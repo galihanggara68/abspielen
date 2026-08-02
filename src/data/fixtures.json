@@ -1,0 +1,197 @@
+{
+  "id": "fixtures-dev-001",
+  "pair": "en-de",
+  "level": "mixed",
+  "cards": [
+    {
+      "id": "en-de-000001",
+      "pair": "en-de",
+      "sourceText": "I drink coffee in the morning.",
+      "targetText": "Ich trinke morgens Kaffee.",
+      "altTargets": [
+        "Am Morgen trinke ich Kaffee."
+      ],
+      "cefr": "A1",
+      "sentenceType": "statement",
+      "tags": [
+        "daily-life",
+        "food"
+      ],
+      "ipa": "ɪç ˈtʁɪŋkə ˈmɔʁɡn̩s ˈkafe",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000002",
+      "pair": "en-de",
+      "sourceText": "Where is the train station?",
+      "targetText": "Wo ist der Bahnhof?",
+      "altTargets": [
+        "Wo befindet sich der Bahnhof?"
+      ],
+      "cefr": "A1",
+      "sentenceType": "question",
+      "tags": [
+        "asking-info",
+        "travel"
+      ],
+      "ipa": "voː ɪst deːɐ̯ ˈbaːnhoːf",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000003",
+      "pair": "en-de",
+      "sourceText": "Please give me the menu.",
+      "targetText": "Bitte geben Sie mir die Speisekarte.",
+      "altTargets": [
+        "Geben Sie mir bitte die Speisekarte."
+      ],
+      "cefr": "A1",
+      "sentenceType": "command",
+      "tags": [
+        "requesting",
+        "social-routines"
+      ],
+      "ipa": "ˈbɪtə ˈɡeːbn̩ ziː miːɐ̯ diː ˈʃpaɪzəˌkaʁtə",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000004",
+      "pair": "en-de",
+      "sourceText": "I have been working here for two years.",
+      "targetText": "Ich arbeite hier seit zwei Jahren.",
+      "altTargets": [
+        "Seit zwei Jahren arbeite ich hier."
+      ],
+      "cefr": "A2",
+      "sentenceType": "statement",
+      "tags": [
+        "work",
+        "time"
+      ],
+      "ipa": "ɪç ˈaʁbaɪtə hiːɐ̯ zaɪt tsvaɪ ˈjaːʁən",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000005",
+      "pair": "en-de",
+      "sourceText": "How much does this jacket cost?",
+      "targetText": "Wie viel kostet diese Jacke?",
+      "altTargets": [
+        "Was kostet diese Jacke?"
+      ],
+      "cefr": "A2",
+      "sentenceType": "question",
+      "tags": [
+        "shopping",
+        "money"
+      ],
+      "ipa": "viː fiːl ˈkɔstət ˈdiːzə ˈjakə",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000006",
+      "pair": "en-de",
+      "sourceText": "Please bring me a glass of water.",
+      "targetText": "Bitte bringen Sie mir ein Glas Wasser.",
+      "altTargets": [
+        "Bringen Sie mir bitte ein Glas Wasser."
+      ],
+      "cefr": "A2",
+      "sentenceType": "command",
+      "tags": [
+        "food",
+        "requesting"
+      ],
+      "ipa": "ˈbɪtə ˈbʁɪŋən ziː miːɐ̯ aɪn ɡlaːs ˈvasɐ",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000007",
+      "pair": "en-de",
+      "sourceText": "I'm happy that you could come to the party.",
+      "targetText": "Ich freue mich, dass du zur Party kommen konntest.",
+      "altTargets": [
+        "Es freut mich, dass du zur Party kommen konntest."
+      ],
+      "cefr": "B1",
+      "sentenceType": "subordinate",
+      "tags": [
+        "emotions",
+        "relationships"
+      ],
+      "ipa": "ɪç ˈfʁɔʏə mɪç das duː tsuːɐ̯ ˈpaʁti ˈkɔmən ˈkɔntəst",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000008",
+      "pair": "en-de",
+      "sourceText": "You should exercise more to stay healthy.",
+      "targetText": "Du solltest mehr Sport treiben, um gesund zu bleiben.",
+      "altTargets": [
+        "Sie sollten sich mehr bewegen, um gesund zu bleiben."
+      ],
+      "cefr": "B1",
+      "sentenceType": "statement",
+      "tags": [
+        "health",
+        "advising"
+      ],
+      "ipa": "duː ˈzɔltəst meːɐ̯ ʃpɔʁt ˈtʁaɪbn̩ ʊm ɡəˈzʊnt tsuː ˈblaɪbn̩",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000009",
+      "pair": "en-de",
+      "sourceText": "Although I enjoy modern art, I find classical paintings more expressive.",
+      "targetText": "Obwohl ich moderne Kunst mag, finde ich klassische Gemälde ausdrucksstärker.",
+      "altTargets": [
+        "Auch wenn mir moderne Kunst gefällt, finde ich klassische Gemälde ausdrucksstärker."
+      ],
+      "cefr": "B2",
+      "sentenceType": "subordinate",
+      "tags": [
+        "culture",
+        "opining"
+      ],
+      "ipa": "ɔpˈvoːl ɪç moˈdɛʁnə kʊnst maːk ˈfɪndə ɪç ˈklasɪʃə ɡəˈmɛːldə ˈaʊsdʁʊksˌʃtɛʁkɐ",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    },
+    {
+      "id": "en-de-000010",
+      "pair": "en-de",
+      "sourceText": "Could you explain to me how this software works?",
+      "targetText": "Könnten Sie mir erklären, wie diese Software funktioniert?",
+      "altTargets": [
+        "Kannst du mir erklären, wie diese Software funktioniert?"
+      ],
+      "cefr": "B2",
+      "sentenceType": "question",
+      "tags": [
+        "technology",
+        "planning"
+      ],
+      "ipa": "ˈkœntn̩ ziː miːɐ̯ ɛɐ̯ˈklɛːʁən viː ˈdiːzə ˈzɔftvɛːɐ̯ fʊŋktsi̯oˈniːɐ̯t",
+      "source": "human",
+      "sourceRef": "fixture",
+      "version": 1
+    }
+  ]
+}
