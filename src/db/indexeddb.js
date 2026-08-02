@@ -65,5 +65,8 @@ export async function getAllCards(pair) {
 }
 
 export function _resetDb() {
+  if (_db) {
+    _db.close();
+  }
   _db = null;
 }
