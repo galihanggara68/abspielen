@@ -1,5 +1,13 @@
 {
   "appId": "com.abspielen.app",
   "appName": "Abspielen",
-  "webDir": "dist"
+  "webDir": "dist",
+  "android": {
+    "buildOptions": {
+      "keystorePath": "release.keystore",
+      "keystorePassword": "password",
+      "keystoreAlias": "abspielen",
+      "keystoreAliasPassword": "password"
+    }
+  }
 }
