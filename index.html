@@ -20,7 +20,14 @@
             <template x-if="currentScreen === 'onboarding'">
                 <div x-data="onboarding" class="screen">
                     <!-- Onboarding content -->
-                    <button @click="next()" aria-label="Next step">Next</button>
+                    <div x-show="!syncing">
+                        <button @click="next()" aria-label="Next step">Next</button>
+                    </div>
+                    <div x-show="syncing" style="display: flex; align-items: center; gap: 10px; margin-top: 20px;">
+                        <div class="spinner"></div>
+                        <span x-text="syncProgress || 'Syncing data...'"></span>
+                    </div>
+                    <div x-show="syncError" style="color: red; margin-top: 10px;" x-text="syncError"></div>
                 </div>
             </template>
             
@@ -90,6 +97,22 @@
             <template x-if="currentScreen === 'settings'">
                 <div x-data="settings" class="screen">
                     <h2>Settings</h2>
+                    
+                    <div style="margin: 20px 0; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px;">
+                        <h3>Data Sync</h3>
+                        <button @click="checkUpdates()" :disabled="syncing" aria-label="Check for Updates">
+                            Check for Updates
+                        </button>
+                        
+                        <div x-show="syncing" style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                            <div class="spinner"></div>
+                            <span x-text="syncResult || 'Syncing...'"></span>
+                        </div>
+                        <div x-show="!syncing && syncResult" style="margin-top: 10px;" x-text="syncResult"></div>
+                    </div>
+
+                    <hr style="margin: 20px 0; border-color: var(--border-color);">
+                    
                     <button @click="toggleDarkMode()" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
                     <button @click="resetProgress()" aria-label="Reset Progress">Reset Progress</button>
                     <button @click="navigate('credits')" aria-label="Go to Credits">Credits</button>

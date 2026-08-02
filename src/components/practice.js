@@ -1,7 +1,6 @@
-import { loadFixtures } from '../db/seed.js';
 import { getNextCard, gradeCard } from '../domain/scheduler.js';
 import { hasGermanVoice, speak } from '../domain/tts.js';
-import { getChunk } from '../db/indexeddb.js';
+import { getAllCards } from '../db/indexeddb.js';
 import { countCardsByState, getSessionState, getPref } from '../db/sqlite.js';
 
 export default function practice() {
@@ -15,7 +14,6 @@ export default function practice() {
     sessionDone: false,
 
     async init() {
-      await loadFixtures();
       this.hasTts = await hasGermanVoice();
       if (this.$store && this.$store.session) {
         await this.$store.session.init();
@@ -47,8 +45,9 @@ export default function practice() {
         return;
       }
 
-      const chunk = await getChunk('fixtures-dev-001');
-      const cardData = chunk ? chunk.cards.find(c => c.id === nextState.card_id) : {};
+      const pair = await getPref('pair') || 'en-de';
+      const allCards = await getAllCards(pair);
+      const cardData = allCards.find(c => c.id === nextState.card_id) || {};
       
       this.currentCard = {
         ...cardData,

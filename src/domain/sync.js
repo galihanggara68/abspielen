@@ -42,9 +42,9 @@ export async function sync(pair, baseUrl, options = {}) {
     for (const chunkId of toDownload) {
       try {
         const chunkUrl = `${baseUrl.replace(/\/$/, '')}/chunks/${chunkId}`;
-        const chunk = await fetchChunk(chunkUrl);
+        const chunkArray = await fetchChunk(chunkUrl);
         
-        const hash = await computeHash(chunk);
+        const hash = await computeHash(chunkArray);
         if (hash !== remoteManifest.chunkHashes[chunkId]) {
           console.warn(`Hash mismatch for chunk ${chunkId}`);
           currentChunk++;
@@ -52,11 +52,16 @@ export async function sync(pair, baseUrl, options = {}) {
           continue;
         }
 
-        await putChunk(chunk);
+        const chunkObj = {
+          id: chunkId,
+          pair: pair,
+          cards: chunkArray
+        };
+        await putChunk(chunkObj);
         
-        if (chunk.cards) {
-          cardsTotal += chunk.cards.length;
-          for (const card of chunk.cards) {
+        if (Array.isArray(chunkArray)) {
+          cardsTotal += chunkArray.length;
+          for (const card of chunkArray) {
             cardIdsToSeed.push(card.id);
           }
         }

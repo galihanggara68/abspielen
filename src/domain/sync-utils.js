@@ -26,7 +26,7 @@ export async function computeHash(chunk) {
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-  return `sha256-${hashHex}`;
+  return hashHex;
 }
 
 export function diffManifests(local, remote) {
