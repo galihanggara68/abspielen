@@ -52,6 +52,7 @@ export async function initDb() {
       current_run_key TEXT,
       current_run_count INTEGER NOT NULL DEFAULT 0,
       cards_seen_today INTEGER NOT NULL DEFAULT 0,
+      new_cards_today INTEGER NOT NULL DEFAULT 0,
       day_start_ts INTEGER
     );
     CREATE TABLE IF NOT EXISTS prefs(
@@ -61,7 +62,7 @@ export async function initDb() {
   `;
   await _execute(tables);
 
-  await _run('INSERT OR IGNORE INTO session_state(id, current_run_count, cards_seen_today) VALUES(1, 0, 0)');
+  await _run('INSERT OR IGNORE INTO session_state(id, current_run_count, cards_seen_today, new_cards_today) VALUES(1, 0, 0, 0)');
   await _run("INSERT OR IGNORE INTO prefs(key, value) VALUES('schema_version', '1')");
 }
 
@@ -159,5 +160,5 @@ export async function countCardsByState(state) {
 
 export async function resetAllProgress() {
   await _execute('DELETE FROM card_state; DELETE FROM review_log;');
-  await _run('UPDATE session_state SET active_strategy = NULL, current_run_key = NULL, current_run_count = 0, cards_seen_today = 0, day_start_ts = NULL WHERE id = 1');
+  await _run('UPDATE session_state SET active_strategy = NULL, current_run_key = NULL, current_run_count = 0, cards_seen_today = 0, new_cards_today = 0, day_start_ts = NULL WHERE id = 1');
 }
