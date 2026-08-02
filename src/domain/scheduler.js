@@ -1,32 +1,51 @@
-import { getDueCards, getNewCards, getSessionState, getCardState, upsertCardState, insertReviewLog, updateSessionState } from '../db/sqlite.js';
+import { getDueCards, getNewCards, getSessionState, getCardState, upsertCardState, insertReviewLog, updateSessionState, getPref } from '../db/sqlite.js';
 import { computeSm2 } from './sm2.js';
+import { applyStrategy } from './strategies.js';
+import { getAllChunkIds, getChunk } from '../db/indexeddb.js';
 
-export async function getNextCard({ now, newCardLimit, newCardsToday }) {
+let pendingRunState = null;
+
+export async function getNextCard({ now, newCardLimit, newCardsToday, currentLevel, recentFailedCardIds }) {
   const session = await getSessionState();
-  const cardsSeenToday = session ? session.cards_seen_today : 0;
   
   const allDue = await getDueCards(now, 100);
-  const reviews = allDue.filter(c => c.state !== 'new');
+  const newCards = await getNewCards(100);
   
-  const newCards = await getNewCards(1);
-  const hasReviews = reviews.length > 0;
-  const hasNew = newCards.length > 0 && newCardsToday < newCardLimit;
+  const availableNew = newCards.slice(0, Math.max(0, newCardLimit - newCardsToday));
+  const candidateStates = [...allDue, ...availableNew];
   
-  if (!hasReviews && !hasNew) return null;
+  if (candidateStates.length === 0) return null;
   
-  const isNewSlot = (cardsSeenToday % 4 === 3);
-  
-  let selectedCardState = null;
-  if (hasNew && (!hasReviews || isNewSlot)) {
-    selectedCardState = newCards[0];
-  } else {
-    selectedCardState = reviews[0];
+  const chunkIds = await getAllChunkIds();
+  const cardMap = new Map();
+  for (const cid of chunkIds) {
+    const chunk = await getChunk(cid);
+    if (chunk && chunk.cards) {
+      for (const c of chunk.cards) {
+        cardMap.set(c.id, c);
+      }
+    }
   }
   
-  return {
-    ...selectedCardState,
-    id: selectedCardState.card_id
+  const fullCards = candidateStates.map(st => {
+    const full = cardMap.get(st.card_id) || {};
+    return { ...full, ...st, id: st.card_id };
+  });
+  
+  const newCardRatioPref = await getPref('new_card_ratio');
+  const options = {
+    new_card_ratio: newCardRatioPref ? parseInt(newCardRatioPref, 10) : 3,
+    currentLevel,
+    recentFailedCardIds
   };
+  
+  const { card, newRunKey, newRunCount } = applyStrategy(fullCards, session, options);
+  
+  if (card) {
+    pendingRunState = { newRunKey, newRunCount };
+    return card;
+  }
+  return null;
 }
 
 export async function gradeCard(cardId, grade) {
@@ -62,9 +81,15 @@ export async function gradeCard(cardId, grade) {
   const session = await getSessionState();
   if (session) {
     const isNew = prevState.state === 'new';
-    await updateSessionState({
+    const updates = {
       cards_seen_today: session.cards_seen_today + 1,
       new_cards_today: isNew ? session.new_cards_today + 1 : session.new_cards_today
-    });
+    };
+    if (pendingRunState) {
+      if (pendingRunState.newRunKey !== undefined) updates.current_run_key = pendingRunState.newRunKey;
+      if (pendingRunState.newRunCount !== undefined) updates.current_run_count = pendingRunState.newRunCount;
+      pendingRunState = null;
+    }
+    await updateSessionState(updates);
   }
 }

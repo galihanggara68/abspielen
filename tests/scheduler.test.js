@@ -1,5 +1,10 @@
-import { describe, test, expect, beforeEach, afterEach } from 'vitest';
+import { describe, test, expect, beforeEach, afterEach, vi } from 'vitest';
 import { getNextCard, gradeCard } from '../src/domain/scheduler.js';
+
+vi.mock('../src/db/indexeddb.js', () => ({
+  getAllChunkIds: vi.fn(async () => []),
+  getChunk: vi.fn(async () => null)
+}));
 import { _setPlugin, initDb, upsertCardState, getCardState, getReviewLogs, seedNewCards } from '../src/db/sqlite.js';
 import { createMockPlugin } from './helpers/mock-sqlite-plugin.js';
 
