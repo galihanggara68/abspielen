@@ -1,0 +1,8 @@
+{
+  "pairs": [
+    "en-de"
+  ],
+  "manifests": {
+    "en-de": "manifests/manifest.en-de.json"
+  }
+}

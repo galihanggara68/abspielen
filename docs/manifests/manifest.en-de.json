@@ -1,0 +1,11 @@
+{
+  "pair": "en-de",
+  "version": 1,
+  "generatedAt": "2026-08-02T05:02:41.410Z",
+  "chunkHashes": {
+    "en-de-A1-001": "cd1fb0e2a060cf71bc073b21645b8f5ab051d96faf2f1ca0c5bc2148b01033d3",
+    "en-de-A2-001": "4c381072d791398832cb90db809140ce726a96959b206f4ac104366b443377b0",
+    "en-de-B1-001": "ba4720b3c1d58fdf57d1ce9ffb0ca49d41a81a6378399deed17a87a1bfa3fedd",
+    "en-de-B2-001": "68b72b2a2d3116657a63fe9bd46fea76898a04489b8f032fdb4a04af98e6bdb9"
+  }
+}
