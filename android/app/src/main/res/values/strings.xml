@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Abspielen</string>
+    <string name="title_activity_main">Abspielen</string>
+    <string name="package_name">com.abspielen.app</string>
+    <string name="custom_url_scheme">com.abspielen.app</string>
+</resources>
