@@ -6,6 +6,7 @@ import onboarding from './components/onboarding.js';
 import settings from './components/settings.js';
 import stats from './components/stats.js';
 import credits from './components/credits.js';
+import { initDb } from './db/sqlite.js';
 
 window.Alpine = Alpine;
 
@@ -16,4 +17,9 @@ Alpine.data('settings', settings);
 Alpine.data('stats', stats);
 Alpine.data('credits', credits);
 
-Alpine.start();
+async function init() {
+  await initDb();
+  Alpine.start();
+}
+
+init();

@@ -1,6 +1,8 @@
 import { CapacitorSQLite } from '@capacitor-community/sqlite';
+import { Capacitor } from '@capacitor/core';
+import { SqlJsPlugin } from './sqljs.js';
 
-let _plugin = CapacitorSQLite;
+let _plugin = Capacitor.getPlatform() === 'web' ? SqlJsPlugin : CapacitorSQLite;
 const _db = 'abspielen';
 
 export function _setPlugin(plugin) {

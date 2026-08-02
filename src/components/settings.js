@@ -65,7 +65,7 @@ export default function settings() {
       this.syncing = true;
       this.syncResult = 'Checking...';
       try {
-        const baseUrl = 'https://example.com';
+        const baseUrl = import.meta.env.VITE_BASE_URL || 'https://example.com';
         const res = await checkForUpdates(this.pair, baseUrl);
         if (res.updateAvailable) {
           this.syncResult = 'Updating...';

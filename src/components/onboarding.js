@@ -58,7 +58,7 @@ export default function onboarding() {
       this.syncing = true;
       this.syncError = null;
       
-      const baseUrl = 'https://example.com'; 
+      const baseUrl = import.meta.env.VITE_BASE_URL || 'https://example.com'; 
 
       const result = await sync(this.pair, baseUrl, {
         onProgress: (stepName, current, total) => {

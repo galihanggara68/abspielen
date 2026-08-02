@@ -28,19 +28,52 @@
                 <div x-data="practice" class="screen">
                     <!-- Practice content -->
                     <div tabindex="-1" class="card-area">
-                        <template x-if="currentCard">
+                        <template x-if="currentCard && !sessionDone">
                             <div>
-                                <p x-text="currentCard.sourceText"></p>
-                                <button @click="reveal()" aria-label="Show answer">Show Answer</button>
+                                <div style="display: flex; justify-content: space-between; font-size: 0.9em; color: gray;">
+                                    <span x-text="currentCard.tags && currentCard.tags.length > 0 ? `[tag-run: ${currentCard.tags[0]}]` : ''"></span>
+                                    <span x-text="`${cardsSeenSession}/${cardsDue + cardsSeenSession}`"></span>
+                                </div>
+                                <hr>
                                 
-                                <template x-if="revealed">
-                                    <div class="grade-buttons">
-                                        <button @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
-                                        <button @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
-                                        <button @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
-                                        <button @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
+                                <p x-text="currentCard.sourceText" style="font-size: 1.2em; text-align: center; margin: 2rem 0;"></p>
+                                
+                                <template x-if="!revealed">
+                                    <div style="text-align: center;">
+                                        <button @click="reveal()" aria-label="Show answer" style="margin-bottom: 2rem;">Show Answer</button>
+                                        <hr>
+                                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                                            <button x-show="hasTts" @click="listen()">Listen</button>
+                                            <button @click="toggleIpa()" x-text="showIpa ? `/${currentCard.ipa}/` : 'IPA'"></button>
+                                        </div>
                                     </div>
                                 </template>
+                                
+                                <template x-if="revealed">
+                                    <div>
+                                        <hr>
+                                        <p x-text="currentCard.targetText" style="font-size: 1.2em; text-align: center; margin: 2rem 0;"></p>
+                                        
+                                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                            <button @click="toggleIpa()" x-text="showIpa ? `/${currentCard.ipa}/` : 'IPA'" style="background: none; border: none; padding: 0; color: inherit; cursor: pointer; text-decoration: underline dotted gray;"></button>
+                                            <button x-show="hasTts" @click="listen()">▶</button>
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="grade-buttons" style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                                            <button @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
+                                            <button @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
+                                            <button @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
+                                            <button @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                        <template x-if="sessionDone">
+                            <div style="text-align: center; margin-top: 3rem;">
+                                <h2>Session Complete! 🎉</h2>
+                                <p x-text="`You reviewed ${cardsSeenSession} cards this session.`"></p>
                             </div>
                         </template>
                     </div>
