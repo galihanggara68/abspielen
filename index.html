@@ -6,9 +6,69 @@
 	    <title>Abspielen</title>
 		<script type="module" src="/src/main.js" defer></script>
     </head>
-    <body>
-        <div x-data>
+    <body :class="{ 'dark': darkMode }" x-data="app" @navigate.window="navigate($event.detail)" @toggle-dark-mode.window="toggleDarkMode()">
+        <header>
             <h1>Abspielen</h1>
-        </div>
+            <nav x-show="currentScreen !== 'onboarding'">
+                <button @click="navigate('practice')" aria-label="Go to Practice">Practice</button>
+                <button @click="navigate('stats')" aria-label="Go to Stats">Stats</button>
+                <button @click="navigate('settings')" aria-label="Go to Settings">Settings</button>
+            </nav>
+        </header>
+
+        <main>
+            <template x-if="currentScreen === 'onboarding'">
+                <div x-data="onboarding" class="screen">
+                    <!-- Onboarding content -->
+                    <button @click="next()" aria-label="Next step">Next</button>
+                </div>
+            </template>
+            
+            <template x-if="currentScreen === 'practice'">
+                <div x-data="practice" class="screen">
+                    <!-- Practice content -->
+                    <div tabindex="-1" class="card-area">
+                        <template x-if="currentCard">
+                            <div>
+                                <p x-text="currentCard.sourceText"></p>
+                                <button @click="reveal()" aria-label="Show answer">Show Answer</button>
+                                
+                                <template x-if="revealed">
+                                    <div class="grade-buttons">
+                                        <button @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
+                                        <button @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
+                                        <button @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
+                                        <button @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+
+            <template x-if="currentScreen === 'stats'">
+                <div x-data="stats" class="screen">
+                    <h2>Stats</h2>
+                    <p>Retention Rate: <span x-text="data?.retentionRate + '%'"></span></p>
+                </div>
+            </template>
+
+            <template x-if="currentScreen === 'settings'">
+                <div x-data="settings" class="screen">
+                    <h2>Settings</h2>
+                    <button @click="toggleDarkMode()" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+                    <button @click="resetProgress()" aria-label="Reset Progress">Reset Progress</button>
+                    <button @click="navigate('credits')" aria-label="Go to Credits">Credits</button>
+                </div>
+            </template>
+
+            <template x-if="currentScreen === 'credits'">
+                <div x-data="credits" class="screen">
+                    <h2>Credits</h2>
+                    <p x-text="attribution"></p>
+                </div>
+            </template>
+        </main>
     </body>
 </html>

@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #0066cc;
+  --border-color: #cccccc;
+}
+
+:root.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --primary-color: #66b3ff;
+  --border-color: #444444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.screen {
+  margin-top: 20px;
+}
