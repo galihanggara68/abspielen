@@ -1,0 +1,30 @@
+[
+  {
+    "id": "en-de-000001", "pair": "en-de",
+    "sourceText": "Hello.", "targetText": "Hallo.",
+    "altTargets": [], "cefr": "A1", "sentenceType": "statement",
+    "tags": ["social-routines"], "ipa": "\u02c8hal\u0254",
+    "source": "tatoeba", "sourceRef": "tatoeba:1", "version": 1
+  },
+  {
+    "id": "en-de-000002", "pair": "en-de",
+    "sourceText": "The soup is very hot.", "targetText": "Die Suppe ist sehr hei\u00df.",
+    "altTargets": [], "cefr": "A1", "sentenceType": "statement",
+    "tags": ["daily-life", "food"], "ipa": "di\u02d0 \u02c8z\u028ap\u0259 \u026ast ze\u02d0\u0250\u032f ha\u026as",
+    "source": "tatoeba", "sourceRef": "tatoeba:2", "version": 1
+  },
+  {
+    "id": "en-de-000003", "pair": "en-de",
+    "sourceText": "Where is the train?", "targetText": "Wo ist der Zug?",
+    "altTargets": [], "cefr": "A2", "sentenceType": "question",
+    "tags": ["travel"], "ipa": "vo\u02d0 \u026ast de\u02d0\u0250\u032f tsu\u02d0k",
+    "source": "tatoeba", "sourceRef": "tatoeba:4", "version": 1
+  },
+  {
+    "id": "en-de-000004", "pair": "en-de",
+    "sourceText": "Good morning.", "targetText": "Guten Morgen.",
+    "altTargets": [], "cefr": "A1", "sentenceType": "statement",
+    "tags": ["social-routines", "time"], "ipa": "\u02c8\u0261u\u02d0tn\u0329 \u02c8m\u0254\u0261\u0259n",
+    "source": "tatoeba", "sourceRef": "tatoeba:5", "version": 1
+  }
+]

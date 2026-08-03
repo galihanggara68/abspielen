@@ -1,0 +1,3 @@
+{"sourceText":"I need a doctor.","targetText":"Ich brauche einen Arzt.","cefr":"A1","sentenceType":"statement","tags":["health"],"altTargets":[],"ipa":"\u026a\u00e7 \u02c8b\u0281a\u028ax\u0259 \u02c8a\u026a\u032f\u0259n a\u0250\u032fst","gapReason":"tag-min:health"}
+{"sourceText":"Call the office.","targetText":"Ruf das B\u00fcro an.","cefr":"B1","sentenceType":"command","tags":["work"],"altTargets":[],"ipa":"\u0281\u028af das \u02c8by\u02d0\u0281o\u02d0 \u0294an","gapReason":"type-per-level:B1:command"}
+{"sourceText":"Broken entry.","targetText": "Kaputt.","cefr":"A1","sentenceType":"statement","tags":["invalid-tag"],"altTargets":[],"ipa":"ka\u02c8p\u028at","gapReason":"tag-min:bogus"}

@@ -1,3 +1,7 @@
 node_modules
 dist
 .env
+
+# Corpus pipeline intermediate work files (produced by skills, consumed by scripts)
+tools/corpus/work/*.jsonl
+tools/corpus/work/*.json

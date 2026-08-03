@@ -1,0 +1,7 @@
+[
+  { "sourceText": "Hello.", "targetText": "Hallo.", "toebaId": 1 },
+  { "sourceText": "The soup is very hot.", "targetText": "Die Suppe ist sehr hei\u00df.", "toebaId": 2 },
+  { "sourceText": "I have a dog.", "targetText": "Ich habe einen Hund.", "toebaId": 3 },
+  { "sourceText": "Where is the train?", "targetText": "Wo ist der Zug?", "toebaId": 4 },
+  { "sourceText": "Good morning.", "targetText": "Guten Morgen.", "toebaId": 5 }
+]

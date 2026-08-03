@@ -1,11 +1,11 @@
 {
   "pair": "en-de",
-  "version": 1,
-  "generatedAt": "2026-08-02T05:02:41.410Z",
+  "version": 2,
+  "generatedAt": "2026-08-03T16:18:41.653Z",
   "chunkHashes": {
-    "en-de-A1-001": "cd1fb0e2a060cf71bc073b21645b8f5ab051d96faf2f1ca0c5bc2148b01033d3",
-    "en-de-A2-001": "4c381072d791398832cb90db809140ce726a96959b206f4ac104366b443377b0",
-    "en-de-B1-001": "ba4720b3c1d58fdf57d1ce9ffb0ca49d41a81a6378399deed17a87a1bfa3fedd",
-    "en-de-B2-001": "68b72b2a2d3116657a63fe9bd46fea76898a04489b8f032fdb4a04af98e6bdb9"
+    "en-de-A1-001": "e0c6900aff599296e21c73e224ea7905dc2e88e050a86323368790434251b6b5",
+    "en-de-A2-001": "edcaea46484583b3c24c32eee13b76e119dc2e257c22327c0fe92fa296b373ce",
+    "en-de-B1-001": "0908be9e6f207d82bf1f62bae557911b7f79434b02d05835bce94ed7a57afb1c",
+    "en-de-B2-001": "f48e6e84d6fb7c5d9fca5c33babca57ea50ba01a868df714dbd0a5dc3b87f117"
   }
 }

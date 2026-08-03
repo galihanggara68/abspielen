@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const API_BASE = 'https://tatoeba.org/en/api_v0/search?from=eng&to=deu&unapproved=no';
+const API_BASE = 'https://tatoeba.org/en/api_v0/search?from=eng&to=deu&unapproved=no&word_count_min=4&word_count_max=12';
 
 async function fetchPage(page) {
   const url = `${API_BASE}&page=${page}`;

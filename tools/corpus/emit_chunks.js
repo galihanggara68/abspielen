@@ -2,30 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import zlib from 'zlib';
 import crypto from 'crypto';
-import { VALID_TAGS, VALID_CEFR, VALID_SENTENCE_TYPES, VALID_SOURCES } from './taxonomy.js';
-
-export function validateCard(card) {
-  if (!/^en-de-\d{6}$/.test(card.id)) throw new Error(`Invalid ID: ${card.id}`);
-  if (card.pair !== 'en-de') throw new Error(`Invalid pair: ${card.pair}`);
-  if (typeof card.sourceText !== 'string' || card.sourceText.trim() === '') throw new Error(`Invalid sourceText for ${card.id}`);
-  if (typeof card.targetText !== 'string' || card.targetText.trim() === '') throw new Error(`Invalid targetText for ${card.id}`);
-  if (!Array.isArray(card.altTargets) || card.altTargets.length > 2) throw new Error(`Invalid altTargets for ${card.id}`);
-  card.altTargets.forEach(a => {
-    if (typeof a !== 'string' || a.trim() === '') throw new Error(`Empty altTarget in ${card.id}`);
-  });
-  if (!VALID_CEFR.includes(card.cefr)) throw new Error(`Invalid CEFR: ${card.cefr} for ${card.id}`);
-  if (!VALID_SENTENCE_TYPES.includes(card.sentenceType)) throw new Error(`Invalid sentenceType: ${card.sentenceType} for ${card.id}`);
-  if (!Array.isArray(card.tags) || card.tags.length < 1 || card.tags.length > 3) throw new Error(`Invalid tags array for ${card.id}`);
-  card.tags.forEach(t => {
-    if (!VALID_TAGS.includes(t)) throw new Error(`invalid tag: ${t} for ${card.id}`);
-  });
-  if (typeof card.ipa !== 'string' || card.ipa.trim() === '') throw new Error(`Invalid ipa for ${card.id}`);
-  if (!VALID_SOURCES.includes(card.source)) throw new Error(`Invalid source: ${card.source} for ${card.id}`);
-  if (typeof card.version !== 'number' || card.version < 1) throw new Error(`Invalid version for ${card.id}`);
-}
+import { VALID_CEFR } from './taxonomy.js';
+import { validateCard } from './validate.js';
 
 export function validateAndEmit(cards) {
-  cards.forEach(validateCard);
+  for (const card of cards) {
+    const { valid, errors } = validateCard(card);
+    if (!valid) throw new Error(errors[0]);
+  }
 }
 
 async function computeHash(jsonContent) {
