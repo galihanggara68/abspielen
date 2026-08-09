@@ -1,0 +1,16 @@
+<div class="screen text-center" style="display: flex; flex-direction: column; justify-content: center; min-height: 70vh;">
+    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Ready to Practice?</h2>
+    
+    <div class="dashboard-metrics">
+        <div class="metric-card">
+            <h3 x-text="$store.session ? $store.session.cardsSeenToday : 0">0</h3>
+            <p>Cards Reviewed</p>
+        </div>
+        <div class="metric-card">
+            <h3 x-text="$store.session ? $store.session.newCardsToday : 0">0</h3>
+            <p>New Cards</p>
+        </div>
+    </div>
+
+    <button @click="navigate('practice')" style="padding: 1rem 3rem; font-size: 1.25rem; border-radius: 50px; margin-top: 1rem;">Start Session</button>
+</div>

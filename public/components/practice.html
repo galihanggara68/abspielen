@@ -1,0 +1,60 @@
+<div x-data="practice" class="screen">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--text-muted); font-weight: 500;">
+        <span x-text="`Due: ${cardsDue}`"></span>
+        <span x-text="`Session: ${cardsSeenSession}`"></span>
+    </div>
+
+    <div tabindex="-1" class="card-area">
+        <template x-if="currentCard && !sessionDone">
+            <div class="flashcard">
+                <template x-if="!audioFirstMode || revealed">
+                    <div class="flashcard-source" x-text="currentCard.sourceText"></div>
+                </template>
+                
+                <template x-if="!revealed && audioFirstMode">
+                    <div class="flex-center flex-col">
+                        <button @click="listen()" class="fab" aria-label="Listen">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                        <p style="color: var(--text-muted); margin-top: 1rem;">Listen and translate</p>
+                    </div>
+                </template>
+
+                <div x-show="!revealed" style="margin-top: 2rem;">
+                    <button @click="reveal()" style="width: 100%;">Show Answer</button>
+                </div>
+                
+                <template x-if="revealed">
+                    <div>
+                        <div class="flashcard-target" x-text="currentCard.targetText"></div>
+                        
+                        <div style="margin: 1.5rem 0; display: flex; justify-content: center; gap: 1rem; align-items: center;">
+                            <button x-show="hasTts" @click="listen()" class="fab" style="margin: 0;" aria-label="Listen">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                            <button @click="toggleIpa()" aria-label="Toggle IPA" style="background: var(--border-color); color: var(--text-color);">IPA</button>
+                        </div>
+                        
+                        <div x-show="showIpa" style="color: var(--text-muted); margin-bottom: 1.5rem; font-family: monospace; font-size: 1.1rem;" x-text="`/${currentCard.ipa}/`"></div>
+                        
+                        <input type="text" x-model="turnNote" placeholder="Add a note (optional)" style="width: 100%; padding: 12px; margin-bottom: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
+                        
+                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: auto;">
+                            <button class="btn-grade btn-again" @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
+                            <button class="btn-grade btn-hard" @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
+                            <button class="btn-grade btn-good" @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
+                            <button class="btn-grade btn-easy" @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+        <template x-if="sessionDone">
+            <div class="text-center" style="margin-top: 4rem;">
+                <h2 style="font-size: 2rem;">Session Complete! 🎉</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;" x-text="`You reviewed ${cardsSeenSession} cards this session.`"></p>
+                <button @click="navigate('home')" style="margin-top: 2rem;">Return Home</button>
+            </div>
+        </template>
+    </div>
+</div>

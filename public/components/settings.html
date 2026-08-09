@@ -1,0 +1,25 @@
+<div x-data="settings" class="screen">
+    <h2>Settings</h2>
+    
+    <div style="margin: 20px 0; padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px; background: var(--bg-color-card);">
+        <h3>Data Sync</h3>
+        <button @click="checkUpdates()" :disabled="syncing" aria-label="Check for Updates" style="width: 100%; margin: 1rem 0 0 0;">
+            Check for Updates
+        </button>
+        
+        <div x-show="syncing" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 1rem;">
+            <div class="spinner"></div>
+            <span x-text="syncResult || 'Syncing...'" style="color: var(--primary-color); font-weight: 500;"></span>
+        </div>
+        <div x-show="!syncing && syncResult" style="margin-top: 1rem; text-align: center; color: var(--success);" x-text="syncResult"></div>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <button @click="toggleAudioFirstMode()" aria-label="Toggle Audio-First Mode" style="background: var(--bg-color-card); color: var(--text-color); border: 1px solid var(--border-color);">
+            <span x-text="audioFirstMode ? 'Disable Audio-First Mode' : 'Enable Audio-First Mode'"></span>
+        </button>
+        <button @click="toggleDarkMode()" aria-label="Toggle Dark Mode" style="background: var(--bg-color-card); color: var(--text-color); border: 1px solid var(--border-color);">Toggle Dark Mode</button>
+        <button @click="resetProgress()" aria-label="Reset Progress" style="background: var(--bg-color-card); color: var(--error); border: 1px solid var(--error);">Reset Progress</button>
+        <button @click="navigate('credits')" aria-label="Go to Credits" style="background: transparent; color: var(--text-muted); box-shadow: none;">Credits</button>
+    </div>
+</div>

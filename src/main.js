@@ -1,5 +1,6 @@
 import './style.css';
 import Alpine from 'alpinejs';
+import component from 'alpinejs-component';
 import practice from './components/practice.js';
 import app from './components/app.js';
 import onboarding from './components/onboarding.js';
@@ -11,6 +12,7 @@ import { initDb } from './db/sqlite.js';
 import sessionStore from './stores/session.js';
 
 window.Alpine = Alpine;
+Alpine.plugin(component);
 
 Alpine.store('session', sessionStore);
 
@@ -23,8 +25,13 @@ Alpine.data('credits', credits);
 Alpine.data('lastSession', lastSession);
 
 async function init() {
-  await initDb();
-  Alpine.start();
+  try {
+    await initDb();
+    Alpine.start();
+  } catch (err) {
+    document.body.innerHTML = '<div style="padding: 20px; color: red;"><h1>Fatal Error</h1><p>' + err.message + '</p></div>';
+    console.error('Fatal initialization error:', err);
+  }
 }
 
 init();

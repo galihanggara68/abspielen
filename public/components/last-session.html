@@ -1,0 +1,26 @@
+<div x-data="lastSession" class="screen">
+    <button @click="navigate('stats')" style="margin-bottom: 1rem; background: transparent; color: var(--text-muted); box-shadow: none; padding: 0;">← Back to Stats</button>
+    <h2>Last Session</h2>
+    <div x-show="turns.length === 0" style="text-align: center; margin-top: 2rem; color: var(--text-muted);">
+        <p>No turns found for the last session.</p>
+    </div>
+    <template x-for="turn in turns" :key="turn.id">
+        <div style="background: var(--bg-color-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <strong style="font-size: 1.1rem;"><span x-text="turn.sourceText"></span></strong>
+                <span style="font-size: 0.75rem; font-weight: 600; padding: 4px 8px; border-radius: 4px; background: var(--border-color); color: var(--text-color);" x-text="turn.grade"></span>
+            </div>
+            <div style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary-color); font-weight: 500;" x-text="turn.targetText"></span>
+                <span style="color: var(--text-muted); font-family: monospace;" x-text="`/${turn.ipa}/`"></span>
+                <button x-show="hasTts" @click="listen(turn.targetText)" style="padding: 4px; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; margin: 0;"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+            </div>
+            <template x-if="turn.note">
+                <div style="background: var(--bg-color); padding: 0.75rem; margin-top: 0.75rem; border-radius: 8px; font-size: 0.9rem;">
+                    <span style="font-weight: 600; color: var(--text-muted); margin-right: 4px;">Note:</span>
+                    <span x-text="turn.note"></span>
+                </div>
+            </template>
+        </div>
+    </template>
+</div>

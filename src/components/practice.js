@@ -50,11 +50,13 @@ export default function practice() {
       if (!nextState) {
         this.currentCard = null;
         this.sessionDone = true;
-        confetti({
-          particleCount: 150,
-          spread: 80,
-          origin: { y: 0.6 }
-        });
+        if (typeof document !== 'undefined') {
+          confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 }
+          });
+        }
         return;
       }
 

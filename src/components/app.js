@@ -8,16 +8,18 @@ export default function app() {
 
     async init() {
       // Catch standard errors
-      window.addEventListener('error', (event) => {
-        event.preventDefault();
-        this.logError(event.message || 'Unknown Error', event.error?.stack || 'No stack trace available');
-      });
+      if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+        window.addEventListener('error', (event) => {
+          event.preventDefault();
+          this.logError(event.message || 'Unknown Error', event.error?.stack || 'No stack trace available');
+        });
 
-      // Catch unhandled promises
-      window.addEventListener('unhandledrejection', (event) => {
-        event.preventDefault();
-        this.logError(event.reason?.message || 'Unhandled Promise Rejection', event.reason?.stack || String(event.reason));
-      });
+        // Catch unhandled promises
+        window.addEventListener('unhandledrejection', (event) => {
+          event.preventDefault();
+          this.logError(event.reason?.message || 'Unhandled Promise Rejection', event.reason?.stack || String(event.reason));
+        });
+      }
 
       const darkModePref = await getPref('dark_mode');
       if (darkModePref !== null) {
@@ -29,7 +31,7 @@ export default function app() {
 
       const onboardingComplete = await getPref('onboarding_complete');
       if (onboardingComplete === 'true') {
-        this.currentScreen = 'practice';
+        this.currentScreen = 'home';
       } else {
         this.currentScreen = 'onboarding';
       }

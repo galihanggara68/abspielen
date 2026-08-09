@@ -1,0 +1,12 @@
+<div x-data="onboarding" class="screen flex-center flex-col" style="min-height: 80vh; text-align: center;">
+    <h2>Welcome to Abspielen</h2>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">Let's get you set up to start learning.</p>
+    <div x-show="!syncing">
+        <button @click="next()" aria-label="Next step" style="width: 200px;">Start</button>
+    </div>
+    <div x-show="syncing" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+        <div class="spinner"></div>
+        <span x-text="syncProgress || 'Syncing data...'" style="color: var(--primary-color); font-weight: 500;"></span>
+    </div>
+    <div x-show="syncError" style="color: var(--error); margin-top: 1rem;" x-text="syncError"></div>
+</div>

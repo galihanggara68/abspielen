@@ -26,6 +26,9 @@ importers:
       alpinejs:
         specifier: ^3.15.12
         version: 3.15.12
+      alpinejs-component:
+        specifier: ^3.0.1
+        version: 3.0.1
       canvas-confetti:
         specifier: ^1.9.4
         version: 1.9.4
@@ -339,6 +342,9 @@ packages:
   '@xmldom/xmldom@0.9.10':
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
+
+  alpinejs-component@3.0.1:
+    resolution: {integrity: sha512-QnJzw0/HcE4bL1jrnSaYY7Yhbloe/r6lnaHb1Ltt+8aoV6f3HGYtHyRyCzVE9LK4KbN7KLkmI+Ku+lBhxdTaAQ==}
 
   alpinejs@3.15.12:
     resolution: {integrity: sha512-nJvPAQVNPdZZ0NrExJ/kzQco3ijR8LwvCOadQecllESiqT4NyZ/57sN9V2XyvhlBGAbmlKYgeWZvYdKq99ij/Q==}
@@ -1311,6 +1317,8 @@ snapshots:
   '@vue/shared@3.1.5': {}
 
   '@xmldom/xmldom@0.9.10': {}
+
+  alpinejs-component@3.0.1: {}
 
   alpinejs@3.15.12:
     dependencies:
