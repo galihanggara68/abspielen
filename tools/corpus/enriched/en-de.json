@@ -4479,6 +4479,1528 @@
   {
     "id": "en-de-000269",
     "pair": "en-de",
+    "sourceText": "Gabriel likes board games.",
+    "targetText": "Gabriel mag Brettspiele.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "leisure",
+      "describing"
+    ],
+    "ipa": "ˈɡaːbʁiɛl maːk ˈbʁɛtˌʃpiːlə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14008761",
+    "version": 1
+  },
+  {
+    "id": "en-de-000270",
+    "pair": "en-de",
+    "sourceText": "Human consciousness created language.",
+    "targetText": "Das menschliche Bewusstsein schuf die Sprache.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "narrating"
+    ],
+    "ipa": "das ˈmɛnʃlɪçə bəˈvʊstzaɪ̯n ʃuːf diː ˈʃpʁaːxə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14006110",
+    "version": 1
+  },
+  {
+    "id": "en-de-000271",
+    "pair": "en-de",
+    "sourceText": "It was interesting there.",
+    "targetText": "Es war dort interessant.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "travel",
+      "describing"
+    ],
+    "ipa": "ɛs vaːɐ̯ dɔʁt ɪntəʁɛˈsant",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14005407",
+    "version": 1
+  },
+  {
+    "id": "en-de-000272",
+    "pair": "en-de",
+    "sourceText": "The Pope is dead.",
+    "targetText": "Der Papst ist tot.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "deːɐ̯ paːpst ɪst toːt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14005115",
+    "version": 1
+  },
+  {
+    "id": "en-de-000273",
+    "pair": "en-de",
+    "sourceText": "God isn't Muslim.",
+    "targetText": "Gott ist kein Muslim.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "ɡɔt ɪst kaɪ̯n ˈmʊslɪm",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14004350",
+    "version": 1
+  },
+  {
+    "id": "en-de-000274",
+    "pair": "en-de",
+    "sourceText": "God isn't Jewish.",
+    "targetText": "Gott ist kein Jude.",
+    "altTargets": [
+      "Gott ist nicht jüdisch."
+    ],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "ɡɔt ɪst kaɪ̯n ˈjuːdə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:14004349",
+    "version": 1
+  },
+  {
+    "id": "en-de-000275",
+    "pair": "en-de",
+    "sourceText": "I have a frog.",
+    "targetText": "Ich habe einen Frosch.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "nature",
+      "describing"
+    ],
+    "ipa": "ɪç ˈhaːbə ˈaɪ̯nən fʁɔʃ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13711640",
+    "version": 1
+  },
+  {
+    "id": "en-de-000276",
+    "pair": "en-de",
+    "sourceText": "Why should I stop?",
+    "targetText": "Warum sollte ich aufhören?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "asking-info",
+      "advising"
+    ],
+    "ipa": "vaˈʁʊm ˈzɔltə ɪç ˈaʊ̯fˌhøːʁən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13710991",
+    "version": 1
+  },
+  {
+    "id": "en-de-000277",
+    "pair": "en-de",
+    "sourceText": "How important is health?",
+    "targetText": "Wie wichtig ist Gesundheit?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "health",
+      "asking-info"
+    ],
+    "ipa": "viː ˈvɪçtɪç ɪst ɡəˈzʊntˌhaɪ̯t",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13710849",
+    "version": 1
+  },
+  {
+    "id": "en-de-000278",
+    "pair": "en-de",
+    "sourceText": "Are tomatoes a fruit?",
+    "targetText": "Ist die Tomate eine Frucht?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "food",
+      "asking-info"
+    ],
+    "ipa": "ɪst diː toˈmaːtə ˈaɪ̯nə fʁʊxt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13710317",
+    "version": 1
+  },
+  {
+    "id": "en-de-000279",
+    "pair": "en-de",
+    "sourceText": "I'm no clown.",
+    "targetText": "Ich bin kein Clown.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "ɪç bɪn kaɪ̯n klaʊ̯n",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13709130",
+    "version": 1
+  },
+  {
+    "id": "en-de-000280",
+    "pair": "en-de",
+    "sourceText": "Tom survived the war.",
+    "targetText": "Tom hat den Krieg überlebt.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "narrating"
+    ],
+    "ipa": "tɔm hat deːn kʁiːk yːbɐˈleːpt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13708670",
+    "version": 1
+  },
+  {
+    "id": "en-de-000281",
+    "pair": "en-de",
+    "sourceText": "Someone always wants something.",
+    "targetText": "Jemand will immer etwas.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "ˈjeːmant vɪl ˈɪmɐ ˈɛtvas",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13708647",
+    "version": 1
+  },
+  {
+    "id": "en-de-000282",
+    "pair": "en-de",
+    "sourceText": "I'm a thief.",
+    "targetText": "Ich bin ein Dieb.",
+    "altTargets": [
+      "Ich bin eine Diebin."
+    ],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "ɪç bɪn aɪ̯n diːp",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13708072",
+    "version": 1
+  },
+  {
+    "id": "en-de-000283",
+    "pair": "en-de",
+    "sourceText": "Your cat has fleas.",
+    "targetText": "Deine Katze hat Flöhe.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "nature",
+      "health"
+    ],
+    "ipa": "ˈdaɪ̯nə ˈkat͡sə hat ˈfløːə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13705955",
+    "version": 1
+  },
+  {
+    "id": "en-de-000284",
+    "pair": "en-de",
+    "sourceText": "The family meets often.",
+    "targetText": "Die Familie trifft sich oft.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "narrating"
+    ],
+    "ipa": "diː faˈmiːli̯ə tʁɪft zɪç ɔft",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13705723",
+    "version": 1
+  },
+  {
+    "id": "en-de-000285",
+    "pair": "en-de",
+    "sourceText": "I can play chess.",
+    "targetText": "Ich kann Schach spielen.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "leisure",
+      "describing"
+    ],
+    "ipa": "ɪç kan ʃax ˈʃpiːlən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13705444",
+    "version": 1
+  },
+  {
+    "id": "en-de-000286",
+    "pair": "en-de",
+    "sourceText": "Both variants are correct.",
+    "targetText": "Beide Varianten sind korrekt.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ˈbaɪ̯də vaˈʁi̯antn̩ zɪnt kɔˈʁɛkt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13705241",
+    "version": 1
+  },
+  {
+    "id": "en-de-000287",
+    "pair": "en-de",
+    "sourceText": "Give me my coat.",
+    "targetText": "Gib mir meinen Mantel.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "command",
+    "tags": [
+      "daily-life",
+      "requesting"
+    ],
+    "ipa": "ɡɪp miːɐ̯ ˈmaɪ̯nən ˈmantl̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702653",
+    "version": 1
+  },
+  {
+    "id": "en-de-000288",
+    "pair": "en-de",
+    "sourceText": "The teacher is strict.",
+    "targetText": "Der Lehrer ist streng.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "deːɐ̯ ˈleːʁɐ ɪst ʃtʁɛŋ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702401",
+    "version": 1
+  },
+  {
+    "id": "en-de-000289",
+    "pair": "en-de",
+    "sourceText": "Is my brother autistic?",
+    "targetText": "Ist mein Bruder autistisch?",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "question",
+    "tags": [
+      "health",
+      "asking-info"
+    ],
+    "ipa": "ɪst maɪ̯n ˈbʁuːdɐ aʊ̯ˈtɪstɪʃ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702297",
+    "version": 1
+  },
+  {
+    "id": "en-de-000290",
+    "pair": "en-de",
+    "sourceText": "I'm counting apples.",
+    "targetText": "Ich zähle Äpfel.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "food",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈt͡sɛːlə ˈɛpfl̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702178",
+    "version": 1
+  },
+  {
+    "id": "en-de-000291",
+    "pair": "en-de",
+    "sourceText": "I bought a pillow.",
+    "targetText": "Ich habe ein Kopfkissen gekauft.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "shopping",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈhaːbə aɪ̯n ˈkɔpfˌkɪsn̩ ɡəˈkaʊ̯ft",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702137",
+    "version": 1
+  },
+  {
+    "id": "en-de-000292",
+    "pair": "en-de",
+    "sourceText": "I bought a blanket.",
+    "targetText": "Ich habe eine Decke gekauft.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "shopping",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈhaːbə ˈaɪ̯nə ˈdɛkə ɡəˈkaʊ̯ft",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13702129",
+    "version": 1
+  },
+  {
+    "id": "en-de-000293",
+    "pair": "en-de",
+    "sourceText": "I'm eating soup.",
+    "targetText": "Ich esse Suppe.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "food",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈɛsə ˈzʊpə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13698972",
+    "version": 1
+  },
+  {
+    "id": "en-de-000294",
+    "pair": "en-de",
+    "sourceText": "Tom mustn't suffer.",
+    "targetText": "Tom darf nicht leiden.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "health",
+      "opining"
+    ],
+    "ipa": "tɔm daʁf nɪçt ˈlaɪ̯dn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13693605",
+    "version": 1
+  },
+  {
+    "id": "en-de-000295",
+    "pair": "en-de",
+    "sourceText": "We're finally here!",
+    "targetText": "Endlich sind wir hier!",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "travel",
+      "describing"
+    ],
+    "ipa": "ˈɛntlɪç zɪnt viːɐ̯ hiːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13693100",
+    "version": 1
+  },
+  {
+    "id": "en-de-000296",
+    "pair": "en-de",
+    "sourceText": "Superman will save us.",
+    "targetText": "Superman wird uns retten.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "opining"
+    ],
+    "ipa": "ˈzuːpɐman vɪʁt ʊns ˈʁɛtn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13692963",
+    "version": 1
+  },
+  {
+    "id": "en-de-000297",
+    "pair": "en-de",
+    "sourceText": "Are viruses living things?",
+    "targetText": "Sind Viren Lebewesen?",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "question",
+    "tags": [
+      "health",
+      "asking-info"
+    ],
+    "ipa": "zɪnt ˈviːʁən ˈleːbəˌveːzn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13692863",
+    "version": 1
+  },
+  {
+    "id": "en-de-000298",
+    "pair": "en-de",
+    "sourceText": "She's a guest.",
+    "targetText": "Sie ist ein Gast.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "social-routines",
+      "describing"
+    ],
+    "ipa": "ziː ɪst aɪ̯n ɡast",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13692760",
+    "version": 1
+  },
+  {
+    "id": "en-de-000299",
+    "pair": "en-de",
+    "sourceText": "The night was hot.",
+    "targetText": "Die Nacht war heiß.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "nature",
+      "describing"
+    ],
+    "ipa": "diː naxt vaːɐ̯ haɪ̯s",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13692757",
+    "version": 1
+  },
+  {
+    "id": "en-de-000300",
+    "pair": "en-de",
+    "sourceText": "Is the water blue?",
+    "targetText": "Ist das Wasser blau?",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "question",
+    "tags": [
+      "nature",
+      "asking-info"
+    ],
+    "ipa": "ɪst das ˈvasɐ blaʊ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13692019",
+    "version": 1
+  },
+  {
+    "id": "en-de-000301",
+    "pair": "en-de",
+    "sourceText": "The door opens inwards.",
+    "targetText": "Die Tür geht nach innen auf.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "diː tyːɐ̯ ɡeːt nax ˈɪnən aʊ̯f",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13687896",
+    "version": 1
+  },
+  {
+    "id": "en-de-000302",
+    "pair": "en-de",
+    "sourceText": "Greetings from my mom.",
+    "targetText": "Grüße von meiner Mutti.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "social-routines"
+    ],
+    "ipa": "ˈɡʁyːsə fɔn ˈmaɪ̯nɐ ˈmʊti",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13686513",
+    "version": 1
+  },
+  {
+    "id": "en-de-000303",
+    "pair": "en-de",
+    "sourceText": "Japanese is very difficult.",
+    "targetText": "Japanisch ist sehr schwer.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "jaˈpaːnɪʃ ɪst zeːɐ̯ ʃveːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13683580",
+    "version": 1
+  },
+  {
+    "id": "en-de-000304",
+    "pair": "en-de",
+    "sourceText": "Two twos are four.",
+    "targetText": "Zwei Zweien sind vier.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "t͡svaɪ̯ ˈt͡svaɪ̯ən zɪnt fiːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13681538",
+    "version": 1
+  },
+  {
+    "id": "en-de-000305",
+    "pair": "en-de",
+    "sourceText": "Happy New Year, Tatoeba!",
+    "targetText": "Frohes neues Jahr, Tatoeba!",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "social-routines"
+    ],
+    "ipa": "ˈfʁoːəs ˈnɔɪ̯əs jaːɐ̯ taˈtoːba",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13678007",
+    "version": 1
+  },
+  {
+    "id": "en-de-000306",
+    "pair": "en-de",
+    "sourceText": "You want to understand.",
+    "targetText": "Sie wollen verstehen.",
+    "altTargets": [
+      "Ihr wollt verstehen.",
+      "Du willst verstehen."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "describing"
+    ],
+    "ipa": "ziː ˈvɔlən fɛɐ̯ˈʃteːən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13676583",
+    "version": 1
+  },
+  {
+    "id": "en-de-000307",
+    "pair": "en-de",
+    "sourceText": "She said it herself.",
+    "targetText": "Sie selbst hat es mir gesagt.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "narrating"
+    ],
+    "ipa": "ziː zɛlpst hat ɛs miːɐ̯ ɡəˈzaːkt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13674036",
+    "version": 1
+  },
+  {
+    "id": "en-de-000308",
+    "pair": "en-de",
+    "sourceText": "The password is \"password.\"",
+    "targetText": "Das Passwort ist „Passwort“.",
+    "altTargets": [
+      "Das Passwort lautet „Passwort“."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "technology",
+      "describing"
+    ],
+    "ipa": "das ˈpasvɔʁt ɪst ˈpasvɔʁt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13671888",
+    "version": 1
+  },
+  {
+    "id": "en-de-000309",
+    "pair": "en-de",
+    "sourceText": "The students chatted happily.",
+    "targetText": "Die Schüler plauderten fröhlich.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "narrating"
+    ],
+    "ipa": "diː ˈʃyːlɐ ˈplaʊ̯dɐtn̩ ˈfʁøːlɪç",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13670607",
+    "version": 1
+  },
+  {
+    "id": "en-de-000310",
+    "pair": "en-de",
+    "sourceText": "German has separable verbs.",
+    "targetText": "Im Deutschen gibt es trennbare Verben.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ɪm ˈdɔɪ̯tʃn̩ ɡiːpt ɛs ˈtʁɛnbaːʁə ˈvɛʁbn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13670244",
+    "version": 1
+  },
+  {
+    "id": "en-de-000311",
+    "pair": "en-de",
+    "sourceText": "Does she have tattoos?",
+    "targetText": "Hat sie Tätowierungen?",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "question",
+    "tags": [
+      "daily-life",
+      "asking-info"
+    ],
+    "ipa": "hat ziː tɛtoˈviːʁʊŋən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13669613",
+    "version": 1
+  },
+  {
+    "id": "en-de-000312",
+    "pair": "en-de",
+    "sourceText": "I hesitated before answering.",
+    "targetText": "Ich zögerte, bevor ich antwortete.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "daily-life",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈt͡søːɡɐtə bəˈfoːɐ̯ ɪç ˈantvɔʁtətə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13666778",
+    "version": 1
+  },
+  {
+    "id": "en-de-000313",
+    "pair": "en-de",
+    "sourceText": "It's Christmas Eve.",
+    "targetText": "Es ist Heiligabend.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "ɛs ɪst ˈhaɪ̯lɪçˌaːbn̩t",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13666774",
+    "version": 1
+  },
+  {
+    "id": "en-de-000314",
+    "pair": "en-de",
+    "sourceText": "Father, stay with me!",
+    "targetText": "Vater, bleib bei mir!",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "command",
+    "tags": [
+      "relationships",
+      "requesting"
+    ],
+    "ipa": "ˈfaːtɐ blaɪ̯p baɪ̯ miːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13665368",
+    "version": 1
+  },
+  {
+    "id": "en-de-000315",
+    "pair": "en-de",
+    "sourceText": "Tom should stop working.",
+    "targetText": "Tom sollte nicht weiter arbeiten.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "work",
+      "advising"
+    ],
+    "ipa": "tɔm ˈzɔltə nɪçt ˈvaɪ̯tɐ ˈaʁbaɪ̯tn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13664719",
+    "version": 1
+  },
+  {
+    "id": "en-de-000316",
+    "pair": "en-de",
+    "sourceText": "There are elections today.",
+    "targetText": "Heute sind Wahlen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "ˈhɔɪ̯tə zɪnt ˈvaːlən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13664282",
+    "version": 1
+  },
+  {
+    "id": "en-de-000317",
+    "pair": "en-de",
+    "sourceText": "He understood everything immediately.",
+    "targetText": "Er hat sofort alles verstanden.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "narrating"
+    ],
+    "ipa": "eːɐ̯ hat zoˈfɔʁt ˈaləs fɛɐ̯ˈʃtandn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13663635",
+    "version": 1
+  },
+  {
+    "id": "en-de-000318",
+    "pair": "en-de",
+    "sourceText": "Give me the list.",
+    "targetText": "Gib mir die Liste.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "command",
+    "tags": [
+      "daily-life",
+      "requesting"
+    ],
+    "ipa": "ɡɪp miːɐ̯ diː ˈlɪstə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13662537",
+    "version": 1
+  },
+  {
+    "id": "en-de-000319",
+    "pair": "en-de",
+    "sourceText": "That looks good too.",
+    "targetText": "Das sieht auch gut aus.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "das ziːt aʊ̯x ɡuːt aʊ̯s",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13662531",
+    "version": 1
+  },
+  {
+    "id": "en-de-000320",
+    "pair": "en-de",
+    "sourceText": "You live in Kazan.",
+    "targetText": "Sie wohnen in Kasan.",
+    "altTargets": [
+      "Sie leben in Kasan.",
+      "Ihr lebt in Kasan."
+    ],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "ziː ˈvoːnən ɪn ˈkaːzan",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13662106",
+    "version": 1
+  },
+  {
+    "id": "en-de-000321",
+    "pair": "en-de",
+    "sourceText": "I burned my fingertip.",
+    "targetText": "Ich verbrannte mir die Fingerkuppe.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "health",
+      "narrating"
+    ],
+    "ipa": "ɪç fɛɐ̯ˈbʁantə miːɐ̯ diː ˈfɪŋɐˌkʊpə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661822",
+    "version": 1
+  },
+  {
+    "id": "en-de-000322",
+    "pair": "en-de",
+    "sourceText": "I know everyone there.",
+    "targetText": "Ich kenne dort alle.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "describing"
+    ],
+    "ipa": "ɪç ˈkɛnə dɔʁt ˈalə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661164",
+    "version": 1
+  },
+  {
+    "id": "en-de-000323",
+    "pair": "en-de",
+    "sourceText": "We live in Kazan.",
+    "targetText": "Wir wohnen in Kasan.",
+    "altTargets": [
+      "Wir leben in Kasan."
+    ],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "viːɐ̯ ˈvoːnən ɪn ˈkaːzan",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661126",
+    "version": 1
+  },
+  {
+    "id": "en-de-000324",
+    "pair": "en-de",
+    "sourceText": "They went to Kazan.",
+    "targetText": "Sie sind nach Kasan gefahren.",
+    "altTargets": [
+      "Sie fuhren nach Kasan."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "travel",
+      "narrating"
+    ],
+    "ipa": "ziː zɪnt nax ˈkaːzan ɡəˈfaːʁən",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661125",
+    "version": 1
+  },
+  {
+    "id": "en-de-000325",
+    "pair": "en-de",
+    "sourceText": "We went to Kazan.",
+    "targetText": "Wir fuhren nach Kasan.",
+    "altTargets": [
+      "Wir sind nach Kasan gefahren."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "travel",
+      "narrating"
+    ],
+    "ipa": "viːɐ̯ ˈfuːʁən nax ˈkaːzan",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661124",
+    "version": 1
+  },
+  {
+    "id": "en-de-000326",
+    "pair": "en-de",
+    "sourceText": "We heard him yell.",
+    "targetText": "Wir haben ihn schreien gehört.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "narrating"
+    ],
+    "ipa": "viːɐ̯ ˈhaːbn̩ iːn ˈʃʁaɪ̯ən ɡəˈhøːɐ̯t",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13661003",
+    "version": 1
+  },
+  {
+    "id": "en-de-000327",
+    "pair": "en-de",
+    "sourceText": "Did my wife call?",
+    "targetText": "Hat meine Frau angerufen?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "relationships",
+      "asking-info"
+    ],
+    "ipa": "hat ˈmaɪ̯nə fʁaʊ̯ ˈanɡəˌʁuːfn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13660471",
+    "version": 1
+  },
+  {
+    "id": "en-de-000328",
+    "pair": "en-de",
+    "sourceText": "Are all panthers black?",
+    "targetText": "Sind alle Panther schwarz?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "nature",
+      "asking-info"
+    ],
+    "ipa": "zɪnt ˈalə ˈpantɐ ʃvaʁt͡s",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13660431",
+    "version": 1
+  },
+  {
+    "id": "en-de-000329",
+    "pair": "en-de",
+    "sourceText": "Our collaboration was fruitful.",
+    "targetText": "Unsere Zusammenarbeit war fruchtbar.",
+    "altTargets": [
+      "Unsere Zusammenarbeit ist fruchtbar gewesen."
+    ],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "work",
+      "describing"
+    ],
+    "ipa": "ˈʊnzəʁə t͡suˈzamənˌaʁbaɪ̯t vaːɐ̯ ˈfʁʊxtbaːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13659731",
+    "version": 1
+  },
+  {
+    "id": "en-de-000330",
+    "pair": "en-de",
+    "sourceText": "I learn two languages.",
+    "targetText": "Ich lerne zwei Sprachen.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ɪç ˈlɛʁnə t͡svaɪ̯ ˈʃpʁaːxn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13659606",
+    "version": 1
+  },
+  {
+    "id": "en-de-000331",
+    "pair": "en-de",
+    "sourceText": "That is very useful.",
+    "targetText": "Das ist sehr nützlich.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "das ɪst zeːɐ̯ ˈnʏt͡slɪç",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13658554",
+    "version": 1
+  },
+  {
+    "id": "en-de-000332",
+    "pair": "en-de",
+    "sourceText": "He's always working.",
+    "targetText": "Er arbeitet immer.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "work",
+      "describing"
+    ],
+    "ipa": "eːɐ̯ ˈaʁbaɪ̯tət ˈɪmɐ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13657650",
+    "version": 1
+  },
+  {
+    "id": "en-de-000333",
+    "pair": "en-de",
+    "sourceText": "Is it okay now?",
+    "targetText": "Ist es jetzt in Ordnung?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "daily-life",
+      "asking-info"
+    ],
+    "ipa": "ɪst ɛs jɛt͡st ɪn ˈɔʁdnʊŋ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13655848",
+    "version": 1
+  },
+  {
+    "id": "en-de-000334",
+    "pair": "en-de",
+    "sourceText": "I unlinked the English.",
+    "targetText": "Ich habe das Englische abgetrennt.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈhaːbə das ˈɛŋlɪʃə ˈapɡəˌtʁɛnt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13655173",
+    "version": 1
+  },
+  {
+    "id": "en-de-000335",
+    "pair": "en-de",
+    "sourceText": "Reading activates the brain.",
+    "targetText": "Lesen aktiviert das Gehirn.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ˈleːzn̩ aktiˈviːɐ̯t das ɡəˈhɪʁn",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13651636",
+    "version": 1
+  },
+  {
+    "id": "en-de-000336",
+    "pair": "en-de",
+    "sourceText": "Money costs too much.",
+    "targetText": "Geld kostet zu viel.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "money",
+      "opining"
+    ],
+    "ipa": "ɡɛlt ˈkɔstət t͡suː fiːl",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650989",
+    "version": 1
+  },
+  {
+    "id": "en-de-000337",
+    "pair": "en-de",
+    "sourceText": "His enthusiasm quickly waned.",
+    "targetText": "Seine Begeisterung schwand schnell dahin.",
+    "altTargets": [
+      "Seine Begeisterung ließ schnell nach."
+    ],
+    "cefr": "B2",
+    "sentenceType": "statement",
+    "tags": [
+      "emotions",
+      "narrating"
+    ],
+    "ipa": "ˈzaɪ̯nə bəˈɡaɪ̯stəʁʊŋ ʃvant ʃnɛl daˈhɪn",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650986",
+    "version": 1
+  },
+  {
+    "id": "en-de-000338",
+    "pair": "en-de",
+    "sourceText": "His house is big.",
+    "targetText": "Sein Haus ist groß.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "zaɪ̯n haʊ̯s ɪst ɡʁoːs",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650737",
+    "version": 1
+  },
+  {
+    "id": "en-de-000339",
+    "pair": "en-de",
+    "sourceText": "Are you going back?",
+    "targetText": "Gehst du zurück?",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "question",
+    "tags": [
+      "travel",
+      "asking-info"
+    ],
+    "ipa": "ɡeːst duː t͡suˈʁʏk",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650732",
+    "version": 1
+  },
+  {
+    "id": "en-de-000340",
+    "pair": "en-de",
+    "sourceText": "I forgot my book.",
+    "targetText": "Ich habe mein Buch vergessen.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "narrating"
+    ],
+    "ipa": "ɪç ˈhaːbə maɪ̯n buːx fɛɐ̯ˈɡɛsn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650673",
+    "version": 1
+  },
+  {
+    "id": "en-de-000341",
+    "pair": "en-de",
+    "sourceText": "These books were mine.",
+    "targetText": "Diese Bücher waren meine.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ˈdiːzə ˈbyːçɐ ˈvaːʁən ˈmaɪ̯nə",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650630",
+    "version": 1
+  },
+  {
+    "id": "en-de-000342",
+    "pair": "en-de",
+    "sourceText": "You have a book.",
+    "targetText": "Du hast ein Buch.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "duː hast aɪ̯n buːx",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650624",
+    "version": 1
+  },
+  {
+    "id": "en-de-000343",
+    "pair": "en-de",
+    "sourceText": "My books are heavy.",
+    "targetText": "Meine Bücher sind schwer.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "ˈmaɪ̯nə ˈbyːçɐ zɪnt ʃveːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650620",
+    "version": 1
+  },
+  {
+    "id": "en-de-000344",
+    "pair": "en-de",
+    "sourceText": "I love her books.",
+    "targetText": "Ich liebe ihre Bücher.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "emotions"
+    ],
+    "ipa": "ɪç ˈliːbə ˈiːʁə ˈbyːçɐ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650600",
+    "version": 1
+  },
+  {
+    "id": "en-de-000345",
+    "pair": "en-de",
+    "sourceText": "I like her books.",
+    "targetText": "Mir gefallen ihre Bücher.",
+    "altTargets": [
+      "Ich mag ihre Bücher."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "emotions"
+    ],
+    "ipa": "miːɐ̯ ɡəˈfalən ˈiːʁə ˈbyːçɐ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650598",
+    "version": 1
+  },
+  {
+    "id": "en-de-000346",
+    "pair": "en-de",
+    "sourceText": "I like his books.",
+    "targetText": "Mir gefallen seine Bücher.",
+    "altTargets": [
+      "Ich mag seine Bücher."
+    ],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "emotions"
+    ],
+    "ipa": "miːɐ̯ ɡəˈfalən ˈzaɪ̯nə ˈbyːçɐ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650596",
+    "version": 1
+  },
+  {
+    "id": "en-de-000347",
+    "pair": "en-de",
+    "sourceText": "I love his books.",
+    "targetText": "Ich liebe seine Bücher.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "emotions"
+    ],
+    "ipa": "ɪç ˈliːbə ˈzaɪ̯nə ˈbyːçɐ",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650594",
+    "version": 1
+  },
+  {
+    "id": "en-de-000348",
+    "pair": "en-de",
+    "sourceText": "This sentence is impolite.",
+    "targetText": "Dieser Satz ist unhöflich.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "daily-life",
+      "describing"
+    ],
+    "ipa": "ˈdiːzɐ zat͡s ɪst ˈʊnˌhøːflɪç",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650386",
+    "version": 1
+  },
+  {
+    "id": "en-de-000349",
+    "pair": "en-de",
+    "sourceText": "Do you have accomodation?",
+    "targetText": "Hast du eine Unterkunft?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "travel",
+      "asking-info"
+    ],
+    "ipa": "hast duː ˈaɪ̯nə ˈʊntɐˌkʊnft",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13650217",
+    "version": 1
+  },
+  {
+    "id": "en-de-000350",
+    "pair": "en-de",
+    "sourceText": "You are already old.",
+    "targetText": "Du bist schon alt.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "describing"
+    ],
+    "ipa": "duː bɪst ʃoːn alt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13649393",
+    "version": 1
+  },
+  {
+    "id": "en-de-000351",
+    "pair": "en-de",
+    "sourceText": "Who were the Incas?",
+    "targetText": "Wer waren die Inkas?",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "question",
+    "tags": [
+      "culture",
+      "asking-info"
+    ],
+    "ipa": "veːɐ̯ ˈvaːʁən diː ˈɪŋkas",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13649379",
+    "version": 1
+  },
+  {
+    "id": "en-de-000352",
+    "pair": "en-de",
+    "sourceText": "German is really difficult.",
+    "targetText": "Deutsch ist wirklich schwer.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "statement",
+    "tags": [
+      "study",
+      "describing"
+    ],
+    "ipa": "dɔɪ̯t͡ʃ ɪst ˈvɪʁklɪç ʃveːɐ̯",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13647513",
+    "version": 1
+  },
+  {
+    "id": "en-de-000353",
+    "pair": "en-de",
+    "sourceText": "She called her daughter.",
+    "targetText": "Sie hat ihre Tochter angerufen.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "relationships",
+      "narrating"
+    ],
+    "ipa": "ziː hat ˈiːʁə ˈtɔxtɐ ˈanɡəˌʁuːfn̩",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13647426",
+    "version": 1
+  },
+  {
+    "id": "en-de-000354",
+    "pair": "en-de",
+    "sourceText": "First education, then marriage.",
+    "targetText": "Erst Bildung, dann Heirat.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "statement",
+    "tags": [
+      "culture",
+      "describing"
+    ],
+    "ipa": "eːɐ̯st ˈbɪldʊŋ dan ˈhaɪ̯ʁaːt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13647049",
+    "version": 1
+  },
+  {
+    "id": "en-de-000355",
+    "pair": "en-de",
+    "sourceText": "Don't save me.",
+    "targetText": "Rette mich nicht.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "command",
+    "tags": [
+      "relationships",
+      "requesting"
+    ],
+    "ipa": "ˈʁɛtə mɪç nɪçt",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13645089",
+    "version": 1
+  },
+  {
+    "id": "en-de-000356",
+    "pair": "en-de",
+    "sourceText": "My eyes are hurting.",
+    "targetText": "Meine Augen tun weh.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "statement",
+    "tags": [
+      "health",
+      "describing"
+    ],
+    "ipa": "ˈmaɪ̯nə ˈaʊ̯ɡn̩ tuːn veː",
+    "source": "tatoeba",
+    "sourceRef": "tatoeba:13642863",
+    "version": 1
+  },
+  {
+    "id": "en-de-000357",
+    "pair": "en-de",
     "sourceText": "I need to buy bread.",
     "targetText": "Ich muss Brot kaufen.",
     "altTargets": [],
@@ -4494,7 +6016,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000270",
+    "id": "en-de-000358",
     "pair": "en-de",
     "sourceText": "How much does this cost?",
     "targetText": "Wie viel kostet das?",
@@ -4511,7 +6033,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000271",
+    "id": "en-de-000359",
     "pair": "en-de",
     "sourceText": "The store is closed today.",
     "targetText": "Der Laden ist heute geschlossen.",
@@ -4527,7 +6049,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000272",
+    "id": "en-de-000360",
     "pair": "en-de",
     "sourceText": "Can I pay with cash?",
     "targetText": "Kann ich bar bezahlen?",
@@ -4545,7 +6067,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000273",
+    "id": "en-de-000361",
     "pair": "en-de",
     "sourceText": "I'm looking for a gift.",
     "targetText": "Ich suche ein Geschenk.",
@@ -4561,7 +6083,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000274",
+    "id": "en-de-000362",
     "pair": "en-de",
     "sourceText": "The receipt is in the bag.",
     "targetText": "Die Quittung ist in der Tüte.",
@@ -4577,7 +6099,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000275",
+    "id": "en-de-000363",
     "pair": "en-de",
     "sourceText": "These shoes are on sale.",
     "targetText": "Diese Schuhe sind im Angebot.",
@@ -4593,7 +6115,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000276",
+    "id": "en-de-000364",
     "pair": "en-de",
     "sourceText": "I don't have enough money.",
     "targetText": "Ich habe nicht genug Geld.",
@@ -4609,7 +6131,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000277",
+    "id": "en-de-000365",
     "pair": "en-de",
     "sourceText": "Can you lend me five euros?",
     "targetText": "Kannst du mir fünf Euro leihen?",
@@ -4626,7 +6148,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000278",
+    "id": "en-de-000366",
     "pair": "en-de",
     "sourceText": "The bill is very high.",
     "targetText": "Die Rechnung ist sehr hoch.",
@@ -4642,7 +6164,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000279",
+    "id": "en-de-000367",
     "pair": "en-de",
     "sourceText": "I need to withdraw cash.",
     "targetText": "Ich muss Bargeld abheben.",
@@ -4658,7 +6180,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000280",
+    "id": "en-de-000368",
     "pair": "en-de",
     "sourceText": "The exchange rate is unfavorable.",
     "targetText": "Der Wechselkurs ist ungünstig.",
@@ -4674,7 +6196,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000281",
+    "id": "en-de-000369",
     "pair": "en-de",
     "sourceText": "We play chess on weekends.",
     "targetText": "Wir spielen am Wochenende Schach.",
@@ -4690,7 +6212,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000282",
+    "id": "en-de-000370",
     "pair": "en-de",
     "sourceText": "My phone is broken.",
     "targetText": "Mein Handy ist kaputt.",
@@ -4706,7 +6228,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000283",
+    "id": "en-de-000371",
     "pair": "en-de",
     "sourceText": "I need to charge my laptop.",
     "targetText": "Ich muss meinen Laptop aufladen.",
@@ -4722,7 +6244,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000284",
+    "id": "en-de-000372",
     "pair": "en-de",
     "sourceText": "The internet connection is slow.",
     "targetText": "Die Internetverbindung ist langsam.",
@@ -4738,7 +6260,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000285",
+    "id": "en-de-000373",
     "pair": "en-de",
     "sourceText": "You should update your software.",
     "targetText": "Du solltest deine Software aktualisieren.",
@@ -4755,7 +6277,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000286",
+    "id": "en-de-000374",
     "pair": "en-de",
     "sourceText": "It's three o'clock.",
     "targetText": "Es ist drei Uhr.",
@@ -4771,7 +6293,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000287",
+    "id": "en-de-000375",
     "pair": "en-de",
     "sourceText": "The meeting is at noon.",
     "targetText": "Das Treffen ist um zwölf Uhr.",
@@ -4788,7 +6310,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000288",
+    "id": "en-de-000376",
     "pair": "en-de",
     "sourceText": "I'll be there in ten minutes.",
     "targetText": "Ich bin in zehn Minuten da.",
@@ -4804,7 +6326,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000289",
+    "id": "en-de-000377",
     "pair": "en-de",
     "sourceText": "The train leaves at six.",
     "targetText": "Der Zug fährt um sechs Uhr ab.",
@@ -4821,7 +6343,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000290",
+    "id": "en-de-000378",
     "pair": "en-de",
     "sourceText": "We arrived ahead of schedule.",
     "targetText": "Wir sind früher als geplant angekommen.",
@@ -4838,7 +6360,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000291",
+    "id": "en-de-000379",
     "pair": "en-de",
     "sourceText": "The deadline was postponed indefinitely.",
     "targetText": "Die Frist wurde auf unbestimmte Zeit verschoben.",
@@ -4855,7 +6377,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000292",
+    "id": "en-de-000380",
     "pair": "en-de",
     "sourceText": "You should drink more water.",
     "targetText": "Du solltest mehr Wasser trinken.",
@@ -4872,7 +6394,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000293",
+    "id": "en-de-000381",
     "pair": "en-de",
     "sourceText": "I'm sorry.",
     "targetText": "Es tut mir leid.",
@@ -4888,7 +6410,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000294",
+    "id": "en-de-000382",
     "pair": "en-de",
     "sourceText": "Excuse me, please.",
     "targetText": "Entschuldigung, bitte.",
@@ -4905,7 +6427,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000295",
+    "id": "en-de-000383",
     "pair": "en-de",
     "sourceText": "That was my fault.",
     "targetText": "Das war meine Schuld.",
@@ -4921,7 +6443,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000296",
+    "id": "en-de-000384",
     "pair": "en-de",
     "sourceText": "I apologize for the delay.",
     "targetText": "Ich entschuldige mich für die Verspätung.",
@@ -4937,7 +6459,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000297",
+    "id": "en-de-000385",
     "pair": "en-de",
     "sourceText": "Forgive me for forgetting.",
     "targetText": "Vergib mir, dass ich es vergessen habe.",
@@ -4953,7 +6475,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000298",
+    "id": "en-de-000386",
     "pair": "en-de",
     "sourceText": "I didn't mean to hurt you.",
     "targetText": "Ich wollte dich nicht verletzen.",
@@ -4969,7 +6491,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000299",
+    "id": "en-de-000387",
     "pair": "en-de",
     "sourceText": "Please accept my sincere apologies.",
     "targetText": "Bitte akzeptieren Sie meine aufrichtige Entschuldigung.",
@@ -4985,7 +6507,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000300",
+    "id": "en-de-000388",
     "pair": "en-de",
     "sourceText": "I regret the misunderstanding.",
     "targetText": "Ich bedauere das Missverständnis.",
@@ -5001,7 +6523,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000301",
+    "id": "en-de-000389",
     "pair": "en-de",
     "sourceText": "Come to my party!",
     "targetText": "Komm zu meiner Party!",
@@ -5018,7 +6540,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000302",
+    "id": "en-de-000390",
     "pair": "en-de",
     "sourceText": "Would you like some coffee?",
     "targetText": "Möchtest du einen Kaffee?",
@@ -5035,7 +6557,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000303",
+    "id": "en-de-000391",
     "pair": "en-de",
     "sourceText": "I invite you to dinner.",
     "targetText": "Ich lade dich zum Essen ein.",
@@ -5052,7 +6574,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000304",
+    "id": "en-de-000392",
     "pair": "en-de",
     "sourceText": "Please join us on Saturday.",
     "targetText": "Begleiten Sie uns am Samstag.",
@@ -5068,7 +6590,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000305",
+    "id": "en-de-000393",
     "pair": "en-de",
     "sourceText": "You're invited to the wedding.",
     "targetText": "Du bist zur Hochzeit eingeladen.",
@@ -5085,7 +6607,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000306",
+    "id": "en-de-000394",
     "pair": "en-de",
     "sourceText": "Feel free to bring a friend.",
     "targetText": "Bring gerne einen Freund mit.",
@@ -5101,7 +6623,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000307",
+    "id": "en-de-000395",
     "pair": "en-de",
     "sourceText": "We'd be delighted to have you.",
     "targetText": "Wir würden uns freuen, dich dabei zu haben.",
@@ -5117,7 +6639,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000308",
+    "id": "en-de-000396",
     "pair": "en-de",
     "sourceText": "Consider this a formal invitation.",
     "targetText": "Betrachten Sie dies als formelle Einladung.",
@@ -5133,7 +6655,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000309",
+    "id": "en-de-000397",
     "pair": "en-de",
     "sourceText": "We plan to travel in summer.",
     "targetText": "Wir planen, im Sommer zu reisen.",
@@ -5150,7 +6672,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000310",
+    "id": "en-de-000398",
     "pair": "en-de",
     "sourceText": "The project is scheduled for next year.",
     "targetText": "Das Projekt ist für nächstes Jahr geplant.",
@@ -5167,7 +6689,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000311",
+    "id": "en-de-000399",
     "pair": "en-de",
     "sourceText": "I think that he is nice.",
     "targetText": "Ich denke, dass er nett ist.",
@@ -5184,7 +6706,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000312",
+    "id": "en-de-000400",
     "pair": "en-de",
     "sourceText": "When she comes, we eat.",
     "targetText": "Wenn sie kommt, essen wir.",
@@ -5200,7 +6722,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000313",
+    "id": "en-de-000401",
     "pair": "en-de",
     "sourceText": "I know that you are tired.",
     "targetText": "Ich weiß, dass du müde bist.",
@@ -5216,7 +6738,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000314",
+    "id": "en-de-000402",
     "pair": "en-de",
     "sourceText": "Because it rains, we stay home.",
     "targetText": "Weil es regnet, bleiben wir zu Hause.",
@@ -5233,7 +6755,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000315",
+    "id": "en-de-000403",
     "pair": "en-de",
     "sourceText": "Although he was sick, he went to work.",
     "targetText": "Obwohl er krank war, ging er zur Arbeit.",
@@ -5250,7 +6772,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000316",
+    "id": "en-de-000404",
     "pair": "en-de",
     "sourceText": "She explained that the flight was canceled.",
     "targetText": "Sie erklärte, dass der Flug gestrichen wurde.",
@@ -5267,7 +6789,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000317",
+    "id": "en-de-000405",
     "pair": "en-de",
     "sourceText": "Provided the weather improves, we'll hike.",
     "targetText": "Vorausgesetzt, dass das Wetter besser wird, wandern wir.",
@@ -5284,7 +6806,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000318",
+    "id": "en-de-000406",
     "pair": "en-de",
     "sourceText": "The report suggests that the policy failed.",
     "targetText": "Der Bericht legt nahe, dass die Politik gescheitert ist.",
@@ -5301,7 +6823,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000319",
+    "id": "en-de-000407",
     "pair": "en-de",
     "sourceText": "I like tea.",
     "targetText": "Ich mag Tee.",
@@ -5317,7 +6839,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000320",
+    "id": "en-de-000408",
     "pair": "en-de",
     "sourceText": "She has a cat.",
     "targetText": "Sie hat eine Katze.",
@@ -5333,7 +6855,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000321",
+    "id": "en-de-000409",
     "pair": "en-de",
     "sourceText": "We go home.",
     "targetText": "Wir gehen nach Hause.",
@@ -5349,7 +6871,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000322",
+    "id": "en-de-000410",
     "pair": "en-de",
     "sourceText": "He is tall.",
     "targetText": "Er ist groß.",
@@ -5365,7 +6887,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000323",
+    "id": "en-de-000411",
     "pair": "en-de",
     "sourceText": "The book is good.",
     "targetText": "Das Buch ist gut.",
@@ -5381,7 +6903,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000324",
+    "id": "en-de-000412",
     "pair": "en-de",
     "sourceText": "I am hungry.",
     "targetText": "Ich habe Hunger.",
@@ -5397,7 +6919,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000325",
+    "id": "en-de-000413",
     "pair": "en-de",
     "sourceText": "It is cold today.",
     "targetText": "Es ist kalt heute.",
@@ -5413,7 +6935,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000326",
+    "id": "en-de-000414",
     "pair": "en-de",
     "sourceText": "You are very kind.",
     "targetText": "Du bist sehr nett.",
@@ -5429,7 +6951,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000327",
+    "id": "en-de-000415",
     "pair": "en-de",
     "sourceText": "My brother is a doctor.",
     "targetText": "Mein Bruder ist Arzt.",
@@ -5446,7 +6968,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000328",
+    "id": "en-de-000416",
     "pair": "en-de",
     "sourceText": "The coffee is hot.",
     "targetText": "Der Kaffee ist heiß.",
@@ -5462,7 +6984,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000329",
+    "id": "en-de-000417",
     "pair": "en-de",
     "sourceText": "I've been learning German for two years.",
     "targetText": "Ich lerne seit zwei Jahren Deutsch.",
@@ -5478,7 +7000,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000330",
+    "id": "en-de-000418",
     "pair": "en-de",
     "sourceText": "The medicine helped quickly.",
     "targetText": "Die Medizin hat schnell geholfen.",
@@ -5494,7 +7016,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000331",
+    "id": "en-de-000419",
     "pair": "en-de",
     "sourceText": "She accepted the job offer.",
     "targetText": "Sie hat das Jobangebot angenommen.",
@@ -5510,7 +7032,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000332",
+    "id": "en-de-000420",
     "pair": "en-de",
     "sourceText": "We celebrated his birthday.",
     "targetText": "Wir haben seinen Geburtstag gefeiert.",
@@ -5526,7 +7048,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000333",
+    "id": "en-de-000421",
     "pair": "en-de",
     "sourceText": "The movie was disappointing.",
     "targetText": "Der Film war enttäuschend.",
@@ -5543,7 +7065,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000334",
+    "id": "en-de-000422",
     "pair": "en-de",
     "sourceText": "I forgot my password.",
     "targetText": "Ich habe mein Passwort vergessen.",
@@ -5559,7 +7081,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000335",
+    "id": "en-de-000423",
     "pair": "en-de",
     "sourceText": "He sold his old car.",
     "targetText": "Er hat sein altes Auto verkauft.",
@@ -5575,7 +7097,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000336",
+    "id": "en-de-000424",
     "pair": "en-de",
     "sourceText": "The children played in the garden.",
     "targetText": "Die Kinder spielten im Garten.",
@@ -5592,7 +7114,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000337",
+    "id": "en-de-000425",
     "pair": "en-de",
     "sourceText": "She described the situation clearly.",
     "targetText": "Sie beschrieb die Situation deutlich.",
@@ -5608,7 +7130,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000338",
+    "id": "en-de-000426",
     "pair": "en-de",
     "sourceText": "I wonder whether he'll come.",
     "targetText": "Ich frage mich, ob er kommen wird.",
@@ -5624,7 +7146,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000339",
+    "id": "en-de-000427",
     "pair": "en-de",
     "sourceText": "We decided to move.",
     "targetText": "Wir haben beschlossen umzuziehen.",
@@ -5641,7 +7163,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000340",
+    "id": "en-de-000428",
     "pair": "en-de",
     "sourceText": "The restaurant was fully booked.",
     "targetText": "Das Restaurant war ausgebucht.",
@@ -5657,7 +7179,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000341",
+    "id": "en-de-000429",
     "pair": "en-de",
     "sourceText": "He borrowed money from the bank.",
     "targetText": "Er hat Geld von der Bank geliehen.",
@@ -5673,7 +7195,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000342",
+    "id": "en-de-000430",
     "pair": "en-de",
     "sourceText": "The concert starts at eight.",
     "targetText": "Das Konzert beginnt um acht.",
@@ -5690,7 +7212,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000343",
+    "id": "en-de-000431",
     "pair": "en-de",
     "sourceText": "I'd recommend the soup.",
     "targetText": "Ich würde die Suppe empfehlen.",
@@ -5707,7 +7229,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000344",
+    "id": "en-de-000432",
     "pair": "en-de",
     "sourceText": "She's been to Japan twice.",
     "targetText": "Sie war zweimal in Japan.",
@@ -5724,7 +7246,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000345",
+    "id": "en-de-000433",
     "pair": "en-de",
     "sourceText": "The problem is more complex than expected.",
     "targetText": "Das Problem ist komplexer als erwartet.",
@@ -5741,7 +7263,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000346",
+    "id": "en-de-000434",
     "pair": "en-de",
     "sourceText": "They argued about politics.",
     "targetText": "Sie haben über Politik gestritten.",
@@ -5758,7 +7280,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000347",
+    "id": "en-de-000435",
     "pair": "en-de",
     "sourceText": "I'm proud of my progress.",
     "targetText": "Ich bin stolz auf meine Fortschritte.",
@@ -5775,7 +7297,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000348",
+    "id": "en-de-000436",
     "pair": "en-de",
     "sourceText": "The weather forecast was wrong.",
     "targetText": "Der Wetterbericht lag falsch.",
@@ -5791,7 +7313,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000349",
+    "id": "en-de-000437",
     "pair": "en-de",
     "sourceText": "He admitted his mistake.",
     "targetText": "Er hat seinen Fehler zugegeben.",
@@ -5807,7 +7329,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000350",
+    "id": "en-de-000438",
     "pair": "en-de",
     "sourceText": "We need to save water.",
     "targetText": "Wir müssen Wasser sparen.",
@@ -5824,7 +7346,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000351",
+    "id": "en-de-000439",
     "pair": "en-de",
     "sourceText": "The exhibition was impressive.",
     "targetText": "Die Ausstellung war beeindruckend.",
@@ -5840,7 +7362,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000352",
+    "id": "en-de-000440",
     "pair": "en-de",
     "sourceText": "She's responsible for marketing.",
     "targetText": "Sie ist für das Marketing verantwortlich.",
@@ -5856,7 +7378,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000353",
+    "id": "en-de-000441",
     "pair": "en-de",
     "sourceText": "I miss my family.",
     "targetText": "Ich vermisse meine Familie.",
@@ -5873,7 +7395,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000354",
+    "id": "en-de-000442",
     "pair": "en-de",
     "sourceText": "The road was blocked.",
     "targetText": "Die Straße war blockiert.",
@@ -5889,7 +7411,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000355",
+    "id": "en-de-000443",
     "pair": "en-de",
     "sourceText": "He received a scholarship.",
     "targetText": "Er hat ein Stipendium bekommen.",
@@ -5906,7 +7428,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000356",
+    "id": "en-de-000444",
     "pair": "en-de",
     "sourceText": "The shoes don't fit.",
     "targetText": "Die Schuhe passen nicht.",
@@ -5922,7 +7444,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000357",
+    "id": "en-de-000445",
     "pair": "en-de",
     "sourceText": "I try to exercise daily.",
     "targetText": "Ich versuche, täglich Sport zu machen.",
@@ -5938,7 +7460,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000358",
+    "id": "en-de-000446",
     "pair": "en-de",
     "sourceText": "The government introduced new regulations.",
     "targetText": "Die Regierung führte neue Vorschriften ein.",
@@ -5955,7 +7477,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000359",
+    "id": "en-de-000447",
     "pair": "en-de",
     "sourceText": "She claimed that the results were inaccurate.",
     "targetText": "Sie behauptete, dass die Ergebnisse ungenau waren.",
@@ -5971,7 +7493,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000360",
+    "id": "en-de-000448",
     "pair": "en-de",
     "sourceText": "The novel deals with identity and belonging.",
     "targetText": "Der Roman behandelt Identität und Zugehörigkeit.",
@@ -5987,7 +7509,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000361",
+    "id": "en-de-000449",
     "pair": "en-de",
     "sourceText": "Despite the setbacks, he remained optimistic.",
     "targetText": "Trotz der Rückschläge blieb er optimistisch.",
@@ -6004,7 +7526,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000362",
+    "id": "en-de-000450",
     "pair": "en-de",
     "sourceText": "The committee rejected the proposal.",
     "targetText": "Der Ausschuss lehnte den Vorschlag ab.",
@@ -6020,7 +7542,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000363",
+    "id": "en-de-000451",
     "pair": "en-de",
     "sourceText": "Hardly anyone believed his story.",
     "targetText": "Kaum jemand glaubte seine Geschichte.",
@@ -6036,7 +7558,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000364",
+    "id": "en-de-000452",
     "pair": "en-de",
     "sourceText": "The findings contradict earlier assumptions.",
     "targetText": "Die Ergebnisse widersprechen früheren Annahmen.",
@@ -6052,7 +7574,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000365",
+    "id": "en-de-000453",
     "pair": "en-de",
     "sourceText": "She's been working remotely since March.",
     "targetText": "Sie arbeitet seit März im Homeoffice.",
@@ -6069,7 +7591,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000366",
+    "id": "en-de-000454",
     "pair": "en-de",
     "sourceText": "The legislation takes effect next year.",
     "targetText": "Die Gesetzgebung tritt im nächsten Jahr in Kraft.",
@@ -6085,7 +7607,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000367",
+    "id": "en-de-000455",
     "pair": "en-de",
     "sourceText": "He emphasized the importance of teamwork.",
     "targetText": "Er betonte die Bedeutung der Teamarbeit.",
@@ -6101,7 +7623,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000368",
+    "id": "en-de-000456",
     "pair": "en-de",
     "sourceText": "The consequences were unforeseeable.",
     "targetText": "Die Folgen waren nicht absehbar.",
@@ -6117,7 +7639,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000369",
+    "id": "en-de-000457",
     "pair": "en-de",
     "sourceText": "We should have booked earlier.",
     "targetText": "Wir hätten früher buchen sollen.",
@@ -6134,7 +7656,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000370",
+    "id": "en-de-000458",
     "pair": "en-de",
     "sourceText": "The documentary raised awareness.",
     "targetText": "Die Dokumentation hat das Bewusstsein geschärft.",
@@ -6150,7 +7672,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000371",
+    "id": "en-de-000459",
     "pair": "en-de",
     "sourceText": "She tends to avoid conflict.",
     "targetText": "Sie neigt dazu, Konflikte zu vermeiden.",
@@ -6166,7 +7688,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000372",
+    "id": "en-de-000460",
     "pair": "en-de",
     "sourceText": "The implications are far-reaching.",
     "targetText": "Die Auswirkungen sind weitreichend.",
@@ -6182,7 +7704,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000373",
+    "id": "en-de-000461",
     "pair": "en-de",
     "sourceText": "He was accused of fraud.",
     "targetText": "Er wurde des Betrugs beschuldigt.",
@@ -6198,7 +7720,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000374",
+    "id": "en-de-000462",
     "pair": "en-de",
     "sourceText": "The curriculum was completely revised.",
     "targetText": "Der Lehrplan wurde komplett überarbeitet.",
@@ -6214,7 +7736,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000375",
+    "id": "en-de-000463",
     "pair": "en-de",
     "sourceText": "I can't help feeling skeptical.",
     "targetText": "Ich kann nicht umhin, skeptisch zu sein.",
@@ -6231,7 +7753,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000376",
+    "id": "en-de-000464",
     "pair": "en-de",
     "sourceText": "The negotiations lasted for weeks.",
     "targetText": "Die Verhandlungen dauerten Wochen.",
@@ -6247,7 +7769,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000377",
+    "id": "en-de-000465",
     "pair": "en-de",
     "sourceText": "She specializes in environmental law.",
     "targetText": "Sie spezialisiert sich auf Umweltrecht.",
@@ -6264,7 +7786,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000378",
+    "id": "en-de-000466",
     "pair": "en-de",
     "sourceText": "The evidence is inconclusive.",
     "targetText": "Die Beweise sind nicht eindeutig.",
@@ -6280,7 +7802,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000379",
+    "id": "en-de-000467",
     "pair": "en-de",
     "sourceText": "He implied that I was lying.",
     "targetText": "Er deutete an, dass ich lüge.",
@@ -6296,7 +7818,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000380",
+    "id": "en-de-000468",
     "pair": "en-de",
     "sourceText": "The policy aims to reduce waste.",
     "targetText": "Die Politik zielt darauf ab, Müll zu reduzieren.",
@@ -6313,7 +7835,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000381",
+    "id": "en-de-000469",
     "pair": "en-de",
     "sourceText": "We're considering various options.",
     "targetText": "Wir ziehen verschiedene Optionen in Betracht.",
@@ -6330,7 +7852,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000382",
+    "id": "en-de-000470",
     "pair": "en-de",
     "sourceText": "The results exceeded our expectations.",
     "targetText": "Die Ergebnisse übertrafen unsere Erwartungen.",
@@ -6346,7 +7868,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000383",
+    "id": "en-de-000471",
     "pair": "en-de",
     "sourceText": "She's regarded as an expert.",
     "targetText": "Sie gilt als Expertin.",
@@ -6363,7 +7885,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000384",
+    "id": "en-de-000472",
     "pair": "en-de",
     "sourceText": "The incident sparked a debate.",
     "targetText": "Der Vorfall löste eine Debatte aus.",
@@ -6379,7 +7901,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000385",
+    "id": "en-de-000473",
     "pair": "en-de",
     "sourceText": "I doubt that he'll agree.",
     "targetText": "Ich bezweifle, dass er zustimmen wird.",
@@ -6395,7 +7917,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000386",
+    "id": "en-de-000474",
     "pair": "en-de",
     "sourceText": "The procedure is relatively straightforward.",
     "targetText": "Das Verfahren ist relativ unkompliziert.",
@@ -6411,7 +7933,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000387",
+    "id": "en-de-000475",
     "pair": "en-de",
     "sourceText": "He was overwhelmed by the response.",
     "targetText": "Er war von der Reaktion überwältigt.",
@@ -6427,7 +7949,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000388",
+    "id": "en-de-000476",
     "pair": "en-de",
     "sourceText": "The transition was smoother than anticipated.",
     "targetText": "Der Übergang war reibungsloser als erwartet.",
@@ -6443,7 +7965,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000389",
+    "id": "en-de-000477",
     "pair": "en-de",
     "sourceText": "Critics praised the film's cinematography.",
     "targetText": "Kritiker lobten die Kameraführung des Films.",
@@ -6460,7 +7982,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000390",
+    "id": "en-de-000478",
     "pair": "en-de",
     "sourceText": "She maintains a professional attitude.",
     "targetText": "Sie bewahrt eine professionelle Haltung.",
@@ -6477,7 +7999,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000391",
+    "id": "en-de-000479",
     "pair": "en-de",
     "sourceText": "The data suggests a correlation.",
     "targetText": "Die Daten deuten auf eine Korrelation hin.",
@@ -6493,7 +8015,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000392",
+    "id": "en-de-000480",
     "pair": "en-de",
     "sourceText": "He was dismissed without explanation.",
     "targetText": "Er wurde ohne Erklärung entlassen.",
@@ -6510,7 +8032,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000393",
+    "id": "en-de-000481",
     "pair": "en-de",
     "sourceText": "The deadline is rapidly approaching.",
     "targetText": "Die Frist rückt schnell näher.",
@@ -6527,7 +8049,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000394",
+    "id": "en-de-000482",
     "pair": "en-de",
     "sourceText": "I strongly recommend making a reservation.",
     "targetText": "Ich empfehle dringend, eine Reservierung vorzunehmen.",
@@ -6544,7 +8066,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000395",
+    "id": "en-de-000483",
     "pair": "en-de",
     "sourceText": "The outcome remains uncertain.",
     "targetText": "Das Ergebnis bleibt ungewiss.",
@@ -6560,7 +8082,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000396",
+    "id": "en-de-000484",
     "pair": "en-de",
     "sourceText": "She was promoted to senior manager.",
     "targetText": "Sie wurde zur Senior Managerin befördert.",
@@ -6576,7 +8098,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000397",
+    "id": "en-de-000485",
     "pair": "en-de",
     "sourceText": "The concept is difficult to grasp.",
     "targetText": "Das Konzept ist schwer zu begreifen.",
@@ -6593,7 +8115,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000398",
+    "id": "en-de-000486",
     "pair": "en-de",
     "sourceText": "He rarely expresses his feelings.",
     "targetText": "Er drückt selten seine Gefühle aus.",
@@ -6610,7 +8132,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000399",
+    "id": "en-de-000487",
     "pair": "en-de",
     "sourceText": "The survey revealed surprising trends.",
     "targetText": "Die Umfrage zeigte überraschende Trends.",
@@ -6626,7 +8148,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000400",
+    "id": "en-de-000488",
     "pair": "en-de",
     "sourceText": "We need to address this issue.",
     "targetText": "Wir müssen dieses Problem ansprechen.",
@@ -6643,7 +8165,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000401",
+    "id": "en-de-000489",
     "pair": "en-de",
     "sourceText": "The atmosphere was tense.",
     "targetText": "Die Atmosphäre war angespannt.",
@@ -6660,7 +8182,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000402",
+    "id": "en-de-000490",
     "pair": "en-de",
     "sourceText": "She filed a formal complaint.",
     "targetText": "Sie reichte eine formelle Beschwerde ein.",
@@ -6676,7 +8198,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000403",
+    "id": "en-de-000491",
     "pair": "en-de",
     "sourceText": "The underlying cause is still unknown.",
     "targetText": "Die eigentliche Ursache ist noch unbekannt.",
@@ -6692,7 +8214,7 @@
     "version": 1
   },
   {
-    "id": "en-de-000404",
+    "id": "en-de-000492",
     "pair": "en-de",
     "sourceText": "He's committed to improving himself.",
     "targetText": "Er ist darum bemüht, sich zu verbessern.",
@@ -6703,6 +8225,856 @@
       "describing"
     ],
     "ipa": "eːɐ̯ ɪst daˈʁʊm bəˈmyːt zɪç tsuː bəˈvɛsɐ̯n",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000493",
+    "pair": "en-de",
+    "sourceText": "Although she had already bought a dress, she couldn't resist the new shoes.",
+    "targetText": "Obwohl sie schon ein Kleid gekauft hatte, konnte sie den neuen Schuhen nicht widerstehen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "shopping",
+      "narrating"
+    ],
+    "ipa": "ˈɔpvoːl ziː ʃoːn aɪ̯n klaɪ̯t ɡəˈkaʊ̯ft ˈhatə ˈkɔntə ziː deːn ˈnɔʏ̯ən ˈʃuːən nɪçt ˌviːdɐˈʃteːən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000494",
+    "pair": "en-de",
+    "sourceText": "He asked the cashier if he could pay by credit card.",
+    "targetText": "Er fragte den Kassierer, ob er mit Kreditkarte bezahlen könne.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "shopping",
+      "asking-info"
+    ],
+    "ipa": "eːɐ̯ ˈfʁaːktə deːn kaˈziːʁɐ ɔp eːɐ̯ mɪt kʁeˈdiːtˌkaʁtə bəˈt͡saːlən ˈkœnə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000495",
+    "pair": "en-de",
+    "sourceText": "If the shop had been open, I would have bought groceries.",
+    "targetText": "Wenn der Laden offen gewesen wäre, hätte ich Lebensmittel gekauft.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "shopping",
+      "food"
+    ],
+    "ipa": "vɛn deːɐ̯ ˈlaːdn̩ ˈɔfn̩ ɡəˈveːzn̩ ˈvɛːʁə ˈhɛtə ɪç ˈleːbn̩smɪtl̩ ɡəˈkaʊ̯ft",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000496",
+    "pair": "en-de",
+    "sourceText": "She only buys products that are produced sustainably.",
+    "targetText": "Sie kauft nur Produkte, die nachhaltig produziert werden.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "shopping",
+      "nature"
+    ],
+    "ipa": "ziː kaʊ̯ft nuːɐ̯ pʁoˈdʊktə diː ˈnaːxˌhaltɪç pʁoduˈt͡siːɐ̯t ˈvɛʁdn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000497",
+    "pair": "en-de",
+    "sourceText": "I will wait here until you come back from the supermarket.",
+    "targetText": "Ich werde hier warten, bis du aus dem Supermarkt zurückkommst.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "shopping",
+      "planning"
+    ],
+    "ipa": "ɪç ˈvɛʁdə hiːɐ̯ ˈvaʁtn̩ bɪs duː aʊ̯s deːm ˈzuːpɐmaʁkt t͡suˈʁʏkˌkɔmst",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000498",
+    "pair": "en-de",
+    "sourceText": "He saved money so that he could buy a new car.",
+    "targetText": "Er sparte Geld, damit er sich ein neues Auto kaufen konnte.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "planning"
+    ],
+    "ipa": "eːɐ̯ ˈʃpaːʁtə ɡɛlt daˈmɪt eːɐ̯ zɪç aɪ̯n ˈnɔʏ̯əs ˈaʊ̯to ˈkaʊ̯fn̩ ˈkɔntə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000499",
+    "pair": "en-de",
+    "sourceText": "Even though they are wealthy, they live very modestly.",
+    "targetText": "Obwohl sie reich sind, leben sie sehr bescheiden.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "describing"
+    ],
+    "ipa": "ɔpˈvoːl ziː ʁaɪ̯ç zɪnt ˈleːbn̩ ziː zeːɐ̯ bəˈʃaɪ̯dn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000500",
+    "pair": "en-de",
+    "sourceText": "I don't know exactly how much the repairs will cost.",
+    "targetText": "Ich weiß nicht genau, wie viel die Reparaturen kosten werden.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "asking-info"
+    ],
+    "ipa": "ɪç vaɪ̯s nɪçt ɡəˈnaʊ̯ viː fiːl diː ʁepaʁaˈtuːʁən ˈkɔstn̩ ˈvɛʁdn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000501",
+    "pair": "en-de",
+    "sourceText": "If he had invested earlier, he would have made a huge profit.",
+    "targetText": "Wenn er früher investiert hätte, hätte er einen riesigen Gewinn gemacht.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "opining"
+    ],
+    "ipa": "vɛn eːɐ̯ ˈfʁyːɐ ɪnvɛsˈtiːɐ̯t ˈhɛtə ˈhɛtə eːɐ̯ ˈaɪ̯nən ˈʁiːzɪɡn̩ ɡəˈvɪn ɡəˈmaxt",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000502",
+    "pair": "en-de",
+    "sourceText": "She wonders whether her salary will be increased this year.",
+    "targetText": "Sie fragt sich, ob ihr Gehalt dieses Jahr erhöht wird.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "work"
+    ],
+    "ipa": "ziː fʁaːkt zɪç ɔp iːɐ̯ ɡəˈhalt ˈdiːzəs jaːɐ̯ ɛɐ̯ˈhøːt vɪʁt",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000503",
+    "pair": "en-de",
+    "sourceText": "I use a password manager so that I don't forget my passwords.",
+    "targetText": "Ich benutze einen Passwortmanager, damit ich meine Passwörter nicht vergesse.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "technology",
+      "daily-life"
+    ],
+    "ipa": "ɪç bəˈnʊt͡sə ˈaɪ̯nən ˈpasvɔʁtmɛnɪd͡ʒɐ daˈmɪt ɪç ˈmaɪ̯nə ˈpasvœʁtɐ nɪçt fɛɐ̯ˈɡɛsə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000504",
+    "pair": "en-de",
+    "sourceText": "Because the server crashed, we couldn't work all afternoon.",
+    "targetText": "Weil der Server abgestürzt ist, konnten wir den ganzen Nachmittag nicht arbeiten.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "technology",
+      "work"
+    ],
+    "ipa": "vaɪ̯l deːɐ̯ ˈzœʁvɐ ˈapɡəˌʃtʏʁt͡st ɪst ˈkɔntn̩ viːɐ̯ deːn ˈɡant͡sn̩ ˈnaxmɪtaːk nɪçt ˈaʁbaɪ̯tn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000505",
+    "pair": "en-de",
+    "sourceText": "Can you tell me how to connect this printer to the network?",
+    "targetText": "Kannst du mir sagen, wie man diesen Drucker mit dem Netzwerk verbindet?",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "technology",
+      "asking-info"
+    ],
+    "ipa": "kanst duː miːɐ̯ ˈzaːɡn̩ viː man ˈdiːzn̩ ˈdʁʊkɐ mɪt deːm ˈnɛt͡svɛʁk fɛɐ̯ˈbɪndət",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000506",
+    "pair": "en-de",
+    "sourceText": "Before we eat dinner, we should finish the project.",
+    "targetText": "Bevor wir zu Abend essen, sollten wir das Projekt beenden.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "work"
+    ],
+    "ipa": "bəˈfoːɐ̯ viːɐ̯ t͡su ˈaːbn̩t ˈɛsn̩ ˈzɔltn̩ viːɐ̯ das pʁoˈjɛkt bəˈʔɛndn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000507",
+    "pair": "en-de",
+    "sourceText": "After she had lived in Berlin for five years, she moved to Paris.",
+    "targetText": "Nachdem sie fünf Jahre in Berlin gelebt hatte, zog sie nach Paris.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "travel"
+    ],
+    "ipa": "naxˈdeːm ziː fʏnf ˈjaːʁə ɪn bɛʁˈliːn ɡəˈleːpt ˈhatə t͡soːk ziː nax paˈʁiːs",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000508",
+    "pair": "en-de",
+    "sourceText": "I'll call you as soon as I arrive at the station.",
+    "targetText": "Ich rufe dich an, sobald ich am Bahnhof ankomme.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "relationships"
+    ],
+    "ipa": "ɪç ˈʁuːfə dɪç an zoˈbalt ɪç am ˈbaːnhoːf ˈanˌkɔmə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000509",
+    "pair": "en-de",
+    "sourceText": "While I was reading a book, it started to rain.",
+    "targetText": "Während ich ein Buch las, fing es an zu regnen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "nature"
+    ],
+    "ipa": "ˈvɛːʁənt ɪç aɪ̯n buːx laːs fɪŋ ɛs an t͡su ˈʁeːɡnən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000510",
+    "pair": "en-de",
+    "sourceText": "It has been three months since we last saw each other.",
+    "targetText": "Es ist drei Monate her, seitdem wir uns zuletzt gesehen haben.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "relationships"
+    ],
+    "ipa": "ɛs ɪst dʁaɪ̯ ˈmoːnatə heːɐ̯ zaɪ̯tˈdeːm viːɐ̯ ʊns t͡suˈlɛt͡st ɡəˈzeːən ˈhaːbn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000511",
+    "pair": "en-de",
+    "sourceText": "You must wait until the light turns green.",
+    "targetText": "Du musst warten, bis die Ampel grün wird.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "time",
+      "advising"
+    ],
+    "ipa": "duː mʊst ˈvaʁtn̩ bɪs diː ˈampl̩ ɡʁyːn vɪʁt",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000512",
+    "pair": "en-de",
+    "sourceText": "I apologize that I submitted the report so late.",
+    "targetText": "Ich bitte um Entschuldigung, dass ich den Bericht so spät eingereicht habe.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "work"
+    ],
+    "ipa": "ɪç ˈbɪtə ʊm ɛntˈʃʊldɪɡʊŋ das ɪç deːn bəˈʁɪçt zoː ʃpɛːt ˈaɪ̯nɡəˌʁaɪ̯çt ˈhaːbə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000513",
+    "pair": "en-de",
+    "sourceText": "I am sorry if my words offended you.",
+    "targetText": "Es tut mir leid, falls meine Worte dich verletzt haben.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "relationships"
+    ],
+    "ipa": "ɛs tuːt miːɐ̯ laɪ̯t fals ˈmaɪ̯nə ˈvɔʁtə dɪç fɛɐ̯ˈlɛt͡st ˈhaːbn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000514",
+    "pair": "en-de",
+    "sourceText": "We deeply regret that your flight was cancelled.",
+    "targetText": "Wir bedauern sehr, dass Ihr Flug storniert wurde.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "travel"
+    ],
+    "ipa": "viːɐ̯ bəˈdaʊ̯ɐn zeːɐ̯ das iːɐ̯ fluːk ʃtɔʁˈniːɐ̯t ˈvʊʁdə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000515",
+    "pair": "en-de",
+    "sourceText": "Please excuse that the room hasn't been cleaned yet.",
+    "targetText": "Bitte entschuldigen Sie, dass das Zimmer noch nicht gereinigt wurde.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "daily-life"
+    ],
+    "ipa": "ˈbɪtə ɛntˈʃʊldɪɡn̩ ziː das das ˈt͡sɪmɐ nɔx nɪçt ɡəˈʁaɪ̯nɪçt ˈvʊʁdə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000516",
+    "pair": "en-de",
+    "sourceText": "He apologized because he had forgotten her birthday.",
+    "targetText": "Er entschuldigte sich, weil er ihren Geburtstag vergessen hatte.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "narrating"
+    ],
+    "ipa": "eːɐ̯ ɛntˈʃʊldɪçtə zɪç vaɪ̯l eːɐ̯ ˈiːʁən ɡəˈbʊʁtstaːk fɛɐ̯ˈɡɛsn̩ ˈhatə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000517",
+    "pair": "en-de",
+    "sourceText": "I hope you can forgive me for reacting so emotionally.",
+    "targetText": "Ich hoffe, dass du mir verzeihen kannst, dass ich so emotional reagiert habe.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "emotions"
+    ],
+    "ipa": "ɪç ˈhɔfə das duː miːɐ̯ fɛɐ̯ˈt͡saɪ̯ən kanst das ɪç zoː emoˈt͡sioˈnaːl ʁeaˈɡiːɐ̯t ˈhaːbə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000518",
+    "pair": "en-de",
+    "sourceText": "He didn't apologize, even though he made a big mistake.",
+    "targetText": "Er hat sich nicht entschuldigt, obwohl er einen großen Fehler gemacht hat.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "narrating"
+    ],
+    "ipa": "eːɐ̯ hat zɪç nɪçt ɛntˈʃʊldɪçt ɔpˈvoːl eːɐ̯ ˈaɪ̯nən ˈɡʁoːsn̩ ˈfeːlɐ ɡəˈmaxt hat",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000519",
+    "pair": "en-de",
+    "sourceText": "She forgave him after he sincerely apologized.",
+    "targetText": "Sie verzieh ihm, nachdem er sich aufrichtig entschuldigt hatte.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "relationships"
+    ],
+    "ipa": "ziː fɛɐ̯ˈt͡siː iːm naxˈdeːm eːɐ̯ zɪç ˈaʊ̯fˌʁɪçtɪç ɛntˈʃʊldɪçt ˈhatə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000520",
+    "pair": "en-de",
+    "sourceText": "I would be delighted if you came to my party.",
+    "targetText": "Ich würde mich freuen, wenn du zu meiner Party kämst.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "social-routines"
+    ],
+    "ipa": "ɪç ˈvʏʁdə mɪç ˈfʁɔʏ̯ən vɛn duː t͡suː ˈmaɪ̯nɐ ˈpaːʁti kɛːmst",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000521",
+    "pair": "en-de",
+    "sourceText": "We invite you so that we can celebrate together.",
+    "targetText": "Wir laden euch ein, damit wir zusammen feiern können.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "social-routines"
+    ],
+    "ipa": "viːɐ̯ ˈlaːdn̩ ɔʏ̯ç aɪ̯n daˈmɪt viːɐ̯ t͡suˈzamən ˈfaɪ̯ɐn ˈkœnən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000522",
+    "pair": "en-de",
+    "sourceText": "Because she has a new house, she invited all her friends.",
+    "targetText": "Weil sie ein neues Haus hat, hat sie alle ihre Freunde eingeladen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "narrating"
+    ],
+    "ipa": "vaɪ̯l ziː aɪ̯n ˈnɔʏ̯əs haʊ̯s hat hat ziː ˈalə ˈiːʁə ˈfʁɔʏ̯ndə ˈaɪ̯nɡəˌlaːdn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000523",
+    "pair": "en-de",
+    "sourceText": "Please let us know whether you accept the invitation.",
+    "targetText": "Bitte geben Sie uns Bescheid, ob Sie die Einladung annehmen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "asking-info"
+    ],
+    "ipa": "ˈbɪtə ˈɡeːbn̩ ziː ʊns bəˈʃaɪ̯t ɔp ziː diː ˈaɪ̯nlaːdʊŋ ˈanˌneːmən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000524",
+    "pair": "en-de",
+    "sourceText": "Even if I am tired, I will go to the event.",
+    "targetText": "Auch wenn ich müde bin, werde ich zu der Veranstaltung gehen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "health"
+    ],
+    "ipa": "aʊ̯x vɛn ɪç ˈmyːdə bɪn ˈvɛʁdə ɪç t͡suː deːɐ̯ fɛɐ̯ˈʔanʃtaltʊŋ ˈɡeːən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000525",
+    "pair": "en-de",
+    "sourceText": "I don't know who has invited us to dinner.",
+    "targetText": "Ich weiß nicht, wer uns zum Abendessen eingeladen hat.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "food"
+    ],
+    "ipa": "ɪç vaɪ̯s nɪçt veːɐ̯ ʊns t͡sʊm ˈaːbn̩tˌɛsn̩ ˈaɪ̯nɡəˌlaːdn̩ hat",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000526",
+    "pair": "en-de",
+    "sourceText": "As long as you are our guest, you don't need to pay for anything.",
+    "targetText": "Solange du unser Gast bist, brauchst du für nichts zu bezahlen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "money"
+    ],
+    "ipa": "zoˈlaŋə duː ˈʊnzɐ ɡast bɪst bʁaʊ̯xst duː fyːɐ̯ nɪçts t͡su bəˈt͡saːlən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000527",
+    "pair": "en-de",
+    "sourceText": "Since you like classical music, I invite you to the concert.",
+    "targetText": "Da du klassische Musik magst, lade ich dich ins Konzert ein.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "inviting",
+      "culture"
+    ],
+    "ipa": "da duː ˈklasɪʃə muˈziːk maːkst ˈlaːdə ɪç dɪç ɪns kɔnˈt͡sɛʁt aɪ̯n",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000528",
+    "pair": "en-de",
+    "sourceText": "Before we book the flight, we must compare the prices.",
+    "targetText": "Bevor wir den Flug buchen, müssen wir die Preise vergleichen.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "planning",
+      "travel"
+    ],
+    "ipa": "bəˈfoːɐ̯ viːɐ̯ deːn fluːk ˈbuːxn̩ ˈmʏsn̩ viːɐ̯ diː ˈpʁaɪ̯zə fɛɐ̯ˈɡlaɪ̯çn̩",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000529",
+    "pair": "en-de",
+    "sourceText": "She organized the project so well that everything ran perfectly.",
+    "targetText": "Sie hat das Projekt so gut organisiert, dass alles perfekt lief.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "planning",
+      "work"
+    ],
+    "ipa": "ziː hat das pʁoˈjɛkt zoː ɡuːt ɔʁɡaniˈziːɐ̯t das ˈaləs pɛʁˈfɛkt liːf",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000530",
+    "pair": "en-de",
+    "sourceText": "I am sorry that I am late.",
+    "targetText": "Es tut mir leid, dass ich spät bin.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "daily-life"
+    ],
+    "ipa": "ɛs tuːt miːɐ̯ laɪ̯t das ɪç ʃpɛːt bɪn",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000531",
+    "pair": "en-de",
+    "sourceText": "Excuse me because I have no time.",
+    "targetText": "Entschuldigung, weil ich keine Zeit habe.",
+    "altTargets": [],
+    "cefr": "A1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "time"
+    ],
+    "ipa": "ɛntˈʃʊldɪɡʊŋ vaɪ̯l ɪç ˈkaɪ̯nə t͡saɪ̯t ˈhaːbə",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000532",
+    "pair": "en-de",
+    "sourceText": "He apologized because he forgot the book.",
+    "targetText": "Er hat sich entschuldigt, weil er das Buch vergessen hat.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "study"
+    ],
+    "ipa": "eːɐ̯ hat zɪç ɛntˈʃʊldɪçt vaɪ̯l eːɐ̯ das buːx fɛɐ̯ˈɡɛsn̩ hat",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000533",
+    "pair": "en-de",
+    "sourceText": "I hope that you can forgive me.",
+    "targetText": "Ich hoffe, dass du mir verzeihen kannst.",
+    "altTargets": [],
+    "cefr": "A2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "emotions"
+    ],
+    "ipa": "ɪç ˈhɔfə das duː miːɐ̯ fɛɐ̯ˈt͡saɪ̯ən kanst",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000534",
+    "pair": "en-de",
+    "sourceText": "We apologize that the package didn't arrive.",
+    "targetText": "Wir bitten um Entschuldigung, dass das Paket nicht angekommen ist.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "shopping"
+    ],
+    "ipa": "viːɐ̯ ˈbɪtn̩ ʊm ɛntˈʃʊldɪɡʊŋ das das paˈkeːt nɪçt ˈanɡəˌkɔmən ɪst",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000535",
+    "pair": "en-de",
+    "sourceText": "Although she apologized, he was still angry.",
+    "targetText": "Obwohl sie sich entschuldigt hat, war er noch wütend.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "emotions"
+    ],
+    "ipa": "ɔpˈvoːl ziː zɪç ɛntˈʃʊldɪçt hat vaːɐ̯ eːɐ̯ nɔx ˈvyːtənt",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000536",
+    "pair": "en-de",
+    "sourceText": "I am truly sorry that the misunderstanding caused so many problems.",
+    "targetText": "Es tut mir aufrichtig leid, dass das Missverständnis so viele Probleme verursacht hat.",
+    "altTargets": [],
+    "cefr": "B2",
+    "sentenceType": "subordinate",
+    "tags": [
+      "apologizing",
+      "work"
+    ],
+    "ipa": "ɛs tuːt miːɐ̯ ˈaʊ̯fˌʁɪçtɪç laɪ̯t das das ˈmɪsfɛɐ̯ˌʃtɛntnɪs zoː ˈfiːlə pʁoˈbleːmə fɛɐ̯ˈʔuːɐ̯zaxt hat",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000537",
+    "pair": "en-de",
+    "sourceText": "If you are sick, you should stay at home.",
+    "targetText": "Wenn du krank bist, solltest du zu Hause bleiben.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "health",
+      "advising"
+    ],
+    "ipa": "vɛn duː kʁaŋk bɪst ˈzɔltəst duː t͡suː ˈhaʊ̯zə ˈblaɪ̯bən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000538",
+    "pair": "en-de",
+    "sourceText": "Since he has no money, he can't travel.",
+    "targetText": "Da er kein Geld hat, kann er nicht reisen.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "money",
+      "travel"
+    ],
+    "ipa": "da eːɐ̯ kaɪ̯n ɡɛlt hat kan eːɐ̯ nɪçt ˈʁaɪ̯zən",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000539",
+    "pair": "en-de",
+    "sourceText": "I don't know when the next train leaves.",
+    "targetText": "Ich weiß nicht, wann der nächste Zug abfährt.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "travel",
+      "time"
+    ],
+    "ipa": "ɪç vaɪ̯s nɪçt van deːɐ̯ ˈnɛːçstə t͡suːk ˈapˌfɛːɐ̯t",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000540",
+    "pair": "en-de",
+    "sourceText": "The food that she cooked was very delicious.",
+    "targetText": "Das Essen, das sie gekocht hat, war sehr lecker.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "food",
+      "describing"
+    ],
+    "ipa": "das ˈɛsn̩ das ziː ɡəˈkɔxt hat vaːɐ̯ zeːɐ̯ ˈlɛkɐ",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000541",
+    "pair": "en-de",
+    "sourceText": "He bought a laptop that is incredibly fast.",
+    "targetText": "Er hat einen Laptop gekauft, der unglaublich schnell ist.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "technology",
+      "shopping"
+    ],
+    "ipa": "eːɐ̯ hat ˈaɪ̯nən ˈlɛptɔp ɡəˈkaʊ̯ft deːɐ̯ ˈʊnˌɡlaʊ̯plɪç ʃnɛl ɪst",
+    "source": "ai",
+    "sourceRef": null,
+    "version": 1
+  },
+  {
+    "id": "en-de-000542",
+    "pair": "en-de",
+    "sourceText": "Because I like to read, I spend a lot of time in the library.",
+    "targetText": "Weil ich gerne lese, verbringe ich viel Zeit in der Bibliothek.",
+    "altTargets": [],
+    "cefr": "B1",
+    "sentenceType": "subordinate",
+    "tags": [
+      "study",
+      "leisure"
+    ],
+    "ipa": "vaɪ̯l ɪç ˈɡɛʁnə ˈleːzə fɛɐ̯ˈbʁɪŋə ɪç fiːl t͡saɪ̯t ɪn deːɐ̯ biːblioˈteːk",
     "source": "ai",
     "sourceRef": null,
     "version": 1

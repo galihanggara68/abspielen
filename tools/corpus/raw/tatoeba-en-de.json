@@ -1503,5 +1503,1350 @@
     "sourceText": "The horse is sleeping.",
     "targetText": "Das Pferd schläft.",
     "toebaId": 13711786
+  },
+  {
+    "sourceText": "Gabriel likes board games.",
+    "targetText": "Gabriel mag Brettspiele.",
+    "toebaId": 14008761
+  },
+  {
+    "sourceText": "Human consciousness created language.",
+    "targetText": "Das menschliche Bewusstsein schuf die Sprache.",
+    "toebaId": 14006110
+  },
+  {
+    "sourceText": "It was interesting there.",
+    "targetText": "Es war dort interessant.",
+    "toebaId": 14005407
+  },
+  {
+    "sourceText": "The Pope is dead.",
+    "targetText": "Der Papst ist tot.",
+    "toebaId": 14005115
+  },
+  {
+    "sourceText": "God isn't Muslim.",
+    "targetText": "Gott ist kein Muslim.",
+    "toebaId": 14004350
+  },
+  {
+    "sourceText": "God isn't Jewish.",
+    "targetText": "Gott ist kein Jude.",
+    "toebaId": 14004349
+  },
+  {
+    "sourceText": "God isn't Jewish.",
+    "targetText": "Gott ist nicht jüdisch.",
+    "toebaId": 14004349
+  },
+  {
+    "sourceText": "I have a frog.",
+    "targetText": "Ich habe einen Frosch.",
+    "toebaId": 13711640
+  },
+  {
+    "sourceText": "Why should I stop?",
+    "targetText": "Warum sollte ich aufhören?",
+    "toebaId": 13710991
+  },
+  {
+    "sourceText": "How important is health?",
+    "targetText": "Wie wichtig ist Gesundheit?",
+    "toebaId": 13710849
+  },
+  {
+    "sourceText": "Are tomatoes a fruit?",
+    "targetText": "Ist die Tomate eine Frucht?",
+    "toebaId": 13710317
+  },
+  {
+    "sourceText": "I'm no clown.",
+    "targetText": "Ich bin kein Clown.",
+    "toebaId": 13709130
+  },
+  {
+    "sourceText": "Tom survived the war.",
+    "targetText": "Tom hat den Krieg überlebt.",
+    "toebaId": 13708670
+  },
+  {
+    "sourceText": "Someone always wants something.",
+    "targetText": "Jemand will immer etwas.",
+    "toebaId": 13708647
+  },
+  {
+    "sourceText": "I'm a thief.",
+    "targetText": "Ich bin ein Dieb.",
+    "toebaId": 13708072
+  },
+  {
+    "sourceText": "I'm a thief.",
+    "targetText": "Ich bin eine Diebin.",
+    "toebaId": 13708072
+  },
+  {
+    "sourceText": "Your cat has fleas.",
+    "targetText": "Deine Katze hat Flöhe.",
+    "toebaId": 13705955
+  },
+  {
+    "sourceText": "The family meets often.",
+    "targetText": "Die Familie trifft sich oft.",
+    "toebaId": 13705723
+  },
+  {
+    "sourceText": "I can play chess.",
+    "targetText": "Ich kann Schach spielen.",
+    "toebaId": 13705444
+  },
+  {
+    "sourceText": "Both variants are correct.",
+    "targetText": "Beide Varianten sind korrekt.",
+    "toebaId": 13705241
+  },
+  {
+    "sourceText": "Give me my coat.",
+    "targetText": "Gib mir meinen Mantel.",
+    "toebaId": 13702653
+  },
+  {
+    "sourceText": "The teacher is strict.",
+    "targetText": "Der Lehrer ist streng.",
+    "toebaId": 13702401
+  },
+  {
+    "sourceText": "Is my brother autistic?",
+    "targetText": "Ist mein Bruder autistisch?",
+    "toebaId": 13702297
+  },
+  {
+    "sourceText": "I'm counting apples.",
+    "targetText": "Ich zähle Äpfel.",
+    "toebaId": 13702178
+  },
+  {
+    "sourceText": "I bought a pillow.",
+    "targetText": "Ich habe ein Kopfkissen gekauft.",
+    "toebaId": 13702137
+  },
+  {
+    "sourceText": "I bought a blanket.",
+    "targetText": "Ich habe eine Decke gekauft.",
+    "toebaId": 13702129
+  },
+  {
+    "sourceText": "I'm eating soup.",
+    "targetText": "Ich esse Suppe.",
+    "toebaId": 13698972
+  },
+  {
+    "sourceText": "Tom mustn't suffer.",
+    "targetText": "Tom darf nicht leiden.",
+    "toebaId": 13693605
+  },
+  {
+    "sourceText": "We're finally here!",
+    "targetText": "Endlich sind wir hier!",
+    "toebaId": 13693100
+  },
+  {
+    "sourceText": "Superman will save us.",
+    "targetText": "Superman wird uns retten.",
+    "toebaId": 13692963
+  },
+  {
+    "sourceText": "Are viruses living things?",
+    "targetText": "Sind Viren Lebewesen?",
+    "toebaId": 13692863
+  },
+  {
+    "sourceText": "She's a guest.",
+    "targetText": "Sie ist ein Gast.",
+    "toebaId": 13692760
+  },
+  {
+    "sourceText": "The night was hot.",
+    "targetText": "Die Nacht war heiß.",
+    "toebaId": 13692757
+  },
+  {
+    "sourceText": "Is the water blue?",
+    "targetText": "Ist das Wasser blau?",
+    "toebaId": 13692019
+  },
+  {
+    "sourceText": "The door opens inwards.",
+    "targetText": "Die Tür geht nach innen auf.",
+    "toebaId": 13687896
+  },
+  {
+    "sourceText": "Greetings from my mom.",
+    "targetText": "Grüße von meiner Mutti.",
+    "toebaId": 13686513
+  },
+  {
+    "sourceText": "Japanese is very difficult.",
+    "targetText": "Japanisch ist sehr schwer.",
+    "toebaId": 13683580
+  },
+  {
+    "sourceText": "Two twos are four.",
+    "targetText": "Zwei Zweien sind vier.",
+    "toebaId": 13681538
+  },
+  {
+    "sourceText": "Happy New Year, Tatoeba!",
+    "targetText": "Frohes neues Jahr, Tatoeba!",
+    "toebaId": 13678007
+  },
+  {
+    "sourceText": "You want to understand.",
+    "targetText": "Sie wollen verstehen.",
+    "toebaId": 13676583
+  },
+  {
+    "sourceText": "You want to understand.",
+    "targetText": "Ihr wollt verstehen.",
+    "toebaId": 13676583
+  },
+  {
+    "sourceText": "You want to understand.",
+    "targetText": "Du willst verstehen.",
+    "toebaId": 13676583
+  },
+  {
+    "sourceText": "She said it herself.",
+    "targetText": "Sie selbst hat es mir gesagt.",
+    "toebaId": 13674036
+  },
+  {
+    "sourceText": "The password is \"password.\"",
+    "targetText": "Das Passwort ist „Passwort“.",
+    "toebaId": 13671888
+  },
+  {
+    "sourceText": "The password is \"password.\"",
+    "targetText": "Das Passwort lautet „Passwort“.",
+    "toebaId": 13671888
+  },
+  {
+    "sourceText": "The students chatted happily.",
+    "targetText": "Die Schüler plauderten fröhlich.",
+    "toebaId": 13670607
+  },
+  {
+    "sourceText": "German has separable verbs.",
+    "targetText": "Im Deutschen gibt es trennbare Verben.",
+    "toebaId": 13670244
+  },
+  {
+    "sourceText": "Does she have tattoos?",
+    "targetText": "Hat sie Tätowierungen?",
+    "toebaId": 13669613
+  },
+  {
+    "sourceText": "I hesitated before answering.",
+    "targetText": "Ich zögerte, bevor ich antwortete.",
+    "toebaId": 13666778
+  },
+  {
+    "sourceText": "It's Christmas Eve.",
+    "targetText": "Es ist Heiligabend.",
+    "toebaId": 13666774
+  },
+  {
+    "sourceText": "Father, stay with me!",
+    "targetText": "Vater, bleib bei mir!",
+    "toebaId": 13665368
+  },
+  {
+    "sourceText": "Tom should stop working.",
+    "targetText": "Tom sollte nicht weiter arbeiten.",
+    "toebaId": 13664719
+  },
+  {
+    "sourceText": "There are elections today.",
+    "targetText": "Heute sind Wahlen.",
+    "toebaId": 13664282
+  },
+  {
+    "sourceText": "He understood everything immediately.",
+    "targetText": "Er hat sofort alles verstanden.",
+    "toebaId": 13663635
+  },
+  {
+    "sourceText": "Give me the list.",
+    "targetText": "Gib mir die Liste.",
+    "toebaId": 13662537
+  },
+  {
+    "sourceText": "That looks good too.",
+    "targetText": "Das sieht auch gut aus.",
+    "toebaId": 13662531
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Sie wohnen in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Sie leben in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Ihr lebt in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Ihr wohnt in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Du lebst in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "You live in Kazan.",
+    "targetText": "Du wohnst in Kasan.",
+    "toebaId": 13662106
+  },
+  {
+    "sourceText": "I burned my fingertip.",
+    "targetText": "Ich verbrannte mir die Fingerkuppe.",
+    "toebaId": 13661822
+  },
+  {
+    "sourceText": "I know everyone there.",
+    "targetText": "Ich kenne dort alle.",
+    "toebaId": 13661164
+  },
+  {
+    "sourceText": "We live in Kazan.",
+    "targetText": "Wir wohnen in Kasan.",
+    "toebaId": 13661126
+  },
+  {
+    "sourceText": "We live in Kazan.",
+    "targetText": "Wir leben in Kasan.",
+    "toebaId": 13661126
+  },
+  {
+    "sourceText": "They went to Kazan.",
+    "targetText": "Sie sind nach Kasan gefahren.",
+    "toebaId": 13661125
+  },
+  {
+    "sourceText": "They went to Kazan.",
+    "targetText": "Sie fuhren nach Kasan.",
+    "toebaId": 13661125
+  },
+  {
+    "sourceText": "We went to Kazan.",
+    "targetText": "Wir fuhren nach Kasan.",
+    "toebaId": 13661124
+  },
+  {
+    "sourceText": "We went to Kazan.",
+    "targetText": "Wir sind nach Kasan gefahren.",
+    "toebaId": 13661124
+  },
+  {
+    "sourceText": "We heard him yell.",
+    "targetText": "Wir haben ihn schreien gehört.",
+    "toebaId": 13661003
+  },
+  {
+    "sourceText": "Did my wife call?",
+    "targetText": "Hat meine Frau angerufen?",
+    "toebaId": 13660471
+  },
+  {
+    "sourceText": "Are all panthers black?",
+    "targetText": "Sind alle Panther schwarz?",
+    "toebaId": 13660431
+  },
+  {
+    "sourceText": "Our collaboration was fruitful.",
+    "targetText": "Unsere Zusammenarbeit war fruchtbar.",
+    "toebaId": 13659731
+  },
+  {
+    "sourceText": "Our collaboration was fruitful.",
+    "targetText": "Unsere Zusammenarbeit ist fruchtbar gewesen.",
+    "toebaId": 13659731
+  },
+  {
+    "sourceText": "I learn two languages.",
+    "targetText": "Ich lerne zwei Sprachen.",
+    "toebaId": 13659606
+  },
+  {
+    "sourceText": "That is very useful.",
+    "targetText": "Das ist sehr nützlich.",
+    "toebaId": 13658554
+  },
+  {
+    "sourceText": "He's always working.",
+    "targetText": "Er arbeitet immer.",
+    "toebaId": 13657650
+  },
+  {
+    "sourceText": "Is it okay now?",
+    "targetText": "Ist es jetzt in Ordnung?",
+    "toebaId": 13655848
+  },
+  {
+    "sourceText": "I unlinked the English.",
+    "targetText": "Ich habe das Englische abgetrennt.",
+    "toebaId": 13655173
+  },
+  {
+    "sourceText": "Reading activates the brain.",
+    "targetText": "Lesen aktiviert das Gehirn.",
+    "toebaId": 13651636
+  },
+  {
+    "sourceText": "Money costs too much.",
+    "targetText": "Geld kostet zu viel.",
+    "toebaId": 13650989
+  },
+  {
+    "sourceText": "His enthusiasm quickly waned.",
+    "targetText": "Seine Begeisterung schwand schnell dahin.",
+    "toebaId": 13650986
+  },
+  {
+    "sourceText": "His enthusiasm quickly waned.",
+    "targetText": "Seine Begeisterung ließ schnell nach.",
+    "toebaId": 13650986
+  },
+  {
+    "sourceText": "His house is big.",
+    "targetText": "Sein Haus ist groß.",
+    "toebaId": 13650737
+  },
+  {
+    "sourceText": "Are you going back?",
+    "targetText": "Gehst du zurück?",
+    "toebaId": 13650732
+  },
+  {
+    "sourceText": "I forgot my book.",
+    "targetText": "Ich habe mein Buch vergessen.",
+    "toebaId": 13650673
+  },
+  {
+    "sourceText": "These books were mine.",
+    "targetText": "Diese Bücher waren meine.",
+    "toebaId": 13650630
+  },
+  {
+    "sourceText": "You have a book.",
+    "targetText": "Du hast ein Buch.",
+    "toebaId": 13650624
+  },
+  {
+    "sourceText": "My books are heavy.",
+    "targetText": "Meine Bücher sind schwer.",
+    "toebaId": 13650620
+  },
+  {
+    "sourceText": "I love her books.",
+    "targetText": "Ich liebe ihre Bücher.",
+    "toebaId": 13650600
+  },
+  {
+    "sourceText": "I like her books.",
+    "targetText": "Mir gefallen ihre Bücher.",
+    "toebaId": 13650598
+  },
+  {
+    "sourceText": "I like her books.",
+    "targetText": "Ich mag ihre Bücher.",
+    "toebaId": 13650598
+  },
+  {
+    "sourceText": "I like his books.",
+    "targetText": "Mir gefallen seine Bücher.",
+    "toebaId": 13650596
+  },
+  {
+    "sourceText": "I like his books.",
+    "targetText": "Ich mag seine Bücher.",
+    "toebaId": 13650596
+  },
+  {
+    "sourceText": "I love his books.",
+    "targetText": "Ich liebe seine Bücher.",
+    "toebaId": 13650594
+  },
+  {
+    "sourceText": "This sentence is impolite.",
+    "targetText": "Dieser Satz ist unhöflich.",
+    "toebaId": 13650386
+  },
+  {
+    "sourceText": "Do you have accomodation?",
+    "targetText": "Hast du eine Unterkunft?",
+    "toebaId": 13650217
+  },
+  {
+    "sourceText": "You are already old.",
+    "targetText": "Du bist schon alt.",
+    "toebaId": 13649393
+  },
+  {
+    "sourceText": "Who were the Incas?",
+    "targetText": "Wer waren die Inkas?",
+    "toebaId": 13649379
+  },
+  {
+    "sourceText": "German is really difficult.",
+    "targetText": "Deutsch ist wirklich schwer.",
+    "toebaId": 13647513
+  },
+  {
+    "sourceText": "She called her daughter.",
+    "targetText": "Sie hat ihre Tochter angerufen.",
+    "toebaId": 13647426
+  },
+  {
+    "sourceText": "First education, then marriage.",
+    "targetText": "Erst Bildung, dann Heirat.",
+    "toebaId": 13647049
+  },
+  {
+    "sourceText": "Don't save me.",
+    "targetText": "Rette mich nicht.",
+    "toebaId": 13645089
+  },
+  {
+    "sourceText": "My eyes are hurting.",
+    "targetText": "Meine Augen tun weh.",
+    "toebaId": 13642863
+  },
+  {
+    "sourceText": "What should I translate?",
+    "targetText": "Was soll ich übersetzen?",
+    "toebaId": 13640401
+  },
+  {
+    "sourceText": "You're completely wrong!",
+    "targetText": "Da liegst du völlig falsch!",
+    "toebaId": 13639029
+  },
+  {
+    "sourceText": "Who supervises the work?",
+    "targetText": "Wer überwacht die Arbeit?",
+    "toebaId": 13639026
+  },
+  {
+    "sourceText": "She did that intentionally.",
+    "targetText": "Sie machte das absichtlich.",
+    "toebaId": 13636878
+  },
+  {
+    "sourceText": "He did that intentionally.",
+    "targetText": "Er machte das absichtlich.",
+    "toebaId": 13636876
+  },
+  {
+    "sourceText": "One person is missing.",
+    "targetText": "Eine Person fehlt.",
+    "toebaId": 13633514
+  },
+  {
+    "sourceText": "They work with Marie.",
+    "targetText": "Sie arbeiten mit Maria zusammen.",
+    "toebaId": 13632249
+  },
+  {
+    "sourceText": "The bird has feathers.",
+    "targetText": "Der Vogel hat Federn.",
+    "toebaId": 13631959
+  },
+  {
+    "sourceText": "Those accusations are ridiculous.",
+    "targetText": "Diese Anschuldigungen sind lachhaft.",
+    "toebaId": 13631627
+  },
+  {
+    "sourceText": "Those accusations are ridiculous.",
+    "targetText": "Diese Anschuldigungen sind lächerlich.",
+    "toebaId": 13631627
+  },
+  {
+    "sourceText": "Do you like Spring?",
+    "targetText": "Magst du den Frühling?",
+    "toebaId": 13630924
+  },
+  {
+    "sourceText": "Tom is a regicide.",
+    "targetText": "Tom ist ein Königsmörder.",
+    "toebaId": 13630771
+  },
+  {
+    "sourceText": "Black cats are beautiful.",
+    "targetText": "Schwarze Katzen sind schön.",
+    "toebaId": 13629649
+  },
+  {
+    "sourceText": "I have one pencil.",
+    "targetText": "Ich habe einen Bleistift.",
+    "toebaId": 13626529
+  },
+  {
+    "sourceText": "It's an allegory.",
+    "targetText": "Das ist eine Allegorie.",
+    "toebaId": 13625222
+  },
+  {
+    "sourceText": "I love you! Goodbye.",
+    "targetText": "Ich liebe dich! Tschüss.",
+    "toebaId": 13624984
+  },
+  {
+    "sourceText": "Memory is always selective.",
+    "targetText": "Das Gedächtnis ist immer selektiv.",
+    "toebaId": 13624638
+  },
+  {
+    "sourceText": "I'm not you!",
+    "targetText": "Ich bin nicht du!",
+    "toebaId": 13622736
+  },
+  {
+    "sourceText": "You surprised us all.",
+    "targetText": "Sie haben uns alle überrascht.",
+    "toebaId": 13622419
+  },
+  {
+    "sourceText": "You surprised us all.",
+    "targetText": "Ihr habt uns alle überrascht.",
+    "toebaId": 13622419
+  },
+  {
+    "sourceText": "You surprised us all.",
+    "targetText": "Du hast uns alle überrascht.",
+    "toebaId": 13622419
+  },
+  {
+    "sourceText": "I saw your message.",
+    "targetText": "Ich habe deine Nachricht gesehen.",
+    "toebaId": 13622315
+  },
+  {
+    "sourceText": "I saw your message.",
+    "targetText": "Ich habe Ihre Nachricht gesehen.",
+    "toebaId": 13622315
+  },
+  {
+    "sourceText": "His computer is connected.",
+    "targetText": "Sein Computer ist angeschlossen.",
+    "toebaId": 13616957
+  },
+  {
+    "sourceText": "His computer is connected.",
+    "targetText": "Sein Computer hat eine Verbindung.",
+    "toebaId": 13616957
+  },
+  {
+    "sourceText": "Where's our luggage?",
+    "targetText": "Wo ist unser Gepäck?",
+    "toebaId": 13616811
+  },
+  {
+    "sourceText": "Which translator is better?",
+    "targetText": "Welcher Übersetzer ist besser?",
+    "toebaId": 13616728
+  },
+  {
+    "sourceText": "I'm in China.",
+    "targetText": "Ich bin in China.",
+    "toebaId": 13616462
+  },
+  {
+    "sourceText": "How close is it?",
+    "targetText": "Wie nah ist es?",
+    "toebaId": 13614932
+  },
+  {
+    "sourceText": "Did you finish it?",
+    "targetText": "Hast du es fertiggemacht?",
+    "toebaId": 13613847
+  },
+  {
+    "sourceText": "Where is the fish?",
+    "targetText": "Wo ist der Fisch?",
+    "toebaId": 13613682
+  },
+  {
+    "sourceText": "The rest is fiction!",
+    "targetText": "Der Rest ist Fiktion!",
+    "toebaId": 13612907
+  },
+  {
+    "sourceText": "He's completely insane.",
+    "targetText": "Er ist total verrückt.",
+    "toebaId": 13612294
+  },
+  {
+    "sourceText": "Whose bookshelf is this?",
+    "targetText": "Wessen Bücherschrank ist das?",
+    "toebaId": 13611355
+  },
+  {
+    "sourceText": "She's dead tired.",
+    "targetText": "Sie ist totmüde.",
+    "toebaId": 13611349
+  },
+  {
+    "sourceText": "I knew her father.",
+    "targetText": "Ich kannte ihren Vater.",
+    "toebaId": 13610084
+  },
+  {
+    "sourceText": "My parents were good.",
+    "targetText": "Meine Eltern waren gut.",
+    "toebaId": 13610065
+  },
+  {
+    "sourceText": "She is dancing ballet.",
+    "targetText": "Sie tanzt Ballett.",
+    "toebaId": 13609653
+  },
+  {
+    "sourceText": "Can I say no?",
+    "targetText": "Kann ich „nein“ sagen?",
+    "toebaId": 13609213
+  },
+  {
+    "sourceText": "Who would like pizza?",
+    "targetText": "Wer möchte Pizza?",
+    "toebaId": 13609158
+  },
+  {
+    "sourceText": "That's so extreme.",
+    "targetText": "Das ist so krass.",
+    "toebaId": 13607489
+  },
+  {
+    "sourceText": "Will it rain tonight?",
+    "targetText": "Wird es heute abend regnen?",
+    "toebaId": 13607313
+  },
+  {
+    "sourceText": "Will it rain tonight?",
+    "targetText": "Regnet es heute abend?",
+    "toebaId": 13607313
+  },
+  {
+    "sourceText": "German has four cases.",
+    "targetText": "Deutsch hat vier Fälle.",
+    "toebaId": 13604678
+  },
+  {
+    "sourceText": "Everything's dry now.",
+    "targetText": "Alles ist schon getrocknet.",
+    "toebaId": 13603893
+  },
+  {
+    "sourceText": "Everything's dry now.",
+    "targetText": "Alles ist schon trocken.",
+    "toebaId": 13603893
+  },
+  {
+    "sourceText": "I feel the energy.",
+    "targetText": "Ich spüre die Energie.",
+    "toebaId": 13602930
+  },
+  {
+    "sourceText": "The walls are cold.",
+    "targetText": "Die Wände sind kalt.",
+    "toebaId": 13601670
+  },
+  {
+    "sourceText": "I'm relatively old.",
+    "targetText": "Ich bin relativ alt.",
+    "toebaId": 13599471
+  },
+  {
+    "sourceText": "Tom saw the velociraptor.",
+    "targetText": "Tom sah den Velociraptor.",
+    "toebaId": 13597575
+  },
+  {
+    "sourceText": "He really likes cars.",
+    "targetText": "Er mag Autos sehr.",
+    "toebaId": 13597480
+  },
+  {
+    "sourceText": "He bought the flowers.",
+    "targetText": "Er hat die Blumen gekauft.",
+    "toebaId": 13596839
+  },
+  {
+    "sourceText": "It's not Kyle.",
+    "targetText": "Es ist nicht Kyle.",
+    "toebaId": 13594806
+  },
+  {
+    "sourceText": "I admit my mistakes.",
+    "targetText": "Ich gestehe meine Fehler.",
+    "toebaId": 13594568
+  },
+  {
+    "sourceText": "I saw a butterfly.",
+    "targetText": "Ich habe einen Schmetterling gesehen.",
+    "toebaId": 13592101
+  },
+  {
+    "sourceText": "I saw a butterfly.",
+    "targetText": "Ich sah einen Schmetterling.",
+    "toebaId": 13592101
+  },
+  {
+    "sourceText": "I only bought one.",
+    "targetText": "Ich habe nur einen gekauft.",
+    "toebaId": 13592066
+  },
+  {
+    "sourceText": "I only bought one.",
+    "targetText": "Ich kaufte nur eine.",
+    "toebaId": 13592066
+  },
+  {
+    "sourceText": "This TV is expensive.",
+    "targetText": "Dieser Fernseher ist teuer.",
+    "toebaId": 13591217
+  },
+  {
+    "sourceText": "She was in Berlin.",
+    "targetText": "Sie war in Berlin.",
+    "toebaId": 13590545
+  },
+  {
+    "sourceText": "I can speak German.",
+    "targetText": "Ich kann Deutsch sprechen.",
+    "toebaId": 13589754
+  },
+  {
+    "sourceText": "She's very brave.",
+    "targetText": "Sie ist sehr mutig.",
+    "toebaId": 13586381
+  },
+  {
+    "sourceText": "I still feel groggy.",
+    "targetText": "Ich fühle mich immer noch benommen.",
+    "toebaId": 13585359
+  },
+  {
+    "sourceText": "People still use that.",
+    "targetText": "Das verwendet man immer noch.",
+    "toebaId": 13585221
+  },
+  {
+    "sourceText": "I recognize good people.",
+    "targetText": "Ich erkenne gute Menschen.",
+    "toebaId": 13584648
+  },
+  {
+    "sourceText": "Hope can be deceptive.",
+    "targetText": "Hoffnung kann trügerisch sein.",
+    "toebaId": 13584629
+  },
+  {
+    "sourceText": "They are learning Arabic.",
+    "targetText": "Sie lernen Arabisch.",
+    "toebaId": 13584256
+  },
+  {
+    "sourceText": "Feelings can be deceiving.",
+    "targetText": "Gefühle können trügerisch sein.",
+    "toebaId": 13583601
+  },
+  {
+    "sourceText": "AI can make mistakes.",
+    "targetText": "Die KI kann sich irren.",
+    "toebaId": 13582739
+  },
+  {
+    "sourceText": "AI can make mistakes.",
+    "targetText": "Die KI kann Fehler machen.",
+    "toebaId": 13582739
+  },
+  {
+    "sourceText": "AI can make mistakes.",
+    "targetText": "Eine KI kann sich irren.",
+    "toebaId": 13582739
+  },
+  {
+    "sourceText": "Languages change with time.",
+    "targetText": "Sprachen ändern sich mit der Zeit.",
+    "toebaId": 13581801
+  },
+  {
+    "sourceText": "The music is fantastic.",
+    "targetText": "Die Musik ist fantastisch.",
+    "toebaId": 13581758
+  },
+  {
+    "sourceText": "We almost got married.",
+    "targetText": "Wir haben fast geheiratet.",
+    "toebaId": 13580146
+  },
+  {
+    "sourceText": "Let's speak Tatar!",
+    "targetText": "Lass uns Tatarisch sprechen!",
+    "toebaId": 13580136
+  },
+  {
+    "sourceText": "Let's speak Tatar!",
+    "targetText": "Lasst uns Tatarisch sprechen!",
+    "toebaId": 13580136
+  },
+  {
+    "sourceText": "Do they speak Tatar?",
+    "targetText": "Sprechen sie Tatarisch?",
+    "toebaId": 13580135
+  },
+  {
+    "sourceText": "Does he speak Tatar?",
+    "targetText": "Spricht er Tatarisch?",
+    "toebaId": 13580131
+  },
+  {
+    "sourceText": "Does she speak Tatar?",
+    "targetText": "Spricht sie Tatarisch?",
+    "toebaId": 13580130
+  },
+  {
+    "sourceText": "Does Ainur speak Tatar?",
+    "targetText": "Spricht Ainur Tatarisch?",
+    "toebaId": 13580123
+  },
+  {
+    "sourceText": "Unemployment numbers are rising.",
+    "targetText": "Die Arbeitslosenzahlen steigen.",
+    "toebaId": 13580100
+  },
+  {
+    "sourceText": "I found some mushrooms.",
+    "targetText": "Ich habe einige Pilze gefunden.",
+    "toebaId": 13579640
+  },
+  {
+    "sourceText": "I found some mushrooms.",
+    "targetText": "Ich habe Pilze gefunden.",
+    "toebaId": 13579640
+  },
+  {
+    "sourceText": "That's a hare!",
+    "targetText": "Das ist ein Hase!",
+    "toebaId": 13579168
+  },
+  {
+    "sourceText": "Who is Ekrem Imamoglu?",
+    "targetText": "Wer ist Ekrem Imamoglu?",
+    "toebaId": 13578579
+  },
+  {
+    "sourceText": "Is that a panther?",
+    "targetText": "Ist das ein Panter?",
+    "toebaId": 13577225
+  },
+  {
+    "sourceText": "This is our restaurant!",
+    "targetText": "Das ist unser Restaurant!",
+    "toebaId": 13575809
+  },
+  {
+    "sourceText": "No, she is busy.",
+    "targetText": "Nein, sie ist beschäftigt.",
+    "toebaId": 13575006
+  },
+  {
+    "sourceText": "Tom is a gentile.",
+    "targetText": "Tom ist Nichtjude.",
+    "toebaId": 13571655
+  },
+  {
+    "sourceText": "They all followed him.",
+    "targetText": "Sie alle folgten ihm.",
+    "toebaId": 13571645
+  },
+  {
+    "sourceText": "This animal is sick.",
+    "targetText": "Dieses Tier ist krank.",
+    "toebaId": 13571639
+  },
+  {
+    "sourceText": "He broke his neck.",
+    "targetText": "Er hat sich den Hals gebrochen.",
+    "toebaId": 13570390
+  },
+  {
+    "sourceText": "Give me that, please.",
+    "targetText": "Bitte geben Sie mir das.",
+    "toebaId": 13569711
+  },
+  {
+    "sourceText": "Tom is a goy.",
+    "targetText": "Tom ist ein Goi.",
+    "toebaId": 13566226
+  },
+  {
+    "sourceText": "Let yourself be happy!",
+    "targetText": "Erlauben Sie sich, glücklich zu sein!",
+    "toebaId": 13564658
+  },
+  {
+    "sourceText": "We lost our umbrella.",
+    "targetText": "Wir verloren unseren Schirm.",
+    "toebaId": 13564345
+  },
+  {
+    "sourceText": "It didn't happen.",
+    "targetText": "Das ist nicht passiert.",
+    "toebaId": 13563373
+  },
+  {
+    "sourceText": "It didn't happen.",
+    "targetText": "Das ist nicht geschehen.",
+    "toebaId": 13563373
+  },
+  {
+    "sourceText": "It didn't happen.",
+    "targetText": "Es ist nicht passiert.",
+    "toebaId": 13563373
+  },
+  {
+    "sourceText": "What would be better?",
+    "targetText": "Was wäre besser?",
+    "toebaId": 13561448
+  },
+  {
+    "sourceText": "Nobody is helping her.",
+    "targetText": "Keiner hilft ihr.",
+    "toebaId": 13559962
+  },
+  {
+    "sourceText": "Nobody is helping her.",
+    "targetText": "Niemand hilft ihr.",
+    "toebaId": 13559962
+  },
+  {
+    "sourceText": "His job is easy.",
+    "targetText": "Seine Arbeit ist leicht.",
+    "toebaId": 13559839
+  },
+  {
+    "sourceText": "Her job is easy.",
+    "targetText": "Ihre Arbeit ist leicht.",
+    "toebaId": 13559838
+  },
+  {
+    "sourceText": "I had organized everything.",
+    "targetText": "Ich hatte alles organisiert.",
+    "toebaId": 13559835
+  },
+  {
+    "sourceText": "Solidarity makes us stronger.",
+    "targetText": "Solidarität macht uns stärker.",
+    "toebaId": 13559483
+  },
+  {
+    "sourceText": "We're learning Turkish.",
+    "targetText": "Wir lernen Türkisch.",
+    "toebaId": 13559477
+  },
+  {
+    "sourceText": "Is the café closed?",
+    "targetText": "Ist das Café geschlossen?",
+    "toebaId": 13559476
+  },
+  {
+    "sourceText": "Buy a new car.",
+    "targetText": "Kaufe ein neues Auto.",
+    "toebaId": 13559473
+  },
+  {
+    "sourceText": "All my bones hurt.",
+    "targetText": "Mir tun alle Knochen weh.",
+    "toebaId": 13559462
+  },
+  {
+    "sourceText": "I detest that colour.",
+    "targetText": "Ich verabscheue diese Farbe.",
+    "toebaId": 13557149
+  },
+  {
+    "sourceText": "I like watercolour paintings.",
+    "targetText": "Ich mag Aquarellbilder.",
+    "toebaId": 13556968
+  },
+  {
+    "sourceText": "Is this table free?",
+    "targetText": "Ist dieser Tisch frei?",
+    "toebaId": 13556073
+  },
+  {
+    "sourceText": "We're learning Slovak.",
+    "targetText": "Wir lernen Slowakisch.",
+    "toebaId": 13556072
+  },
+  {
+    "sourceText": "She set a trap.",
+    "targetText": "Sie hat eine Falle gestellt.",
+    "toebaId": 13556055
+  },
+  {
+    "sourceText": "We celebrate Easter together.",
+    "targetText": "Wir feiern zusammen Ostern.",
+    "toebaId": 13554819
+  },
+  {
+    "sourceText": "We celebrate Christmas together.",
+    "targetText": "Wir feiern zusammen Weihnachten.",
+    "toebaId": 13554812
+  },
+  {
+    "sourceText": "Women like football, too.",
+    "targetText": "Auch Frauen mögen Fußball.",
+    "toebaId": 13553388
+  },
+  {
+    "sourceText": "Is she a student?",
+    "targetText": "Ist sie Studentin?",
+    "toebaId": 13550298
+  },
+  {
+    "sourceText": "It's like new.",
+    "targetText": "Es ist wie neu.",
+    "toebaId": 13548933
+  },
+  {
+    "sourceText": "That's the ghost.",
+    "targetText": "Das ist das Gespenst.",
+    "toebaId": 13547506
+  },
+  {
+    "sourceText": "I caught some salmon.",
+    "targetText": "Ich fischte Lachs.",
+    "toebaId": 13546435
+  },
+  {
+    "sourceText": "I live near Paris.",
+    "targetText": "Ich wohne in der Nähe von Paris.",
+    "toebaId": 13546150
+  },
+  {
+    "sourceText": "His eyes are black.",
+    "targetText": "Seine Augen sind schwarz.",
+    "toebaId": 13544792
+  },
+  {
+    "sourceText": "Their eyes are black.",
+    "targetText": "Ihre Augen sind schwarz.",
+    "toebaId": 13544788
+  },
+  {
+    "sourceText": "You should really come.",
+    "targetText": "Du solltest wirklich kommen.",
+    "toebaId": 13542140
+  },
+  {
+    "sourceText": "You should really come.",
+    "targetText": "Ihr solltet wirklich kommen.",
+    "toebaId": 13542140
+  },
+  {
+    "sourceText": "You should really come.",
+    "targetText": "Sie sollten wirklich kommen.",
+    "toebaId": 13542140
+  },
+  {
+    "sourceText": "Take the first step.",
+    "targetText": "Machen Sie den ersten Schritt.",
+    "toebaId": 13542139
+  },
+  {
+    "sourceText": "Take the first step.",
+    "targetText": "Macht den ersten Schritt.",
+    "toebaId": 13542139
+  },
+  {
+    "sourceText": "Take the first step.",
+    "targetText": "Mach den ersten Schritt.",
+    "toebaId": 13542139
+  },
+  {
+    "sourceText": "They lost their fortune.",
+    "targetText": "Sie haben ihr Vermögen verloren.",
+    "toebaId": 13542005
+  },
+  {
+    "sourceText": "She's not mad.",
+    "targetText": "Sie ist nicht wütend.",
+    "toebaId": 13540846
+  },
+  {
+    "sourceText": "That's no use.",
+    "targetText": "Das ist zu nichts nütze.",
+    "toebaId": 13540335
+  },
+  {
+    "sourceText": "Tom earned a lot.",
+    "targetText": "Tom verdiente viel.",
+    "toebaId": 13540326
+  },
+  {
+    "sourceText": "Antibiotics are heavy artillery.",
+    "targetText": "Antibiotika sind schwere Artillerie.",
+    "toebaId": 13540323
+  },
+  {
+    "sourceText": "Antibiotics are heavy artillery.",
+    "targetText": "Antibiotika sind schwere Geschütze.",
+    "toebaId": 13540323
+  },
+  {
+    "sourceText": "That sunset looks incredible.",
+    "targetText": "Dieser Sonnenuntergang schaut unglaublich aus.",
+    "toebaId": 13539172
+  },
+  {
+    "sourceText": "She acts on instinct.",
+    "targetText": "Sie handelt instinktiv.",
+    "toebaId": 13536736
+  },
+  {
+    "sourceText": "He acts on instinct.",
+    "targetText": "Er handelt instinktiv.",
+    "toebaId": 13536735
+  },
+  {
+    "sourceText": "She will visit India.",
+    "targetText": "Sie wird Indien besuchen.",
+    "toebaId": 13536118
+  },
+  {
+    "sourceText": "He's really suffering.",
+    "targetText": "Er leidet sehr.",
+    "toebaId": 13536112
+  },
+  {
+    "sourceText": "She is completely exhausted.",
+    "targetText": "Sie ist sehr erschöpft.",
+    "toebaId": 13536104
+  },
+  {
+    "sourceText": "Our village is big.",
+    "targetText": "Unser Dorf ist groß.",
+    "toebaId": 13535504
+  },
+  {
+    "sourceText": "It's a shark.",
+    "targetText": "Es ist ein Hai.",
+    "toebaId": 13535502
+  },
+  {
+    "sourceText": "You may not smoke.",
+    "targetText": "Du darfst nicht rauchen.",
+    "toebaId": 13535163
+  },
+  {
+    "sourceText": "Did you mean me?",
+    "targetText": "Meinten Sie mich?",
+    "toebaId": 13534352
+  },
+  {
+    "sourceText": "He went to Maria.",
+    "targetText": "Er ist zu Maria gegangen.",
+    "toebaId": 13532078
+  },
+  {
+    "sourceText": "I went to Maria.",
+    "targetText": "Ich ging zu Maria.",
+    "toebaId": 13532063
+  },
+  {
+    "sourceText": "And where's Tom?",
+    "targetText": "Und wo ist Tom?",
+    "toebaId": 13530466
+  },
+  {
+    "sourceText": "There are too many.",
+    "targetText": "Es sind zu viele.",
+    "toebaId": 13529412
+  },
+  {
+    "sourceText": "Wintertime began last weekend.",
+    "targetText": "Letztes Wochenende ist die Winterzeit in Kraft getreten.",
+    "toebaId": 13529393
+  },
+  {
+    "sourceText": "Plane food is gross.",
+    "targetText": "Flugzeugessen ist gräßlich.",
+    "toebaId": 13529300
+  },
+  {
+    "sourceText": "Our country has everything.",
+    "targetText": "Unser Land hat alles.",
+    "toebaId": 13528732
+  },
+  {
+    "sourceText": "They betrayed their country.",
+    "targetText": "Sie haben Ihr Land verraten.",
+    "toebaId": 13528542
+  },
+  {
+    "sourceText": "My name is Robert.",
+    "targetText": "Ich heiße Robert.",
+    "toebaId": 13525405
+  },
+  {
+    "sourceText": "My name is Robert.",
+    "targetText": "Mein Name ist Robert.",
+    "toebaId": 13525405
+  },
+  {
+    "sourceText": "She received a doctorate.",
+    "targetText": "Sie erhielt den Doktortitel.",
+    "toebaId": 13523530
+  },
+  {
+    "sourceText": "You can sleep here.",
+    "targetText": "Du kannst hier schlafen.",
+    "toebaId": 13522794
+  },
+  {
+    "sourceText": "He'll support him.",
+    "targetText": "Er wird ihn unterstützen.",
+    "toebaId": 13520299
+  },
+  {
+    "sourceText": "This crisis was predictable.",
+    "targetText": "Diese Krise war zu erwarten.",
+    "toebaId": 13515944
+  },
+  {
+    "sourceText": "He has an iPhone.",
+    "targetText": "Er hat ein iPhone.",
+    "toebaId": 13511950
+  },
+  {
+    "sourceText": "Books are my friends.",
+    "targetText": "Bücher sind meine Freunde.",
+    "toebaId": 13511022
+  },
+  {
+    "sourceText": "The raisins are sweet.",
+    "targetText": "Die Rosinen sind süß.",
+    "toebaId": 13505654
   }
 ]
