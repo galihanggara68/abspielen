@@ -181,5 +181,21 @@
                 </div>
             </template>
         </main>
+
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; display: flex; flex-direction: column; align-items: center; padding: 1rem; gap: 1rem;" x-show="globalErrors.length > 0">
+            <template x-for="error in globalErrors" :key="error.id">
+                <div style="pointer-events: auto; background: var(--bg-color, #fff); color: var(--text-color, #000); border: 2px solid red; border-radius: 8px; padding: 1rem; max-width: 400px; width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+                        <strong style="color: red;">Error: <span x-text="error.summary"></span></strong>
+                        <button @click="dismissError(error.id)" style="background: none; border: none; color: inherit; padding: 0.2rem 0.5rem; font-size: 1.5rem; line-height: 1; cursor: pointer;">&times;</button>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <button @click="error.expanded = !error.expanded" style="font-size: 0.8rem; padding: 0.2rem 0.5rem;" x-text="error.expanded ? 'Hide Details' : 'Show Details'"></button>
+                    </div>
+                    <div x-show="error.expanded" style="margin-top: 0.5rem; background: #222; color: #0f0; padding: 0.5rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;" x-text="error.details">
+                    </div>
+                </div>
+            </template>
+        </div>
     </body>
 </html>

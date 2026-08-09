@@ -135,6 +135,11 @@ export async function getReviewLogsBySession(sessionId) {
   return _query('SELECT * FROM review_log WHERE session_id = ? ORDER BY reviewed_at ASC', [sessionId]);
 }
 
+export async function getLatestSessionIdWithLogs() {
+  const rows = await _query('SELECT session_id FROM review_log ORDER BY reviewed_at DESC LIMIT 1');
+  return rows.length > 0 ? rows[0].session_id : null;
+}
+
 export async function getSessionState() {
   const rows = await _query('SELECT * FROM session_state WHERE id = 1');
   return rows.length > 0 ? rows[0] : null;

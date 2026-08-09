@@ -4,8 +4,21 @@ export default function app() {
   return {
     currentScreen: '', // 'onboarding', 'practice', 'settings', 'stats', 'credits'
     darkMode: false,
+    globalErrors: [],
 
     async init() {
+      // Catch standard errors
+      window.addEventListener('error', (event) => {
+        event.preventDefault();
+        this.logError(event.message || 'Unknown Error', event.error?.stack || 'No stack trace available');
+      });
+
+      // Catch unhandled promises
+      window.addEventListener('unhandledrejection', (event) => {
+        event.preventDefault();
+        this.logError(event.reason?.message || 'Unhandled Promise Rejection', event.reason?.stack || String(event.reason));
+      });
+
       const darkModePref = await getPref('dark_mode');
       if (darkModePref !== null) {
         this.darkMode = darkModePref === 'true';
@@ -38,6 +51,15 @@ export default function app() {
       } else {
         document.documentElement.classList.remove('dark');
       }
+    },
+
+    logError(summary, details) {
+      console.error(summary, details);
+      this.globalErrors.push({ id: Date.now() + Math.random(), summary, details, expanded: false });
+    },
+
+    dismissError(id) {
+      this.globalErrors = this.globalErrors.filter(e => e.id !== id);
     }
   };
 }

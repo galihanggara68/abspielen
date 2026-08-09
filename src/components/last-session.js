@@ -1,4 +1,4 @@
-import { getReviewLogsBySession, getPref } from '../db/sqlite.js';
+import { getReviewLogsBySession, getLatestSessionIdWithLogs, getPref } from '../db/sqlite.js';
 import { getAllCards } from '../db/indexeddb.js';
 import { hasGermanVoice, speak } from '../domain/tts.js';
 
@@ -9,11 +9,7 @@ export default function lastSession() {
 
     async init() {
       this.hasTts = await hasGermanVoice();
-      let sessionId = null;
-      if (this.$store && this.$store.session) {
-        await this.$store.session.init();
-        sessionId = this.$store.session.currentSessionId;
-      }
+      const sessionId = await getLatestSessionIdWithLogs();
       
       if (!sessionId) {
         this.turns = [];
