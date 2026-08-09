@@ -1,28 +1,45 @@
-<div x-data="stats" class="screen">
-    <h2>Stats</h2>
-    
-    <div class="dashboard-metrics" style="margin-top: 1.5rem;">
-        <div class="metric-card">
-            <h3 x-text="data?.retentionRate + '%'">0%</h3>
-            <p>Retention</p>
-        </div>
-        <div class="metric-card">
-            <h3 x-text="data?.sessionStreak">0</h3>
-            <p>Day Streak</p>
+<div x-data="stats" class="screen" style="max-width: 500px; padding-top: 2rem;">
+    <!-- Top Header -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <div style="font-size: 1.5rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+            <span style="color: #F59E0B; background: rgba(245, 158, 11, 0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">🪙</span>
+            <span x-text="`${data?.sessionStreak || 0} MP`">2565 MP</span>
         </div>
     </div>
 
-    <button @click="navigate('last-session')" style="width: 100%; margin-bottom: 2rem; background: var(--bg-color-card); color: var(--primary-color); border: 1px solid var(--primary-color);">View Last Session Log</button>
-
-    <div>
-        <h3>Activity Heatmap</h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%; margin-top: 1rem;">
+    <!-- Heatmap -->
+    <div style="margin-bottom: 3rem;">
+        <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem; font-weight: 500;">Recent Activity</div>
+        
+        <div class="heatmap">
             <template x-for="item in data?.heatmap" :key="item.date">
-                <div :title="`${item.date}: ${item.count} reviews`" 
-                     style="width: 12px; height: 12px; border-radius: 2px;"
-                     :style="`background-color: ${item.count > 20 ? 'var(--success)' : item.count > 10 ? '#34D399' : item.count > 0 ? '#6EE7B7' : 'var(--border-color)'}`">
+                <div class="heatmap-day"
+                     :data-level="item.count > 20 ? 4 : item.count > 10 ? 3 : item.count > 5 ? 2 : item.count > 0 ? 1 : 0"
+                     :title="`${item.date}: ${item.count} reviews`">
                 </div>
             </template>
+        </div>
+    </div>
+
+    <!-- Menu List -->
+    <div style="background: transparent;">
+        <div class="list-item">
+            <span>Retention Rate</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--text-muted);" x-text="data?.retentionRate + '%'"></span>
+            </div>
+        </div>
+        
+        <div class="list-item">
+            <span>Current Streak</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--text-muted);" x-text="`${data?.sessionStreak || 0} days`"></span>
+            </div>
+        </div>
+        
+        <div class="list-item" @click="navigate('last-session')">
+            <span>Last Session Log</span>
+            <span class="chevron">›</span>
         </div>
     </div>
 </div>

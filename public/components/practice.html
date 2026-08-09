@@ -1,54 +1,69 @@
-<div x-data="practice" class="screen">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--text-muted); font-weight: 500;">
-        <span x-text="`Due: ${cardsDue}`"></span>
-        <span x-text="`Session: ${cardsSeenSession}`"></span>
+<div x-data="practice" class="screen" style="padding-top: 0; max-width: 500px;">
+    
+    <!-- Top Header & Progress -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <button @click="navigate('home')" style="background: transparent; color: var(--text-color); box-shadow: none; padding: 8px; font-size: 1.5rem;">&times;</button>
+    </div>
+    
+    <div x-show="!sessionDone" style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem; text-transform: capitalize;" x-text="`${currentCard?.cefr || ''} - ${currentCard?.tags?.[0] || 'Vocab'}`"></h3>
+        <div class="progress-bar-container">
+            <div class="progress-bar-fill" :style="`width: ${(cardsSeenSession / Math.max(1, cardsDue + cardsSeenSession)) * 100}%`"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted);">
+            <span x-text="`${cardsSeenSession} cards reviewed`"></span>
+            <span x-text="`${cardsDue + cardsSeenSession} cards`"></span>
+        </div>
     </div>
 
     <div tabindex="-1" class="card-area">
         <template x-if="currentCard && !sessionDone">
             <div class="flashcard">
+                <!-- Play Audio Button -->
+                <button x-show="hasTts && currentCard.targetText" @click="listen()" class="btn-play-audio" aria-label="Listen">
+                    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                </button>
+
+                <!-- Furigana/IPA -->
+                <div x-show="showIpa || currentCard.ipa" style="color: var(--text-muted); margin-bottom: 0.5rem; font-family: monospace; font-size: 1rem;" x-text="currentCard.ipa ? `/${currentCard.ipa}/` : ''"></div>
+                
+                <!-- Source Text -->
                 <template x-if="!audioFirstMode || revealed">
-                    <div class="flashcard-source" x-text="currentCard.sourceText"></div>
+                    <div class="flashcard-source" style="font-size: 2.5rem; letter-spacing: 0.05em;" x-text="currentCard.sourceText"></div>
                 </template>
                 
                 <template x-if="!revealed && audioFirstMode">
-                    <div class="flex-center flex-col">
-                        <button @click="listen()" class="fab" aria-label="Listen">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        </button>
-                        <p style="color: var(--text-muted); margin-top: 1rem;">Listen and translate</p>
+                    <div class="flex-center flex-col" style="height: 100px;">
+                        <p style="color: var(--text-muted); font-size: 1.1rem;">Listen and translate</p>
                     </div>
                 </template>
 
-                <div x-show="!revealed" style="margin-top: 2rem;">
-                    <button @click="reveal()" style="width: 100%;">Show Answer</button>
+                <div x-show="!revealed" style="margin-top: auto; padding-top: 2rem;">
+                    <button @click="reveal()" style="width: 100%; background: rgba(255,255,255,0.1); color: var(--text-color);">Tap to Reveal</button>
                 </div>
                 
                 <template x-if="revealed">
-                    <div>
-                        <div class="flashcard-target" x-text="currentCard.targetText"></div>
+                    <div style="margin-top: 2rem; text-align: left;">
+                        <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.25rem;">Part of Speech</div>
+                        <div class="flashcard-target" style="color: white; font-size: 1.3rem; margin-bottom: 1.5rem; line-height: 1.4;" x-text="currentCard.targetText"></div>
                         
-                        <div style="margin: 1.5rem 0; display: flex; justify-content: center; gap: 1rem; align-items: center;">
-                            <button x-show="hasTts" @click="listen()" class="fab" style="margin: 0;" aria-label="Listen">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </button>
-                            <button @click="toggleIpa()" aria-label="Toggle IPA" style="background: var(--border-color); color: var(--text-color);">IPA</button>
-                        </div>
-                        
-                        <div x-show="showIpa" style="color: var(--text-muted); margin-bottom: 1.5rem; font-family: monospace; font-size: 1.1rem;" x-text="`/${currentCard.ipa}/`"></div>
-                        
-                        <input type="text" x-model="turnNote" placeholder="Add a note (optional)" style="width: 100%; padding: 12px; margin-bottom: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
-                        
-                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: auto;">
-                            <button class="btn-grade btn-again" @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
-                            <button class="btn-grade btn-hard" @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
-                            <button class="btn-grade btn-good" @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
-                            <button class="btn-grade btn-easy" @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
-                        </div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.25rem;">Note</div>
+                        <input type="text" x-model="turnNote" placeholder="Tap here to add a note..." style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: rgba(255,255,255,0.05); color: var(--text-color); font-size: 1rem;">
                     </div>
                 </template>
             </div>
         </template>
+        
+        <!-- Controls outside flashcard -->
+        <template x-if="currentCard && !sessionDone && revealed">
+            <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 2rem; gap: 8px;">
+                <button class="btn-grade btn-again" @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
+                <button class="btn-grade btn-hard" @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
+                <button class="btn-grade btn-good" @click="grade('good')" data-grade="good" aria-label="Grade: Good">Good</button>
+                <button class="btn-grade btn-easy" @click="grade('easy')" data-grade="easy" aria-label="Grade: Easy">Easy</button>
+            </div>
+        </template>
+        
         <template x-if="sessionDone">
             <div class="text-center" style="margin-top: 4rem;">
                 <h2 style="font-size: 2rem;">Session Complete! 🎉</h2>

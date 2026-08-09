@@ -1,25 +1,46 @@
-<div x-data="settings" class="screen">
-    <h2>Settings</h2>
-    
-    <div style="margin: 20px 0; padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px; background: var(--bg-color-card);">
-        <h3>Data Sync</h3>
-        <button @click="checkUpdates()" :disabled="syncing" aria-label="Check for Updates" style="width: 100%; margin: 1rem 0 0 0;">
-            Check for Updates
-        </button>
-        
-        <div x-show="syncing" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 1rem;">
-            <div class="spinner"></div>
-            <span x-text="syncResult || 'Syncing...'" style="color: var(--primary-color); font-weight: 500;"></span>
-        </div>
-        <div x-show="!syncing && syncResult" style="margin-top: 1rem; text-align: center; color: var(--success);" x-text="syncResult"></div>
+<div x-data="settings" class="screen" style="max-width: 500px; padding-top: 2rem;">
+    <!-- Top Header -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0;">Settings</h2>
     </div>
-    
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
-        <button @click="toggleAudioFirstMode()" aria-label="Toggle Audio-First Mode" style="background: var(--bg-color-card); color: var(--text-color); border: 1px solid var(--border-color);">
-            <span x-text="audioFirstMode ? 'Disable Audio-First Mode' : 'Enable Audio-First Mode'"></span>
-        </button>
-        <button @click="toggleDarkMode()" aria-label="Toggle Dark Mode" style="background: var(--bg-color-card); color: var(--text-color); border: 1px solid var(--border-color);">Toggle Dark Mode</button>
-        <button @click="resetProgress()" aria-label="Reset Progress" style="background: var(--bg-color-card); color: var(--error); border: 1px solid var(--error);">Reset Progress</button>
-        <button @click="navigate('credits')" aria-label="Go to Credits" style="background: transparent; color: var(--text-muted); box-shadow: none;">Credits</button>
+
+    <!-- Menu List -->
+    <div style="background: transparent;">
+        
+        <div class="list-item" @click="checkUpdates()">
+            <span>Data Sync</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span x-show="syncing" class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></span>
+                <span x-show="!syncing" style="color: var(--primary-color); font-size: 0.9rem;" x-text="syncResult"></span>
+                <span class="chevron">›</span>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span>Audio-First Mode</span>
+            <label class="toggle-switch">
+                <input type="checkbox" :checked="audioFirstMode" @change="toggleAudioFirstMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="list-item">
+            <span>Dark Mode</span>
+            <label class="toggle-switch">
+                <input type="checkbox" :checked="darkMode" @change="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="list-item" @click="resetProgress()">
+            <span style="color: var(--error);">Reset Progress</span>
+            <span class="chevron">›</span>
+        </div>
+
+        <div class="list-item" @click="navigate('credits')">
+            <span>Credits</span>
+            <span class="chevron">›</span>
+        </div>
+        
     </div>
 </div>

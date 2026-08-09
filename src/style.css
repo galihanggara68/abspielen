@@ -15,14 +15,14 @@
 }
 
 :root.dark {
-  --bg-color: #111827;
-  --bg-color-card: #1F2937;
-  --text-color: #F9FAFB;
-  --text-muted: #9CA3AF;
-  --primary-color: #6366F1;
-  --primary-color-hover: #4F46E5;
-  --border-color: #374151;
-  --nav-bg: #1F2937;
+  --bg-color: #0d0d0f;
+  --bg-color-card: #282a30;
+  --text-color: #ffffff;
+  --text-muted: #8e8e93;
+  --primary-color: #34D399;
+  --primary-color-hover: #10B981;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --nav-bg: #0d0d0f;
 }
 
 * {
@@ -130,17 +130,18 @@ button:disabled {
 /* Flashcard */
 .flashcard {
   background-color: var(--bg-color-card);
-  border-radius: 16px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 3rem 1.5rem;
   margin-top: 1rem;
   text-align: center;
   border: 1px solid var(--border-color);
-  min-height: 250px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .flashcard-source {
@@ -257,4 +258,138 @@ button:disabled {
 }
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* New UI Classes */
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8B5CF6 0%, #F59E0B 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Audio Play Button Top Left */
+.btn-play-audio {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+.btn-play-audio:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+.btn-play-audio svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* List Items (Settings/Stats) */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+}
+.list-item:last-child {
+  border-bottom: none;
+}
+.list-item:hover {
+  background: transparent;
+  opacity: 0.8;
+}
+.list-item .chevron {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* Heatmap */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 4px;
+  margin-top: 1rem;
+}
+.heatmap-day {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.heatmap-day[data-level="1"] { background-color: #064E3B; }
+.heatmap-day[data-level="2"] { background-color: #059669; }
+.heatmap-day[data-level="3"] { background-color: #34D399; }
+.heatmap-day[data-level="4"] { background-color: #6EE7B7; }
+
+/* Switch Toggle */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  transition: .2s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .2s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
 }
