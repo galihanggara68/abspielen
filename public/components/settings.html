@@ -25,6 +25,14 @@
         </div>
 
         <div class="list-item">
+            <span>Cloze Deletion Mode</span>
+            <label class="toggle-switch">
+                <input type="checkbox" :checked="clozeMode" @change="toggleClozeMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="list-item">
             <span>Dark Mode</span>
             <label class="toggle-switch">
                 <input type="checkbox" :checked="darkMode" @change="toggleDarkMode()">

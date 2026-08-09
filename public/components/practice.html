@@ -25,11 +25,15 @@
                 </button>
 
                 <!-- Furigana/IPA -->
-                <div x-show="showIpa || currentCard.ipa" style="color: var(--text-muted); margin-bottom: 0.5rem; font-family: monospace; font-size: 1rem;" x-text="currentCard.ipa ? `/${currentCard.ipa}/` : ''"></div>
+                <div x-show="currentCard.ipa" @click="toggleIpa()" style="color: var(--text-muted); margin-bottom: 0.5rem; font-family: monospace; font-size: 1rem; cursor: pointer;" x-text="revealed || showIpa ? `/${currentCard.ipa}/` : '/---/'" title="Tap to reveal pronunciation"></div>
                 
                 <!-- Source Text -->
                 <template x-if="!audioFirstMode || revealed">
                     <div class="flashcard-source" style="font-size: 2.5rem; letter-spacing: 0.05em;" x-text="currentCard.sourceText"></div>
+                </template>
+                
+                <template x-if="!revealed && clozeMode">
+                    <div class="flashcard-cloze" style="margin-top: 1.5rem; color: var(--text-muted); font-size: 1.5rem; text-align: left;" x-text="maskedTargetText"></div>
                 </template>
                 
                 <template x-if="!revealed && audioFirstMode">

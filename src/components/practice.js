@@ -13,6 +13,8 @@ export default function practice() {
     cardsSeenSession: 0,
     showIpa: false,
     audioFirstMode: false,
+    clozeMode: false,
+    maskedTargetText: '',
     hasTts: false,
     sessionDone: false,
     turnNote: '',
@@ -20,6 +22,7 @@ export default function practice() {
     async init() {
       this.hasTts = await hasGermanVoice();
       this.audioFirstMode = (await getPref('audio_first_mode')) === 'true';
+      this.clozeMode = (await getPref('cloze_mode')) === 'true';
       if (this.$store && this.$store.session) {
         await this.$store.session.init();
         if (this.cardsSeenSession === 0) {
@@ -72,6 +75,24 @@ export default function practice() {
       
       this.revealed = false;
       this.showIpa = false;
+      
+      if (this.clozeMode && this.currentCard.targetText) {
+        let targetWords = this.currentCard.targetText.split(' ');
+        let candidateIndices = [];
+        targetWords.forEach((word, index) => {
+          if (word.replace(/[^a-zA-ZäöüÄÖÜß]/g, '').length >= 4) {
+            candidateIndices.push(index);
+          }
+        });
+        if (candidateIndices.length === 0) {
+          candidateIndices = targetWords.map((_, i) => i);
+        }
+        
+        let maskIndex = candidateIndices[Math.floor(Math.random() * candidateIndices.length)];
+        let wordToMask = targetWords[maskIndex];
+        targetWords[maskIndex] = wordToMask.replace(/[a-zA-ZäöüÄÖÜß]+/g, '[?]');
+        this.maskedTargetText = targetWords.join(' ');
+      }
       
       const newCount = await countCardsByState('new');
       const dueCount = await countDueCards(Date.now());

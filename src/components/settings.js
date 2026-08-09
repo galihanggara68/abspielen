@@ -11,6 +11,7 @@ export default function settings() {
     ttsVoice: '',
     showIpa: false,
     audioFirstMode: false,
+    clozeMode: false,
     darkMode: false,
     voices: [],
     syncing: false,
@@ -24,6 +25,7 @@ export default function settings() {
       this.ttsVoice = await getPref('tts_voice') || '';
       this.showIpa = (await getPref('show_ipa')) === 'true';
       this.audioFirstMode = (await getPref('audio_first_mode')) === 'true';
+      this.clozeMode = (await getPref('cloze_mode')) === 'true';
       this.darkMode = (await getPref('dark_mode')) === 'true';
       
       if (await hasGermanVoice() && window.speechSynthesis) {
@@ -60,6 +62,11 @@ export default function settings() {
     async toggleAudioFirstMode() {
       this.audioFirstMode = !this.audioFirstMode;
       await setPref('audio_first_mode', this.audioFirstMode.toString());
+    },
+    
+    async toggleClozeMode() {
+      this.clozeMode = !this.clozeMode;
+      await setPref('cloze_mode', this.clozeMode.toString());
     },
     
     async toggleDarkMode() {
