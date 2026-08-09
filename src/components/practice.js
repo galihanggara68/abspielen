@@ -1,8 +1,9 @@
 import { getNextCard, gradeCard } from '../domain/scheduler.js';
 import { hasGermanVoice, speak } from '../domain/tts.js';
 import { getAllCards } from '../db/indexeddb.js';
-import { countCardsByState, getSessionState, getPref } from '../db/sqlite.js';
+import { countCardsByState, countDueCards, getSessionState, getPref } from '../db/sqlite.js';
 import { Preferences } from '@capacitor/preferences';
+import confetti from 'canvas-confetti';
 
 export default function practice() {
   return {
@@ -11,13 +12,19 @@ export default function practice() {
     cardsDue: 0,
     cardsSeenSession: 0,
     showIpa: false,
+    audioFirstMode: false,
     hasTts: false,
     sessionDone: false,
+    turnNote: '',
 
     async init() {
       this.hasTts = await hasGermanVoice();
+      this.audioFirstMode = (await getPref('audio_first_mode')) === 'true';
       if (this.$store && this.$store.session) {
         await this.$store.session.init();
+        if (this.cardsSeenSession === 0) {
+          await this.$store.session.startNewSession();
+        }
       }
       await this.pullNextCard();
     },
@@ -41,8 +48,13 @@ export default function practice() {
       });
 
       if (!nextState) {
-        this.sessionDone = true;
         this.currentCard = null;
+        this.sessionDone = true;
+        confetti({
+          particleCount: 150,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
         return;
       }
 
@@ -60,9 +72,8 @@ export default function practice() {
       this.showIpa = false;
       
       const newCount = await countCardsByState('new');
-      const reviewCount = await countCardsByState('review');
-      const learningCount = await countCardsByState('learning');
-      this.cardsDue = reviewCount + learningCount + Math.min(newCount, newCardLimit - newCardsToday);
+      const dueCount = await countDueCards(Date.now());
+      this.cardsDue = dueCount + Math.min(newCount, newCardLimit - newCardsToday);
 
       // Save to preferences for the Android widget
       const tag = this.currentCard.tags && this.currentCard.tags.length > 0 ? this.currentCard.tags[0] : '';
@@ -73,14 +84,14 @@ export default function practice() {
       await Preferences.set({ key: 'widget_cards_progress', value: `${this.cardsSeenSession}/${this.cardsDue + this.cardsSeenSession}` });
       
       // Notify the Android side to update widget
-      if (window.Capacitor && window.Capacitor.isNativePlatform()) {
+      if (typeof window !== 'undefined' && window.Capacitor && window.Capacitor.isNativePlatform()) {
           try {
              const { Bridge } = window.Capacitor.Plugins;
-             // We can use an intent to notify the widget, or just send a broadcast.
-             // But actually, we need to create a custom plugin or we can just run evaluateJS if we had a plugin...
-             // Wait, there is no direct way to send broadcast from Capacitor JS without a plugin.
-             // But the widget updates every 30 mins automatically if we use AppWidgetProvider or when app closes.
           } catch (e) {}
+      }
+      
+      if (this.audioFirstMode && this.hasTts && this.currentCard.targetText) {
+        setTimeout(() => this.listen(), 100);
       }
     },
 
@@ -90,7 +101,9 @@ export default function practice() {
 
     async grade(gradeStr) {
       if (!this.currentCard) return;
-      await gradeCard(this.currentCard.id, gradeStr);
+      const sessionId = this.$store && this.$store.session ? this.$store.session.currentSessionId : '';
+      await gradeCard(this.currentCard.id, gradeStr, this.turnNote, sessionId);
+      this.turnNote = '';
       this.cardsSeenSession++;
       
       const session = await getSessionState();

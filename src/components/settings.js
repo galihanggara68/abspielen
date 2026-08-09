@@ -10,6 +10,7 @@ export default function settings() {
     dailyLimit: 20,
     ttsVoice: '',
     showIpa: false,
+    audioFirstMode: false,
     darkMode: false,
     voices: [],
     syncing: false,
@@ -22,6 +23,7 @@ export default function settings() {
       this.dailyLimit = parseInt(await getPref('daily_new_limit') || '20', 10);
       this.ttsVoice = await getPref('tts_voice') || '';
       this.showIpa = (await getPref('show_ipa')) === 'true';
+      this.audioFirstMode = (await getPref('audio_first_mode')) === 'true';
       this.darkMode = (await getPref('dark_mode')) === 'true';
       
       if (await hasGermanVoice() && window.speechSynthesis) {
@@ -53,6 +55,11 @@ export default function settings() {
     async toggleIpa() {
       this.showIpa = !this.showIpa;
       await setPref('show_ipa', this.showIpa.toString());
+    },
+    
+    async toggleAudioFirstMode() {
+      this.audioFirstMode = !this.audioFirstMode;
+      await setPref('audio_first_mode', this.audioFirstMode.toString());
     },
     
     async toggleDarkMode() {

@@ -48,7 +48,7 @@ export async function getNextCard({ now, newCardLimit, newCardsToday, currentLev
   return null;
 }
 
-export async function gradeCard(cardId, grade) {
+export async function gradeCard(cardId, grade, note = '', sessionId = '') {
   const now = Date.now();
   const cardState = await getCardState(cardId);
   if (!cardState) return;
@@ -63,7 +63,7 @@ export async function gradeCard(cardId, grade) {
     repetitions: nextState.repetitions,
     state: nextState.state,
     last_reviewed_at: now,
-    due_at: nextState.interval_days === 0 ? null : now + nextState.interval_days * 24 * 60 * 60 * 1000
+    due_at: nextState.interval_days === 0 ? now + 10 * 60 * 1000 : now + nextState.interval_days * 24 * 60 * 60 * 1000
   });
   
   await insertReviewLog({
@@ -75,7 +75,9 @@ export async function gradeCard(cardId, grade) {
     prev_reps: prevState.repetitions,
     new_ease: nextState.ease,
     new_interval: nextState.interval_days,
-    new_reps: nextState.repetitions
+    new_reps: nextState.repetitions,
+    session_id: sessionId,
+    note
   });
   
   const session = await getSessionState();

@@ -15,10 +15,12 @@
   "packageManager": "pnpm@10.17.1",
   "dependencies": {
     "@capacitor-community/sqlite": "^8.1.0",
+    "@capacitor-community/text-to-speech": "^8.0.2",
     "@capacitor/android": "^8.5.0",
     "@capacitor/core": "^8.5.0",
     "@capacitor/preferences": "^8.0.1",
     "alpinejs": "^3.15.12",
+    "canvas-confetti": "^1.9.4",
     "idb": "^8.0.3"
   },
   "devDependencies": {

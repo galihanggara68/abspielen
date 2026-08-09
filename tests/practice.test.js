@@ -3,8 +3,27 @@ import practice from '../src/components/practice.js';
 import sessionStore from '../src/stores/session.js';
 import { _setPlugin, initDb } from '../src/db/sqlite.js';
 import { _resetDb } from '../src/db/indexeddb.js';
+import { loadFixtures } from '../src/db/seed.js';
 import { createMockPlugin } from './helpers/mock-sqlite-plugin.js';
 import "fake-indexeddb/auto";
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
+
+vi.mock('@capacitor-community/text-to-speech', () => ({
+  TextToSpeech: {
+    isLanguageSupported: vi.fn(),
+    getSupportedLanguages: vi.fn(),
+    speak: vi.fn()
+  }
+}));
+
+vi.mock('@capacitor/preferences', () => ({
+  Preferences: {
+    set: vi.fn(),
+    get: vi.fn(),
+    remove: vi.fn(),
+    clear: vi.fn()
+  }
+}));
 
 describe('Practice Component', () => {
   let mockPlugin;
@@ -15,18 +34,11 @@ describe('Practice Component', () => {
     _setPlugin(mockPlugin);
     await initDb();
     _resetDb();
-    globalThis.speechSynthesis = {
-      getVoices: () => [{ lang: 'de-DE' }],
-      speak: vi.fn(),
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn()
-    };
-    globalThis.SpeechSynthesisUtterance = class {
-      constructor(text) {
-        this.text = text;
-      }
-    };
+    await loadFixtures();
     
+    TextToSpeech.isLanguageSupported.mockResolvedValue({ supported: true });
+    TextToSpeech.speak.mockClear();
+
     comp = practice();
     comp.$store = { session: sessionStore };
     await comp.init();
@@ -34,7 +46,6 @@ describe('Practice Component', () => {
 
   afterEach(() => {
     mockPlugin.close();
-    globalThis.speechSynthesis = undefined;
   });
 
   test('AC-03-13: Practice component loads and displays the first card', () => {
@@ -51,18 +62,18 @@ describe('Practice Component', () => {
 
   test('AC-03-15: Clicking a grade button loads the next card', async () => {
     const firstId = comp.currentCard.id;
+    comp.turnNote = 'my test note';
     await comp.grade('good');
     expect(comp.currentCard.id).not.toBe(firstId);
     expect(comp.cardsSeenSession).toBe(1);
     expect(comp.revealed).toBe(false);
+    expect(comp.turnNote).toBe(''); // note clears out
   });
 
   test('AC-03-16: TTS listen button is hidden when hasGermanVoice() returns false', async () => {
-    globalThis.speechSynthesis = { 
-      getVoices: () => [], 
-      addEventListener: vi.fn(), 
-      removeEventListener: vi.fn() 
-    };
+    TextToSpeech.isLanguageSupported.mockResolvedValueOnce({ supported: false });
+    TextToSpeech.getSupportedLanguages.mockResolvedValueOnce({ languages: [] });
+    
     const compNoTTS = practice();
     compNoTTS.$store = { session: sessionStore };
     await compNoTTS.init();
@@ -100,8 +111,9 @@ describe('Practice Component', () => {
     expect(comp.$store.session.cardsSeenToday).toBe(0);
   });
 
-  test('listen() calls speechSynthesis.speak', () => {
-    comp.listen();
-    expect(globalThis.speechSynthesis.speak).toHaveBeenCalled();
+  test('listen() calls speechSynthesis.speak', async () => {
+    comp.currentCard = { targetText: 'Hallo', lang: 'de' };
+    await comp.listen();
+    expect(TextToSpeech.speak).toHaveBeenCalled();
   });
 });

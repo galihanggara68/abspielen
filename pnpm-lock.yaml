@@ -11,6 +11,9 @@ importers:
       '@capacitor-community/sqlite':
         specifier: ^8.1.0
         version: 8.1.0(@capacitor/core@8.5.0)
+      '@capacitor-community/text-to-speech':
+        specifier: ^8.0.2
+        version: 8.0.2(@capacitor/core@8.5.0)
       '@capacitor/android':
         specifier: ^8.5.0
         version: 8.5.0(@capacitor/core@8.5.0)
@@ -23,6 +26,9 @@ importers:
       alpinejs:
         specifier: ^3.15.12
         version: 3.15.12
+      canvas-confetti:
+        specifier: ^1.9.4
+        version: 1.9.4
       idb:
         specifier: ^8.0.3
         version: 8.0.3
@@ -51,6 +57,11 @@ packages:
   '@capacitor-community/sqlite@8.1.0':
     resolution: {integrity: sha512-yhKZDAVPDPcM3QE6UGB3LXyV25a6Rve1SjZ1aUpTE0E2isnYTVM0PG9+JOI241f+NdsHzPTE7ESJiYSqKsKnuA==}
     engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@capacitor/core': '>=8.0.0'
+
+  '@capacitor-community/text-to-speech@8.0.2':
+    resolution: {integrity: sha512-SbpBMzcmzdTiN8jQDme/yUYHEJISZA+IiaRn5zT14k3UKpjaA7eYBnSm9h76rJHRV/y6DVZVhT1J0SaK5JTKtA==}
     peerDependencies:
       '@capacitor/core': '>=8.0.0'
 
@@ -383,6 +394,9 @@ packages:
 
   buffer-crc32@0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
+
+  canvas-confetti@1.9.4:
+    resolution: {integrity: sha512-yxQbJkAVrFXWNbTUjPqjF7G+g6pDotOUHGbkZq2NELZUMDpiJ85rIEazVb8GTaAptNW2miJAXbs1BtioA251Pw==}
 
   chai@6.2.2:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
@@ -991,6 +1005,10 @@ snapshots:
       '@capacitor/core': 8.5.0
       jeep-sqlite: 2.8.0
 
+  '@capacitor-community/text-to-speech@8.0.2(@capacitor/core@8.5.0)':
+    dependencies:
+      '@capacitor/core': 8.5.0
+
   '@capacitor/android@8.5.0(@capacitor/core@8.5.0)':
     dependencies:
       '@capacitor/core': 8.5.0
@@ -1335,6 +1353,8 @@ snapshots:
   browser-fs-access@0.35.0: {}
 
   buffer-crc32@0.2.13: {}
+
+  canvas-confetti@1.9.4: {}
 
   chai@6.2.2: {}
 

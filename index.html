@@ -9,8 +9,13 @@
     <body :class="{ 'dark': darkMode }" x-data="app" @navigate.window="navigate($event.detail)" @toggle-dark-mode.window="toggleDarkMode()">
         <header>
             <h1>Abspielen</h1>
-            <nav x-show="currentScreen !== 'onboarding'">
+            <nav x-show="currentScreen !== 'onboarding'" style="display: flex; gap: 0.5rem; justify-content: center; align-items: center; padding: 1rem; border-bottom: 1px solid var(--border-color, #ccc);">
+                <span style="font-weight: bold; margin-right: 1rem; color: #ff9800;" x-show="$store.session && $store.session.currentStreak > 0">
+                    🔥 <span x-text="$store.session.currentStreak"></span> Day Streak
+                </span>
+                <button @click="navigate('home')" aria-label="Go to Home">Home</button>
                 <button @click="navigate('practice')" aria-label="Go to Practice">Practice</button>
+                <button @click="navigate('last-session')" aria-label="Go to Last Session">Last Session</button>
                 <button @click="navigate('stats')" aria-label="Go to Stats">Stats</button>
                 <button @click="navigate('settings')" aria-label="Go to Settings">Settings</button>
             </nav>
@@ -43,7 +48,12 @@
                                 </div>
                                 <hr>
                                 
-                                <p x-text="currentCard.sourceText" style="font-size: 1.2em; text-align: center; margin: 2rem 0;"></p>
+                                <div x-show="!audioFirstMode || revealed">
+                                    <p x-text="currentCard.sourceText" style="font-size: 1.2em; text-align: center; margin: 2rem 0;"></p>
+                                </div>
+                                <div x-show="audioFirstMode && !revealed" style="text-align: center; margin: 2rem 0;">
+                                    <button @click="listen()" aria-label="Play Audio Again">🔊 Play Audio</button>
+                                </div>
                                 
                                 <template x-if="!revealed">
                                     <div style="text-align: center;">
@@ -67,6 +77,7 @@
                                         </div>
                                         
                                         <hr>
+                                        <textarea x-model="turnNote" placeholder="Add a note for this turn (optional)..." style="width: 100%; box-sizing: border-box; margin-top: 1rem; border-radius: 4px; padding: 0.5rem; border: 1px solid var(--border-color, #ccc); background: transparent; color: inherit; font-family: inherit; resize: vertical;"></textarea>
                                         <div class="grade-buttons" style="display: flex; justify-content: space-between; margin-top: 1rem;">
                                             <button @click="grade('again')" data-grade="again" aria-label="Grade: Again">Again</button>
                                             <button @click="grade('hard')" data-grade="hard" aria-label="Grade: Hard">Hard</button>
@@ -87,10 +98,51 @@
                 </div>
             </template>
 
+            <template x-if="currentScreen === 'last-session'">
+                <div x-data="lastSession" class="screen">
+                    <h2>Last Session</h2>
+                    <div x-show="turns.length === 0" style="text-align: center; margin-top: 2rem;">
+                        <p>No turns found for the last session.</p>
+                    </div>
+                    <template x-for="turn in turns" :key="turn.id">
+                        <div style="border: 1px solid var(--border-color, #ccc); border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <strong><span x-text="turn.sourceText"></span></strong>
+                                <span style="font-size: 0.8em; color: gray;" x-text="`Grade: ${turn.grade}`"></span>
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <span x-text="turn.targetText"></span>
+                                <span style="color: gray; margin-left: 0.5rem;" x-text="`/${turn.ipa}/`"></span>
+                                <button x-show="hasTts" @click="listen(turn.targetText)" style="padding: 2px 6px; font-size: 0.8em; margin-left: 0.5rem;">▶</button>
+                            </div>
+                            <template x-if="turn.note">
+                                <div style="background: var(--bg-color, #f5f5f5); border-left: 4px solid #888; padding: 0.5rem; margin-top: 0.5rem; font-style: italic; border-radius: 0 4px 4px 0;">
+                                    <span style="font-size: 0.8em; font-weight: bold; display: block; margin-bottom: 0.2rem;">📝 Note:</span>
+                                    <span x-text="turn.note"></span>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </template>
+
             <template x-if="currentScreen === 'stats'">
                 <div x-data="stats" class="screen">
                     <h2>Stats</h2>
                     <p>Retention Rate: <span x-text="data?.retentionRate + '%'"></span></p>
+                    <p>Current Session Streak: <span x-text="data?.sessionStreak"></span></p>
+
+                    <div style="margin-top: 2rem;">
+                        <h3>Activity Heatmap</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">
+                            <template x-for="item in data?.heatmap" :key="item.date">
+                                <div :title="`${item.date}: ${item.count} reviews`" 
+                                     style="width: 15px; height: 15px; border-radius: 2px;"
+                                     :style="`background-color: ${item.count > 20 ? '#196127' : item.count > 10 ? '#239a3b' : item.count > 0 ? '#7bc96f' : 'var(--border-color, #ebedf0)'}`">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
                 </div>
             </template>
 
@@ -113,6 +165,9 @@
 
                     <hr style="margin: 20px 0; border-color: var(--border-color);">
                     
+                    <button @click="toggleAudioFirstMode()" aria-label="Toggle Audio-First Mode">
+                        <span x-text="audioFirstMode ? 'Disable Audio-First Mode' : 'Enable Audio-First Mode'"></span>
+                    </button>
                     <button @click="toggleDarkMode()" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
                     <button @click="resetProgress()" aria-label="Reset Progress">Reset Progress</button>
                     <button @click="navigate('credits')" aria-label="Go to Credits">Credits</button>

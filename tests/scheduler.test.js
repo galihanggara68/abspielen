@@ -54,11 +54,13 @@ describe('Scheduler', () => {
 
   test('gradeCard creates review_log entry', async () => {
     await seedNewCards(['c1']);
-    await gradeCard('c1', 'good');
+    await gradeCard('c1', 'good', 'my note', 'session-123');
     const logs = await getReviewLogs(0);
     expect(logs).toHaveLength(1);
     expect(logs[0].card_id).toBe('c1');
     expect(logs[0].grade).toBe('good');
     expect(logs[0].new_reps).toBe(1);
+    expect(logs[0].note).toBe('my note');
+    expect(logs[0].session_id).toBe('session-123');
   });
 });

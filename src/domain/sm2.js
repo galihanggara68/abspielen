@@ -6,7 +6,7 @@ export function computeSm2(cardState, grade) {
 
   if (q < 3) {
     repetitions = 0;
-    interval_days = 1;
+    interval_days = 0;
     state = 'learning';
   } else {
     if (repetitions === 0) interval_days = 1;

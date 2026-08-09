@@ -45,19 +45,18 @@ describe('SQLite Data Layer', () => {
     const due = await getDueCards(now, 10);
     const ids = due.map(c => c.card_id);
     expect(ids).toContain('c1');
-    expect(ids).toContain('c3');
     expect(ids).toContain('c4');
     expect(ids).not.toContain('c2');
-    // c3 (null due_at = new) should come first, then c4 (most overdue), then c1
-    expect(ids.indexOf('c3')).toBeLessThan(ids.indexOf('c4'));
+    expect(ids).not.toContain('c3');
+    // c4 (most overdue) should come first, then c1
     expect(ids.indexOf('c4')).toBeLessThan(ids.indexOf('c1'));
   });
 
   test('insertReviewLog and getReviewLogs', async () => {
     const entries = [
-      { card_id: 'c1', reviewed_at: 1000, grade: 'good', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.6, new_interval: 1, new_reps: 1 },
-      { card_id: 'c1', reviewed_at: 2000, grade: 'easy', prev_ease: 2.6, prev_interval: 1, prev_reps: 1, new_ease: 2.7, new_interval: 3, new_reps: 2 },
-      { card_id: 'c2', reviewed_at: 3000, grade: 'hard', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.3, new_interval: 1, new_reps: 1 },
+      { card_id: 'c1', reviewed_at: 1000, grade: 'good', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.6, new_interval: 1, new_reps: 1, session_id: 'sess1', note: 'n1' },
+      { card_id: 'c1', reviewed_at: 2000, grade: 'easy', prev_ease: 2.6, prev_interval: 1, prev_reps: 1, new_ease: 2.7, new_interval: 3, new_reps: 2, session_id: 'sess1', note: '' },
+      { card_id: 'c2', reviewed_at: 3000, grade: 'hard', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.3, new_interval: 1, new_reps: 1, session_id: 'sess2', note: 'n2' },
     ];
     for (const e of entries) await insertReviewLog(e);
     const logs = await getReviewLogs(0);
@@ -65,6 +64,20 @@ describe('SQLite Data Layer', () => {
     expect(logs[0]).toMatchObject(entries[0]);
     expect(logs[1]).toMatchObject(entries[1]);
     expect(logs[2]).toMatchObject(entries[2]);
+  });
+
+  test('getReviewLogsBySession fetches correct logs', async () => {
+    const entries = [
+      { card_id: 'c1', reviewed_at: 1000, grade: 'good', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.6, new_interval: 1, new_reps: 1, session_id: 'sess1', note: 'n1' },
+      { card_id: 'c1', reviewed_at: 2000, grade: 'easy', prev_ease: 2.6, prev_interval: 1, prev_reps: 1, new_ease: 2.7, new_interval: 3, new_reps: 2, session_id: 'sess1', note: '' },
+      { card_id: 'c2', reviewed_at: 3000, grade: 'hard', prev_ease: 2.5, prev_interval: 0, prev_reps: 0, new_ease: 2.3, new_interval: 1, new_reps: 1, session_id: 'sess2', note: 'n2' },
+    ];
+    for (const e of entries) await insertReviewLog(e);
+    
+    const sess1Logs = await import('../src/db/sqlite.js').then(m => m.getReviewLogsBySession('sess1'));
+    expect(sess1Logs).toHaveLength(2);
+    expect(sess1Logs[0].note).toBe('n1');
+    expect(sess1Logs[1].note).toBe('');
   });
 
   test('getReviewLogsForCard filters by card_id and since', async () => {

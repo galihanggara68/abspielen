@@ -46,7 +46,9 @@ export async function initDb() {
       prev_reps INTEGER,
       new_ease REAL,
       new_interval INTEGER,
-      new_reps INTEGER
+      new_reps INTEGER,
+      note TEXT,
+      session_id TEXT
     );
     CREATE TABLE IF NOT EXISTS session_state(
       id INTEGER PRIMARY KEY,
@@ -55,7 +57,10 @@ export async function initDb() {
       current_run_count INTEGER NOT NULL DEFAULT 0,
       cards_seen_today INTEGER NOT NULL DEFAULT 0,
       new_cards_today INTEGER NOT NULL DEFAULT 0,
-      day_start_ts INTEGER
+      day_start_ts INTEGER,
+      current_session_id TEXT,
+      current_streak INTEGER NOT NULL DEFAULT 0,
+      last_study_date TEXT
     );
     CREATE TABLE IF NOT EXISTS prefs(
       key TEXT PRIMARY KEY,
@@ -90,7 +95,7 @@ export async function upsertCardState(cardState) {
 
 export async function getDueCards(now, limit) {
   return _query(
-    "SELECT * FROM card_state WHERE due_at <= ? OR state = 'new' ORDER BY CASE WHEN due_at IS NULL THEN 0 ELSE 1 END, due_at ASC LIMIT ?",
+    "SELECT * FROM card_state WHERE due_at <= ? ORDER BY due_at ASC LIMIT ?",
     [now, limit]
   );
 }
@@ -101,7 +106,7 @@ export async function getNewCards(limit) {
 
 export async function insertReviewLog(entry) {
   await _run(
-    'INSERT INTO review_log(card_id, reviewed_at, grade, prev_ease, prev_interval, prev_reps, new_ease, new_interval, new_reps) VALUES(?,?,?,?,?,?,?,?,?)',
+    'INSERT INTO review_log(card_id, reviewed_at, grade, prev_ease, prev_interval, prev_reps, new_ease, new_interval, new_reps, session_id, note) VALUES(?,?,?,?,?,?,?,?,?,?,?)',
     [
       entry.card_id,
       entry.reviewed_at,
@@ -111,7 +116,9 @@ export async function insertReviewLog(entry) {
       entry.prev_reps,
       entry.new_ease,
       entry.new_interval,
-      entry.new_reps
+      entry.new_reps,
+      entry.session_id !== undefined ? entry.session_id : null,
+      entry.note !== undefined ? entry.note : null
     ]
   );
 }
@@ -122,6 +129,10 @@ export async function getReviewLogs(since) {
 
 export async function getReviewLogsForCard(cardId, since) {
   return _query('SELECT * FROM review_log WHERE card_id = ? AND reviewed_at >= ? ORDER BY reviewed_at ASC', [cardId, since]);
+}
+
+export async function getReviewLogsBySession(sessionId) {
+  return _query('SELECT * FROM review_log WHERE session_id = ? ORDER BY reviewed_at ASC', [sessionId]);
 }
 
 export async function getSessionState() {
@@ -160,7 +171,12 @@ export async function countCardsByState(state) {
   return rows.length > 0 ? rows[0].count : 0;
 }
 
+export async function countDueCards(now) {
+  const rows = await _query('SELECT COUNT(*) as count FROM card_state WHERE due_at <= ?', [now]);
+  return rows.length > 0 ? rows[0].count : 0;
+}
+
 export async function resetAllProgress() {
   await _execute('DELETE FROM card_state; DELETE FROM review_log;');
-  await _run('UPDATE session_state SET active_strategy = NULL, current_run_key = NULL, current_run_count = 0, cards_seen_today = 0, new_cards_today = 0, day_start_ts = NULL WHERE id = 1');
+  await _run('UPDATE session_state SET active_strategy = NULL, current_run_key = NULL, current_run_count = 0, cards_seen_today = 0, new_cards_today = 0, day_start_ts = NULL, current_session_id = NULL WHERE id = 1');
 }

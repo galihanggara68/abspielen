@@ -23,10 +23,14 @@ export async function computeStats(now = Date.now()) {
 
   const allLogs = await getReviewLogs(0);
   let sessionStreak = 0;
+  const heatmap = {};
   if (allLogs && allLogs.length > 0) {
     const days = new Set();
     allLogs.forEach(l => {
       const d = new Date(l.reviewed_at);
+      const dateStr = d.toISOString().split('T')[0];
+      heatmap[dateStr] = (heatmap[dateStr] || 0) + 1;
+      
       d.setHours(0,0,0,0);
       days.add(d.getTime());
     });
@@ -61,12 +65,20 @@ export async function computeStats(now = Date.now()) {
     }
   }
 
+  const heatmapArray = [];
+  for (let i = 89; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400000);
+    const dateStr = d.toISOString().split('T')[0];
+    heatmapArray.push({ date: dateStr, count: heatmap[dateStr] || 0 });
+  }
+
   return {
     cardsDueToday: dueCards.length,
     cardsSeenToday: session ? session.cards_seen_today : 0,
     newCardsToday: session ? session.new_cards_today : 0,
     sessionStreak,
     retentionRate,
-    stateCounts
+    stateCounts,
+    heatmap: heatmapArray
   };
 }
