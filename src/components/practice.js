@@ -18,6 +18,7 @@ export default function practice() {
     hasTts: false,
     sessionDone: false,
     turnNote: '',
+    newCardsSeenSession: 0,
 
     async init() {
       this.hasTts = await hasGermanVoice();
@@ -33,13 +34,9 @@ export default function practice() {
     },
 
     async pullNextCard() {
-      let newCardsToday = 0;
+      // Ensure daily reset check happens, even though we use session counts for the limit
       if (this.$store && this.$store.session) {
         await this.$store.session.checkDayReset();
-        newCardsToday = this.$store.session.newCardsToday;
-      } else {
-        const session = await getSessionState();
-        if (session) newCardsToday = session.new_cards_today;
       }
       
       const newCardLimit = parseInt(await getPref('daily_new_limit') || '20', 10);
@@ -47,7 +44,7 @@ export default function practice() {
       const nextState = await getNextCard({
         now: Date.now(),
         newCardLimit,
-        newCardsToday
+        newCardsSeenSession: this.newCardsSeenSession
       });
 
       if (!nextState) {
@@ -96,7 +93,7 @@ export default function practice() {
       
       const newCount = await countCardsByState('new');
       const dueCount = await countDueCards(Date.now());
-      this.cardsDue = dueCount + Math.min(newCount, newCardLimit - newCardsToday);
+      this.cardsDue = dueCount + Math.min(newCount, Math.max(0, newCardLimit - this.newCardsSeenSession));
 
       // Save to preferences for the Android widget
       const tag = this.currentCard.tags && this.currentCard.tags.length > 0 ? this.currentCard.tags[0] : '';
@@ -124,10 +121,12 @@ export default function practice() {
 
     async grade(gradeStr) {
       if (!this.currentCard) return;
+      const isNew = this.currentCard.state === 'new';
       const sessionId = this.$store && this.$store.session ? this.$store.session.currentSessionId : '';
       await gradeCard(this.currentCard.id, gradeStr, this.turnNote, sessionId);
       this.turnNote = '';
       this.cardsSeenSession++;
+      if (isNew) this.newCardsSeenSession++;
       
       const session = await getSessionState();
       if (session && this.$store && this.$store.session) {

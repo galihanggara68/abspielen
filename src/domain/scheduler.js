@@ -5,13 +5,13 @@ import { getAllChunkIds, getChunk } from '../db/indexeddb.js';
 
 let pendingRunState = null;
 
-export async function getNextCard({ now, newCardLimit, newCardsToday, currentLevel, recentFailedCardIds }) {
+export async function getNextCard({ now, newCardLimit, newCardsSeenSession, currentLevel, recentFailedCardIds }) {
   const session = await getSessionState();
   
   const allDue = await getDueCards(now, 100);
   const newCards = await getNewCards(100);
   
-  const availableNew = newCards.slice(0, Math.max(0, newCardLimit - newCardsToday));
+  const availableNew = newCards.slice(0, Math.max(0, newCardLimit - (newCardsSeenSession || 0)));
   const candidateStates = [...allDue, ...availableNew];
   
   if (candidateStates.length === 0) return null;
