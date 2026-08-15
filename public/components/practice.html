@@ -1,4 +1,4 @@
-<div x-data="practice" class="screen" style="padding-top: 0; max-width: 500px;">
+<div x-data="practice" @navigate.window="handleNavigate($event.detail)" class="screen" style="padding-top: 0; max-width: 500px;">
     
     <!-- Top Header & Progress -->
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">

@@ -20,6 +20,16 @@ export default function practice() {
     turnNote: '',
     newCardsSeenSession: 0,
 
+    async handleNavigate(screen) {
+      if (screen === 'practice') {
+        this.sessionDone = false;
+        this.cardsSeenSession = 0;
+        this.newCardsSeenSession = 0;
+        this.currentCard = null;
+        await this.init();
+      }
+    },
+
     async init() {
       this.hasTts = await hasGermanVoice();
       this.audioFirstMode = (await getPref('audio_first_mode')) === 'true';
